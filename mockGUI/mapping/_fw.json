@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 248
+ETag: W/"f8-FFvVzuuF3LrwqJYvXHc4GBPbPDY"
+Date: Wed, 16 Sep 2026 10:32:32 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"name":"BFH Master-Kompetenzrahmen 2026","isShared":true,"createdAt":"2026-09-16","id":"cf-bfh-master-kompetenzrahmen-2026","_id":"cf-bfh-master-kompetenzrahmen-2026","created_at":"2026-09-16T10:32:32.035Z","updated_at":"2026-09-16T10:32:32.035Z"}

@@ -1,0 +1,70 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: timeweaver-postgres
+    environment:
+      POSTGRES_DB: timeweaver
+      POSTGRES_USER: timeweaver
+      POSTGRES_PASSWORD: timeweaver
+    ports:
+      - "5433:5432"
+    volumes:
+      - "./postgres-data:/var/lib/postgresql/data"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U timeweaver -d timeweaver"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  # Timefold Solver (Java/Spring Boot microservice) — https://github.com/TimefoldAI/timefold-solver
+  solver:
+    build:
+      context: ./solver-java
+      dockerfile: Dockerfile
+    container_name: timeweaver-solver
+    ports:
+      - "8081:8080"
+    environment:
+      SERVER_PORT: 8080
+    restart: unless-stopped
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: timeweaver-app
+    ports:
+      - "3001:3001"
+    environment:
+      PORT: 3001
+      NODE_ENV: production
+      POSTGRES_HOST: postgres
+      POSTGRES_PORT: 5432
+      POSTGRES_DB: timeweaver
+      POSTGRES_USER: timeweaver
+      POSTGRES_PASSWORD: timeweaver
+      DATABASE_URL: http://localhost:3001/api
+      TIMEFOLD_URL: http://solver:8080
+      SOLVER_ENGINE: timefold
+      OIDC_ISSUER: http://doc-pouch:3030/oidc
+      OIDC_CLIENT_ID: timeWeaver.local
+    depends_on:
+      postgres:
+        condition: service_healthy
+      solver:
+        condition: service_started
+    restart: unless-stopped
+
+  # Optional OIDC identity provider service (docPouch instance as an OIDC provider)
+  # docPouch is not used as data storage
+  doc-pouch:
+    image: ghcr.io/bfh-jtf/doc-pouch:latest
+    container_name: timeweaver-docpouch-oidc
+    ports:
+      - "3030:3030"
+    volumes:
+      - "./docpouch-db:/app/db"
+      - "./docpouch-log:/app/log"
+    env_file: .env
+    restart: unless-stopped

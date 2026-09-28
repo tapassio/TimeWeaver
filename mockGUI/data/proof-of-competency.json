@@ -1,0 +1,514 @@
+[
+  {
+    "_id": "proof-001",
+    "title": "Leistungsnachweis: Live Case: Winkler GmbH",
+    "type": "assignment",
+    "description": "Kompetenznachweis für Modul 'Live Case: Winkler GmbH'.",
+    "is_group_assessment": false,
+    "module_id": "mod-001"
+  },
+  {
+    "_id": "proof-002",
+    "title": "Leistungsnachweis: Digital Marketing",
+    "type": "presentation",
+    "description": "Kompetenznachweis für Modul 'Digital Marketing'.",
+    "is_group_assessment": false,
+    "module_id": "mod-002"
+  },
+  {
+    "_id": "proof-003",
+    "title": "Leistungsnachweis: Change Management",
+    "type": "assignment",
+    "description": "Kompetenznachweis für Modul 'Change Management'.",
+    "is_group_assessment": true,
+    "module_id": "mod-003"
+  },
+  {
+    "_id": "proof-004",
+    "title": "Leistungsnachweis: Cloud Business Models",
+    "type": "project",
+    "description": "Kompetenznachweis für Modul 'Cloud Business Models'.",
+    "is_group_assessment": true,
+    "module_id": "mod-004"
+  },
+  {
+    "_id": "proof-005",
+    "title": "Leistungsnachweis: Live Case: Felber & Partner",
+    "type": "assignment",
+    "description": "Kompetenznachweis für Modul 'Live Case: Felber & Partner'.",
+    "is_group_assessment": false,
+    "module_id": "mod-005"
+  },
+  {
+    "_id": "proof-006",
+    "title": "Leistungsnachweis: Digital Ethics",
+    "type": "exam",
+    "description": "Kompetenznachweis für Modul 'Digital Ethics'.",
+    "is_group_assessment": false,
+    "module_id": "mod-006"
+  },
+  {
+    "_id": "proof-007",
+    "title": "Leistungsnachweis: Business Model Innovation",
+    "type": "exam",
+    "description": "Kompetenznachweis für Modul 'Business Model Innovation'.",
+    "is_group_assessment": true,
+    "module_id": "mod-007"
+  },
+  {
+    "_id": "proof-008",
+    "title": "Leistungsnachweis: Digital Transformation Leadership",
+    "type": "presentation",
+    "description": "Kompetenznachweis für Modul 'Digital Transformation Leadership'.",
+    "is_group_assessment": false,
+    "module_id": "mod-008"
+  },
+  {
+    "_id": "proof-009",
+    "title": "Leistungsnachweis: IT Governance",
+    "type": "project",
+    "description": "Kompetenznachweis für Modul 'IT Governance'.",
+    "is_group_assessment": false,
+    "module_id": "mod-009"
+  },
+  {
+    "_id": "proof-010",
+    "title": "Leistungsnachweis: Live Case: Kaiser Stocker & Co.",
+    "type": "project",
+    "description": "Kompetenznachweis für Modul 'Live Case: Kaiser Stocker & Co.'.",
+    "is_group_assessment": false,
+    "module_id": "mod-010"
+  },
+  {
+    "_id": "proof-011",
+    "title": "Leistungsnachweis: Agile Software Delivery",
+    "type": "project",
+    "description": "Kompetenznachweis für Modul 'Agile Software Delivery'.",
+    "is_group_assessment": true,
+    "module_id": "mod-011"
+  },
+  {
+    "_id": "proof-012",
+    "title": "Leistungsnachweis: FinTech Innovation",
+    "type": "presentation",
+    "description": "Kompetenznachweis für Modul 'FinTech Innovation'.",
+    "is_group_assessment": true,
+    "module_id": "mod-012"
+  },
+  {
+    "_id": "proof-013",
+    "title": "Leistungsnachweis: AI in Business",
+    "type": "assignment",
+    "description": "Kompetenznachweis für Modul 'AI in Business'.",
+    "is_group_assessment": false,
+    "module_id": "mod-013"
+  },
+  {
+    "_id": "proof-014",
+    "title": "Leistungsnachweis: Masterarbeit",
+    "type": "project",
+    "description": "Kompetenznachweis für Modul 'Masterarbeit'.",
+    "is_group_assessment": false,
+    "module_id": "mod-014"
+  },
+  {
+    "_id": "proof-015",
+    "title": "Leistungsnachweis: Data-Driven Decision Making",
+    "type": "project",
+    "description": "Kompetenznachweis für Modul 'Data-Driven Decision Making'.",
+    "is_group_assessment": false,
+    "module_id": "mod-015"
+  },
+  {
+    "_id": "proof-016",
+    "title": "Leistungsnachweis: Digital Strategy",
+    "type": "assignment",
+    "description": "Kompetenznachweis für Modul 'Digital Strategy'.",
+    "is_group_assessment": false,
+    "module_id": "mod-016"
+  },
+  {
+    "_id": "proof-017",
+    "title": "Leistungsnachweis: Ethics in Public Administration",
+    "type": "presentation",
+    "description": "Kompetenznachweis für Modul 'Ethics in Public Administration'.",
+    "is_group_assessment": false,
+    "module_id": "mod-017"
+  },
+  {
+    "_id": "proof-018",
+    "title": "Leistungsnachweis: Public Finance Management",
+    "type": "presentation",
+    "description": "Kompetenznachweis für Modul 'Public Finance Management'.",
+    "is_group_assessment": false,
+    "module_id": "mod-018"
+  },
+  {
+    "_id": "proof-019",
+    "title": "Leistungsnachweis: Civic Technology",
+    "type": "assignment",
+    "description": "Kompetenznachweis für Modul 'Civic Technology'.",
+    "is_group_assessment": false,
+    "module_id": "mod-019"
+  },
+  {
+    "_id": "proof-020",
+    "title": "Leistungsnachweis: Fiscal Sustainability",
+    "type": "presentation",
+    "description": "Kompetenznachweis für Modul 'Fiscal Sustainability'.",
+    "is_group_assessment": false,
+    "module_id": "mod-020"
+  },
+  {
+    "_id": "proof-021",
+    "title": "Leistungsnachweis: Sustainable Public Procurement",
+    "type": "presentation",
+    "description": "Kompetenznachweis für Modul 'Sustainable Public Procurement'.",
+    "is_group_assessment": false,
+    "module_id": "mod-021"
+  },
+  {
+    "_id": "proof-022",
+    "title": "Leistungsnachweis: Change Leadership in Public Institutions",
+    "type": "project",
+    "description": "Kompetenznachweis für Modul 'Change Leadership in Public Institutions'.",
+    "is_group_assessment": true,
+    "module_id": "mod-022"
+  },
+  {
+    "_id": "proof-023",
+    "title": "Leistungsnachweis: Stakeholder Engagement",
+    "type": "presentation",
+    "description": "Kompetenznachweis für Modul 'Stakeholder Engagement'.",
+    "is_group_assessment": false,
+    "module_id": "mod-023"
+  },
+  {
+    "_id": "proof-024",
+    "title": "Leistungsnachweis: Public-Private Partnerships",
+    "type": "assignment",
+    "description": "Kompetenznachweis für Modul 'Public-Private Partnerships'.",
+    "is_group_assessment": true,
+    "module_id": "mod-024"
+  },
+  {
+    "_id": "proof-025",
+    "title": "Leistungsnachweis: Institutional Innovation",
+    "type": "project",
+    "description": "Kompetenznachweis für Modul 'Institutional Innovation'.",
+    "is_group_assessment": false,
+    "module_id": "mod-025"
+  },
+  {
+    "_id": "proof-026",
+    "title": "Leistungsnachweis: Public Administration Reform",
+    "type": "assignment",
+    "description": "Kompetenznachweis für Modul 'Public Administration Reform'.",
+    "is_group_assessment": false,
+    "module_id": "mod-026"
+  },
+  {
+    "_id": "proof-027",
+    "title": "Leistungsnachweis: Evidence-Based Policy Making",
+    "type": "project",
+    "description": "Kompetenznachweis für Modul 'Evidence-Based Policy Making'.",
+    "is_group_assessment": true,
+    "module_id": "mod-027"
+  },
+  {
+    "_id": "proof-028",
+    "title": "Leistungsnachweis: Regulatory Impact Analysis",
+    "type": "project",
+    "description": "Kompetenznachweis für Modul 'Regulatory Impact Analysis'.",
+    "is_group_assessment": true,
+    "module_id": "mod-028"
+  },
+  {
+    "_id": "proof-029",
+    "title": "Leistungsnachweis: Governance & Policy Design",
+    "type": "exam",
+    "description": "Kompetenznachweis für Modul 'Governance & Policy Design'.",
+    "is_group_assessment": true,
+    "module_id": "mod-029"
+  },
+  {
+    "_id": "proof-030",
+    "title": "Leistungsnachweis: Masterarbeit",
+    "type": "project",
+    "description": "Kompetenznachweis für Modul 'Masterarbeit'.",
+    "is_group_assessment": false,
+    "module_id": "mod-030"
+  },
+  {
+    "_id": "proof-031",
+    "title": "Leistungsnachweis: Digital Government Services",
+    "type": "project",
+    "description": "Kompetenznachweis für Modul 'Digital Government Services'.",
+    "is_group_assessment": false,
+    "module_id": "mod-031"
+  },
+  {
+    "_id": "proof-032",
+    "title": "Leistungsnachweis: Smart City Strategies",
+    "type": "exam",
+    "description": "Kompetenznachweis für Modul 'Smart City Strategies'.",
+    "is_group_assessment": false,
+    "module_id": "mod-032"
+  },
+  {
+    "_id": "proof-033",
+    "title": "Leistungsnachweis: Mergers & Acquisitions",
+    "type": "exam",
+    "description": "Kompetenznachweis für Modul 'Mergers & Acquisitions'.",
+    "is_group_assessment": false,
+    "module_id": "mod-033"
+  },
+  {
+    "_id": "proof-034",
+    "title": "Leistungsnachweis: International Trade",
+    "type": "project",
+    "description": "Kompetenznachweis für Modul 'International Trade'.",
+    "is_group_assessment": false,
+    "module_id": "mod-034"
+  },
+  {
+    "_id": "proof-035",
+    "title": "Leistungsnachweis: Negotiation & Conflict Management",
+    "type": "project",
+    "description": "Kompetenznachweis für Modul 'Negotiation & Conflict Management'.",
+    "is_group_assessment": false,
+    "module_id": "mod-035"
+  },
+  {
+    "_id": "proof-036",
+    "title": "Leistungsnachweis: Operations Management",
+    "type": "presentation",
+    "description": "Kompetenznachweis für Modul 'Operations Management'.",
+    "is_group_assessment": false,
+    "module_id": "mod-036"
+  },
+  {
+    "_id": "proof-037",
+    "title": "Leistungsnachweis: Leadership & Organizational Behavior",
+    "type": "presentation",
+    "description": "Kompetenznachweis für Modul 'Leadership & Organizational Behavior'.",
+    "is_group_assessment": true,
+    "module_id": "mod-037"
+  },
+  {
+    "_id": "proof-038",
+    "title": "Leistungsnachweis: Business Analytics",
+    "type": "assignment",
+    "description": "Kompetenznachweis für Modul 'Business Analytics'.",
+    "is_group_assessment": true,
+    "module_id": "mod-038"
+  },
+  {
+    "_id": "proof-039",
+    "title": "Leistungsnachweis: Project Management",
+    "type": "exam",
+    "description": "Kompetenznachweis für Modul 'Project Management'.",
+    "is_group_assessment": true,
+    "module_id": "mod-039"
+  },
+  {
+    "_id": "proof-040",
+    "title": "Leistungsnachweis: Strategic Management",
+    "type": "presentation",
+    "description": "Kompetenznachweis für Modul 'Strategic Management'.",
+    "is_group_assessment": false,
+    "module_id": "mod-040"
+  },
+  {
+    "_id": "proof-041",
+    "title": "Leistungsnachweis: Corporate Finance",
+    "type": "assignment",
+    "description": "Kompetenznachweis für Modul 'Corporate Finance'.",
+    "is_group_assessment": true,
+    "module_id": "mod-041"
+  },
+  {
+    "_id": "proof-042",
+    "title": "Leistungsnachweis: Supply Chain Management",
+    "type": "project",
+    "description": "Kompetenznachweis für Modul 'Supply Chain Management'.",
+    "is_group_assessment": false,
+    "module_id": "mod-042"
+  },
+  {
+    "_id": "proof-043",
+    "title": "Leistungsnachweis: Risk Management",
+    "type": "assignment",
+    "description": "Kompetenznachweis für Modul 'Risk Management'.",
+    "is_group_assessment": true,
+    "module_id": "mod-043"
+  },
+  {
+    "_id": "proof-044",
+    "title": "Leistungsnachweis: HR Management",
+    "type": "exam",
+    "description": "Kompetenznachweis für Modul 'HR Management'.",
+    "is_group_assessment": true,
+    "module_id": "mod-044"
+  },
+  {
+    "_id": "proof-045",
+    "title": "Leistungsnachweis: Marketing Management",
+    "type": "presentation",
+    "description": "Kompetenznachweis für Modul 'Marketing Management'.",
+    "is_group_assessment": true,
+    "module_id": "mod-045"
+  },
+  {
+    "_id": "proof-046",
+    "title": "Leistungsnachweis: Masterarbeit",
+    "type": "project",
+    "description": "Kompetenznachweis für Modul 'Masterarbeit'.",
+    "is_group_assessment": false,
+    "module_id": "mod-046"
+  },
+  {
+    "_id": "proof-047",
+    "title": "Leistungsnachweis: Sustainable Business Models",
+    "type": "presentation",
+    "description": "Kompetenznachweis für Modul 'Sustainable Business Models'.",
+    "is_group_assessment": false,
+    "module_id": "mod-047"
+  },
+  {
+    "_id": "proof-048",
+    "title": "Leistungsnachweis: Business Ethics & Governance",
+    "type": "assignment",
+    "description": "Kompetenznachweis für Modul 'Business Ethics & Governance'.",
+    "is_group_assessment": false,
+    "module_id": "mod-048"
+  },
+  {
+    "_id": "proof-049",
+    "title": "Leistungsnachweis: Live Case: Siegrist GmbH",
+    "type": "exam",
+    "description": "Kompetenznachweis für Modul 'Live Case: Siegrist GmbH'.",
+    "is_group_assessment": true,
+    "module_id": "mod-049"
+  },
+  {
+    "_id": "proof-050",
+    "title": "Leistungsnachweis: Bootstrapping & Alternative Financing",
+    "type": "presentation",
+    "description": "Kompetenznachweis für Modul 'Bootstrapping & Alternative Financing'.",
+    "is_group_assessment": true,
+    "module_id": "mod-050"
+  },
+  {
+    "_id": "proof-051",
+    "title": "Leistungsnachweis: Venture Creation",
+    "type": "presentation",
+    "description": "Kompetenznachweis für Modul 'Venture Creation'.",
+    "is_group_assessment": false,
+    "module_id": "mod-051"
+  },
+  {
+    "_id": "proof-052",
+    "title": "Leistungsnachweis: Lean Startup Methodology",
+    "type": "assignment",
+    "description": "Kompetenznachweis für Modul 'Lean Startup Methodology'.",
+    "is_group_assessment": true,
+    "module_id": "mod-052"
+  },
+  {
+    "_id": "proof-053",
+    "title": "Leistungsnachweis: Live Case: Meier Merz & Partner",
+    "type": "assignment",
+    "description": "Kompetenznachweis für Modul 'Live Case: Meier Merz & Partner'.",
+    "is_group_assessment": false,
+    "module_id": "mod-053"
+  },
+  {
+    "_id": "proof-054",
+    "title": "Leistungsnachweis: Entrepreneurial Finance",
+    "type": "presentation",
+    "description": "Kompetenznachweis für Modul 'Entrepreneurial Finance'.",
+    "is_group_assessment": true,
+    "module_id": "mod-054"
+  },
+  {
+    "_id": "proof-055",
+    "title": "Leistungsnachweis: Legal Foundations for Startups",
+    "type": "project",
+    "description": "Kompetenznachweis für Modul 'Legal Foundations for Startups'.",
+    "is_group_assessment": false,
+    "module_id": "mod-055"
+  },
+  {
+    "_id": "proof-056",
+    "title": "Leistungsnachweis: Corporate Entrepreneurship",
+    "type": "project",
+    "description": "Kompetenznachweis für Modul 'Corporate Entrepreneurship'.",
+    "is_group_assessment": false,
+    "module_id": "mod-056"
+  },
+  {
+    "_id": "proof-057",
+    "title": "Leistungsnachweis: Design Thinking for Startups",
+    "type": "assignment",
+    "description": "Kompetenznachweis für Modul 'Design Thinking for Startups'.",
+    "is_group_assessment": false,
+    "module_id": "mod-057"
+  },
+  {
+    "_id": "proof-058",
+    "title": "Leistungsnachweis: Live Case: Portmann AG",
+    "type": "exam",
+    "description": "Kompetenznachweis für Modul 'Live Case: Portmann AG'.",
+    "is_group_assessment": false,
+    "module_id": "mod-058"
+  },
+  {
+    "_id": "proof-059",
+    "title": "Leistungsnachweis: Innovation Management",
+    "type": "exam",
+    "description": "Kompetenznachweis für Modul 'Innovation Management'.",
+    "is_group_assessment": true,
+    "module_id": "mod-059"
+  },
+  {
+    "_id": "proof-060",
+    "title": "Leistungsnachweis: Venture Capital & Funding",
+    "type": "assignment",
+    "description": "Kompetenznachweis für Modul 'Venture Capital & Funding'.",
+    "is_group_assessment": true,
+    "module_id": "mod-060"
+  },
+  {
+    "_id": "proof-061",
+    "title": "Leistungsnachweis: Business Model Design",
+    "type": "presentation",
+    "description": "Kompetenznachweis für Modul 'Business Model Design'.",
+    "is_group_assessment": true,
+    "module_id": "mod-061"
+  },
+  {
+    "_id": "proof-062",
+    "title": "Leistungsnachweis: Masterarbeit",
+    "type": "project",
+    "description": "Kompetenznachweis für Modul 'Masterarbeit'.",
+    "is_group_assessment": false,
+    "module_id": "mod-062"
+  },
+  {
+    "_id": "proof-063",
+    "title": "Leistungsnachweis: Pitching & Storytelling",
+    "type": "exam",
+    "description": "Kompetenznachweis für Modul 'Pitching & Storytelling'.",
+    "is_group_assessment": false,
+    "module_id": "mod-063"
+  },
+  {
+    "_id": "proof-064",
+    "title": "Leistungsnachweis: Growth Hacking",
+    "type": "assignment",
+    "description": "Kompetenznachweis für Modul 'Growth Hacking'.",
+    "is_group_assessment": true,
+    "module_id": "mod-064"
+  }
+]

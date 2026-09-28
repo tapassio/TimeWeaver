@@ -1,0 +1,63 @@
+{
+  "name": "cp-sat-ts",
+  "version": "1.0.0",
+  "description": "TypeScript implementation of Google's CP-SAT constraint programming solver",
+  "main": "dist/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/index.js"
+    },
+    "./worker": {
+      "types": "./dist/worker/index.d.ts",
+      "import": "./dist/esm/worker/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && tsc -p tsconfig.esm.json && tsc -p tsconfig.worker.json && esbuild src/worker/worker-bootstrap.ts --bundle --platform=node --format=cjs --outfile=dist/cp-sat-worker.cjs && echo '{\"type\":\"module\"}' > dist/esm/package.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src tests --ext .ts",
+    "prepublishOnly": "npm run build",
+    "benchmark": "npx tsx benchmarks/scheduling-benchmark.ts && npx tsx benchmarks/circuit-benchmark.ts && npx tsx benchmarks/reservoir-benchmark.ts && npx tsx benchmarks/nooverlap2d-benchmark.ts",
+    "benchmark:circuit": "npx tsx benchmarks/circuit-benchmark.ts",
+    "benchmark:reservoir": "npx tsx benchmarks/reservoir-benchmark.ts",
+    "benchmark:nooverlap2d": "npx tsx benchmarks/nooverlap2d-benchmark.ts",
+    "benchmark:propagation": "npx tsx benchmarks/propagation-queue-benchmark.ts",
+    "benchmark:scaling": "npx tsx benchmarks/solver-scaling-benchmark.ts",
+    "benchmark:lns": "npx tsx benchmarks/lns-benchmark.ts",
+    "benchmark:portfolio": "npm run build && npx tsx benchmarks/portfolio-benchmark.ts"
+  },
+  "keywords": [
+    "constraint-programming",
+    "cp-sat",
+    "optimization",
+    "scheduling",
+    "or-tools",
+    "typescript"
+  ],
+  "author": "Mekari",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "esbuild": "^0.28.1",
+    "eslint": "^8.56.0",
+    "fast-check": "^4.8.0",
+    "tsx": "^4.22.4",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

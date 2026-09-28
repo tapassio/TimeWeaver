@@ -1,0 +1,2177 @@
+[
+  {
+    "_id": "block-001",
+    "module_id": "mod-001",
+    "title": "Block 1 – Live Case: Winkler GmbH",
+    "slots": [
+      {
+        "date": "2027-12-30",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2027-12-30",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2027-12-31",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2027-12-31",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-01-01",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-01-01",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-004",
+    "instructor_ids": [
+      "instr-031",
+      "instr-012"
+    ],
+    "status": "confirmed"
+  },
+  {
+    "_id": "block-002",
+    "module_id": "mod-002",
+    "title": "Block 1 – Digital Marketing",
+    "slots": [
+      {
+        "date": "2028-02-03",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-02-04",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-02-05",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-02-05",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-001",
+    "instructor_ids": [
+      "instr-051",
+      "instr-007"
+    ],
+    "status": "planned"
+  },
+  {
+    "_id": "block-003",
+    "module_id": "mod-003",
+    "title": "Block 1 – Change Management",
+    "slots": [
+      {
+        "date": "2028-02-03",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-02-03",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-02-04",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-02-04",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-02-05",
+        "weekday": "saturday",
+        "period": "morning"
+      }
+    ],
+    "room_id": "room-001",
+    "instructor_ids": [
+      "instr-016",
+      "instr-074"
+    ],
+    "status": "confirmed"
+  },
+  {
+    "_id": "block-004",
+    "module_id": "mod-004",
+    "title": "Block 1 – Cloud Business Models",
+    "slots": [
+      {
+        "date": "2027-09-30",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2027-10-01",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2027-10-01",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2027-10-02",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2027-10-02",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-002",
+    "instructor_ids": [
+      "instr-009",
+      "instr-073"
+    ],
+    "status": "confirmed"
+  },
+  {
+    "_id": "block-005",
+    "module_id": "mod-005",
+    "title": "Block 1 – Live Case: Felber & Partner",
+    "slots": [
+      {
+        "date": "2028-06-15",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-06-15",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-06-17",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-06-17",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-001",
+    "instructor_ids": [
+      "instr-059",
+      "instr-047"
+    ],
+    "status": "confirmed"
+  },
+  {
+    "_id": "block-006",
+    "module_id": "mod-006",
+    "title": "Block 1 – Digital Ethics",
+    "slots": [
+      {
+        "date": "2028-04-20",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-04-20",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-04-21",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-04-22",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-04-22",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-003",
+    "instructor_ids": [
+      "instr-068",
+      "instr-064"
+    ],
+    "status": "planned"
+  },
+  {
+    "_id": "block-007",
+    "module_id": "mod-007",
+    "title": "Block 1 – Business Model Innovation",
+    "slots": [
+      {
+        "date": "2028-05-19",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-05-19",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-05-20",
+        "weekday": "saturday",
+        "period": "morning"
+      }
+    ],
+    "room_id": "room-004",
+    "instructor_ids": [
+      "instr-022",
+      "instr-044"
+    ],
+    "status": "planned"
+  },
+  {
+    "_id": "block-008",
+    "module_id": "mod-008",
+    "title": "Block 1 – Digital Transformation Leadership",
+    "slots": [
+      {
+        "date": "2028-05-20",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-05-19",
+        "weekday": "friday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-003",
+    "instructor_ids": [
+      "instr-045",
+      "instr-064"
+    ],
+    "status": "confirmed"
+  },
+  {
+    "_id": "block-009",
+    "module_id": "mod-009",
+    "title": "Block 1 – IT Governance",
+    "slots": [
+      {
+        "date": "2028-03-11",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-03-10",
+        "weekday": "friday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-001",
+    "instructor_ids": [
+      "instr-009",
+      "instr-008"
+    ],
+    "status": "confirmed"
+  },
+  {
+    "_id": "block-010",
+    "module_id": "mod-010",
+    "title": "Block 1 – Live Case: Kaiser Stocker & Co.",
+    "slots": [
+      {
+        "date": "2028-10-19",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-10-20",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-10-21",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-10-21",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-004",
+    "instructor_ids": [
+      "instr-045",
+      "instr-003"
+    ],
+    "status": "confirmed"
+  },
+  {
+    "_id": "block-011",
+    "module_id": "mod-011",
+    "title": "Block 1 – Agile Software Delivery",
+    "slots": [
+      {
+        "date": "2029-01-11",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2029-01-11",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2029-01-12",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2029-01-13",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-002",
+    "instructor_ids": [
+      "instr-037",
+      "instr-017"
+    ],
+    "status": "planned"
+  },
+  {
+    "_id": "block-012",
+    "module_id": "mod-012",
+    "title": "Block 1 – FinTech Innovation",
+    "slots": [
+      {
+        "date": "2028-09-21",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-09-21",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-09-22",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-09-22",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-09-23",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-09-23",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-004",
+    "instructor_ids": [
+      "instr-052",
+      "instr-071"
+    ],
+    "status": "planned"
+  },
+  {
+    "_id": "block-013",
+    "module_id": "mod-013",
+    "title": "Block 1 – AI in Business",
+    "slots": [
+      {
+        "date": "2029-02-01",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2029-02-02",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2029-02-02",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2029-02-03",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2029-02-03",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-003",
+    "instructor_ids": [
+      "instr-049"
+    ],
+    "status": "confirmed"
+  },
+  {
+    "_id": "block-014",
+    "module_id": "mod-015",
+    "title": "Block 1 – Data-Driven Decision Making",
+    "slots": [
+      {
+        "date": "2029-04-26",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2029-04-27",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2029-04-27",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2029-04-28",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-004",
+    "instructor_ids": [
+      "instr-066"
+    ],
+    "status": "confirmed"
+  },
+  {
+    "_id": "block-015",
+    "module_id": "mod-016",
+    "title": "Block 1 – Digital Strategy",
+    "slots": [
+      {
+        "date": "2029-03-22",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2029-03-22",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2029-03-23",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2029-03-23",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2029-03-24",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2029-03-24",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-002",
+    "instructor_ids": [
+      "instr-051",
+      "instr-014"
+    ],
+    "status": "confirmed"
+  },
+  {
+    "_id": "block-016",
+    "module_id": "mod-017",
+    "title": "Block 1 – Ethics in Public Administration",
+    "slots": [
+      {
+        "date": "2028-02-03",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-02-03",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-02-04",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-02-04",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-02-05",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-02-05",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-004",
+    "instructor_ids": [
+      "instr-049"
+    ],
+    "status": "planned"
+  },
+  {
+    "_id": "block-017",
+    "module_id": "mod-018",
+    "title": "Block 1 – Public Finance Management",
+    "slots": [
+      {
+        "date": "2028-02-04",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-02-05",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-02-05",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-004",
+    "instructor_ids": [
+      "instr-063",
+      "instr-060"
+    ],
+    "status": "confirmed"
+  },
+  {
+    "_id": "block-018",
+    "module_id": "mod-019",
+    "title": "Block 1 – Civic Technology",
+    "slots": [
+      {
+        "date": "2027-11-18",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2027-11-18",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2027-11-19",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2027-11-19",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2027-11-20",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2027-11-20",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-002",
+    "instructor_ids": [
+      "instr-021",
+      "instr-067"
+    ],
+    "status": "confirmed"
+  },
+  {
+    "_id": "block-019",
+    "module_id": "mod-020",
+    "title": "Block 1 – Fiscal Sustainability",
+    "slots": [
+      {
+        "date": "2027-11-11",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2027-11-11",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2027-11-12",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2027-11-13",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2027-11-13",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-001",
+    "instructor_ids": [
+      "instr-039"
+    ],
+    "status": "planned"
+  },
+  {
+    "_id": "block-020",
+    "module_id": "mod-021",
+    "title": "Block 1 – Sustainable Public Procurement",
+    "slots": [
+      {
+        "date": "2028-03-09",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-03-09",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-03-10",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-03-11",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-03-11",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-002",
+    "instructor_ids": [
+      "instr-046"
+    ],
+    "status": "confirmed"
+  },
+  {
+    "_id": "block-021",
+    "module_id": "mod-022",
+    "title": "Block 1 – Change Leadership in Public Institutions",
+    "slots": [
+      {
+        "date": "2028-03-09",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-03-09",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-03-10",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-03-10",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-03-11",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-03-11",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-002",
+    "instructor_ids": [
+      "instr-025",
+      "instr-031"
+    ],
+    "status": "planned"
+  },
+  {
+    "_id": "block-022",
+    "module_id": "mod-023",
+    "title": "Block 1 – Stakeholder Engagement",
+    "slots": [
+      {
+        "date": "2028-03-02",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-03-02",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-03-03",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-03-03",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-03-04",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-001",
+    "instructor_ids": [
+      "instr-004",
+      "instr-036"
+    ],
+    "status": "confirmed"
+  },
+  {
+    "_id": "block-023",
+    "module_id": "mod-024",
+    "title": "Block 1 – Public-Private Partnerships",
+    "slots": [
+      {
+        "date": "2028-06-09",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-06-10",
+        "weekday": "saturday",
+        "period": "morning"
+      }
+    ],
+    "room_id": "room-001",
+    "instructor_ids": [
+      "instr-045"
+    ],
+    "status": "confirmed"
+  },
+  {
+    "_id": "block-024",
+    "module_id": "mod-025",
+    "title": "Block 1 – Institutional Innovation",
+    "slots": [
+      {
+        "date": "2028-03-11",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-03-10",
+        "weekday": "friday",
+        "period": "morning"
+      }
+    ],
+    "room_id": "room-003",
+    "instructor_ids": [
+      "instr-027",
+      "instr-062"
+    ],
+    "status": "confirmed"
+  },
+  {
+    "_id": "block-025",
+    "module_id": "mod-026",
+    "title": "Block 1 – Public Administration Reform",
+    "slots": [
+      {
+        "date": "2028-12-07",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-12-08",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-12-09",
+        "weekday": "saturday",
+        "period": "morning"
+      }
+    ],
+    "room_id": "room-004",
+    "instructor_ids": [
+      "instr-011"
+    ],
+    "status": "confirmed"
+  },
+  {
+    "_id": "block-026",
+    "module_id": "mod-027",
+    "title": "Block 1 – Evidence-Based Policy Making",
+    "slots": [
+      {
+        "date": "2029-01-25",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2029-01-25",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2029-01-26",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2029-01-26",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2029-01-27",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2029-01-27",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-001",
+    "instructor_ids": [
+      "instr-056"
+    ],
+    "status": "confirmed"
+  },
+  {
+    "_id": "block-027",
+    "module_id": "mod-028",
+    "title": "Block 1 – Regulatory Impact Analysis",
+    "slots": [
+      {
+        "date": "2028-11-16",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-11-16",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-11-17",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-11-17",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-11-18",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-11-18",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-001",
+    "instructor_ids": [
+      "instr-011",
+      "instr-021"
+    ],
+    "status": "confirmed"
+  },
+  {
+    "_id": "block-028",
+    "module_id": "mod-029",
+    "title": "Block 1 – Governance & Policy Design",
+    "slots": [
+      {
+        "date": "2029-01-11",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2029-01-12",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2029-01-12",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2029-01-13",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2029-01-13",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-004",
+    "instructor_ids": [
+      "instr-061",
+      "instr-045"
+    ],
+    "status": "planned"
+  },
+  {
+    "_id": "block-029",
+    "module_id": "mod-031",
+    "title": "Block 1 – Digital Government Services",
+    "slots": [
+      {
+        "date": "2029-06-07",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2029-06-08",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2029-06-08",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2029-06-09",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2029-06-09",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-003",
+    "instructor_ids": [
+      "instr-054",
+      "instr-017"
+    ],
+    "status": "confirmed"
+  },
+  {
+    "_id": "block-030",
+    "module_id": "mod-032",
+    "title": "Block 1 – Smart City Strategies",
+    "slots": [
+      {
+        "date": "2029-05-31",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2029-05-31",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2029-06-01",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2029-06-01",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2029-06-02",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2029-06-02",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-002",
+    "instructor_ids": [
+      "instr-068",
+      "instr-066"
+    ],
+    "status": "planned"
+  },
+  {
+    "_id": "block-031",
+    "module_id": "mod-033",
+    "title": "Block 1 – Mergers & Acquisitions",
+    "slots": [
+      {
+        "date": "2027-11-04",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2027-11-04",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2027-11-05",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2027-11-06",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2027-11-06",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-001",
+    "instructor_ids": [
+      "instr-006",
+      "instr-013"
+    ],
+    "status": "planned"
+  },
+  {
+    "_id": "block-032",
+    "module_id": "mod-034",
+    "title": "Block 1 – International Trade",
+    "slots": [
+      {
+        "date": "2027-10-07",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2027-10-07",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2027-10-08",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2027-10-08",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2027-10-09",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2027-10-09",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-004",
+    "instructor_ids": [
+      "instr-065",
+      "instr-066"
+    ],
+    "status": "confirmed"
+  },
+  {
+    "_id": "block-033",
+    "module_id": "mod-035",
+    "title": "Block 1 – Negotiation & Conflict Management",
+    "slots": [
+      {
+        "date": "2027-12-16",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2027-12-16",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2027-12-17",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2027-12-17",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2027-12-18",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2027-12-18",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-001",
+    "instructor_ids": [
+      "instr-034",
+      "instr-072"
+    ],
+    "status": "planned"
+  },
+  {
+    "_id": "block-034",
+    "module_id": "mod-036",
+    "title": "Block 1 – Operations Management",
+    "slots": [
+      {
+        "date": "2027-09-30",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2027-09-30",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2027-10-01",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2027-10-01",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2027-10-02",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2027-10-02",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-001",
+    "instructor_ids": [
+      "instr-041",
+      "instr-010"
+    ],
+    "status": "planned"
+  },
+  {
+    "_id": "block-035",
+    "module_id": "mod-037",
+    "title": "Block 1 – Leadership & Organizational Behavior",
+    "slots": [
+      {
+        "date": "2028-03-23",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-03-23",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-03-24",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-03-24",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-03-25",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-03-25",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-001",
+    "instructor_ids": [
+      "instr-020"
+    ],
+    "status": "planned"
+  },
+  {
+    "_id": "block-036",
+    "module_id": "mod-038",
+    "title": "Block 1 – Business Analytics",
+    "slots": [
+      {
+        "date": "2028-06-01",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-06-02",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-06-02",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-06-03",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-004",
+    "instructor_ids": [
+      "instr-029"
+    ],
+    "status": "planned"
+  },
+  {
+    "_id": "block-037",
+    "module_id": "mod-039",
+    "title": "Block 1 – Project Management",
+    "slots": [
+      {
+        "date": "2028-04-20",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-04-21",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-04-21",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-04-22",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-04-22",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-003",
+    "instructor_ids": [
+      "instr-056",
+      "instr-066"
+    ],
+    "status": "planned"
+  },
+  {
+    "_id": "block-038",
+    "module_id": "mod-040",
+    "title": "Block 1 – Strategic Management",
+    "slots": [
+      {
+        "date": "2028-06-23",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-06-24",
+        "weekday": "saturday",
+        "period": "morning"
+      }
+    ],
+    "room_id": "room-004",
+    "instructor_ids": [
+      "instr-071",
+      "instr-059"
+    ],
+    "status": "confirmed"
+  },
+  {
+    "_id": "block-039",
+    "module_id": "mod-041",
+    "title": "Block 1 – Corporate Finance",
+    "slots": [
+      {
+        "date": "2028-05-19",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-05-20",
+        "weekday": "saturday",
+        "period": "morning"
+      }
+    ],
+    "room_id": "room-001",
+    "instructor_ids": [
+      "instr-030",
+      "instr-014"
+    ],
+    "status": "planned"
+  },
+  {
+    "_id": "block-040",
+    "module_id": "mod-042",
+    "title": "Block 1 – Supply Chain Management",
+    "slots": [
+      {
+        "date": "2028-12-14",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-12-14",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-12-15",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-12-15",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-12-16",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-12-16",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-002",
+    "instructor_ids": [
+      "instr-055"
+    ],
+    "status": "confirmed"
+  },
+  {
+    "_id": "block-041",
+    "module_id": "mod-043",
+    "title": "Block 1 – Risk Management",
+    "slots": [
+      {
+        "date": "2028-10-12",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-10-12",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-10-13",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-10-13",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-10-14",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-10-14",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-001",
+    "instructor_ids": [
+      "instr-066",
+      "instr-074"
+    ],
+    "status": "planned"
+  },
+  {
+    "_id": "block-042",
+    "module_id": "mod-044",
+    "title": "Block 1 – HR Management",
+    "slots": [
+      {
+        "date": "2028-11-23",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-11-23",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-11-24",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-11-24",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-11-25",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-11-25",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-001",
+    "instructor_ids": [
+      "instr-035"
+    ],
+    "status": "confirmed"
+  },
+  {
+    "_id": "block-043",
+    "module_id": "mod-045",
+    "title": "Block 1 – Marketing Management",
+    "slots": [
+      {
+        "date": "2028-09-28",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-09-28",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-09-29",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-09-29",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-09-30",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-001",
+    "instructor_ids": [
+      "instr-016",
+      "instr-059"
+    ],
+    "status": "planned"
+  },
+  {
+    "_id": "block-044",
+    "module_id": "mod-047",
+    "title": "Block 1 – Sustainable Business Models",
+    "slots": [
+      {
+        "date": "2029-05-24",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2029-05-24",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2029-05-25",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2029-05-25",
+        "weekday": "friday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-004",
+    "instructor_ids": [
+      "instr-068",
+      "instr-027"
+    ],
+    "status": "confirmed"
+  },
+  {
+    "_id": "block-045",
+    "module_id": "mod-048",
+    "title": "Block 1 – Business Ethics & Governance",
+    "slots": [
+      {
+        "date": "2029-06-07",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2029-06-07",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2029-06-08",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2029-06-08",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2029-06-09",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2029-06-09",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-002",
+    "instructor_ids": [
+      "instr-005"
+    ],
+    "status": "planned"
+  },
+  {
+    "_id": "block-046",
+    "module_id": "mod-049",
+    "title": "Block 1 – Live Case: Siegrist GmbH",
+    "slots": [
+      {
+        "date": "2028-01-13",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-01-13",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-01-14",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-01-14",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-01-15",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-01-15",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-002",
+    "instructor_ids": [
+      "instr-018",
+      "instr-052"
+    ],
+    "status": "planned"
+  },
+  {
+    "_id": "block-047",
+    "module_id": "mod-050",
+    "title": "Block 1 – Bootstrapping & Alternative Financing",
+    "slots": [
+      {
+        "date": "2027-11-25",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2027-11-25",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2027-11-26",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2027-11-26",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2027-11-27",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2027-11-27",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-001",
+    "instructor_ids": [
+      "instr-033",
+      "instr-056"
+    ],
+    "status": "planned"
+  },
+  {
+    "_id": "block-048",
+    "module_id": "mod-051",
+    "title": "Block 1 – Venture Creation",
+    "slots": [
+      {
+        "date": "2028-02-03",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-02-03",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-02-04",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-02-05",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-02-05",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-001",
+    "instructor_ids": [
+      "instr-006",
+      "instr-059"
+    ],
+    "status": "planned"
+  },
+  {
+    "_id": "block-049",
+    "module_id": "mod-052",
+    "title": "Block 1 – Lean Startup Methodology",
+    "slots": [
+      {
+        "date": "2028-01-06",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-01-07",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-01-07",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-01-08",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-01-08",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-004",
+    "instructor_ids": [
+      "instr-071"
+    ],
+    "status": "confirmed"
+  },
+  {
+    "_id": "block-050",
+    "module_id": "mod-053",
+    "title": "Block 1 – Live Case: Meier Merz & Partner",
+    "slots": [
+      {
+        "date": "2028-04-20",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-04-20",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-04-21",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-04-21",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-04-22",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-04-22",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-003",
+    "instructor_ids": [
+      "instr-043",
+      "instr-049"
+    ],
+    "status": "confirmed"
+  },
+  {
+    "_id": "block-051",
+    "module_id": "mod-054",
+    "title": "Block 1 – Entrepreneurial Finance",
+    "slots": [
+      {
+        "date": "2028-03-16",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-03-16",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-03-17",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-03-18",
+        "weekday": "saturday",
+        "period": "morning"
+      }
+    ],
+    "room_id": "room-002",
+    "instructor_ids": [
+      "instr-012",
+      "instr-019"
+    ],
+    "status": "planned"
+  },
+  {
+    "_id": "block-052",
+    "module_id": "mod-055",
+    "title": "Block 1 – Legal Foundations for Startups",
+    "slots": [
+      {
+        "date": "2028-03-23",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-03-23",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-03-24",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-03-24",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-03-25",
+        "weekday": "saturday",
+        "period": "morning"
+      }
+    ],
+    "room_id": "room-001",
+    "instructor_ids": [
+      "instr-068",
+      "instr-020"
+    ],
+    "status": "planned"
+  },
+  {
+    "_id": "block-053",
+    "module_id": "mod-056",
+    "title": "Block 1 – Corporate Entrepreneurship",
+    "slots": [
+      {
+        "date": "2028-06-17",
+        "weekday": "saturday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-06-16",
+        "weekday": "friday",
+        "period": "morning"
+      }
+    ],
+    "room_id": "room-004",
+    "instructor_ids": [
+      "instr-064",
+      "instr-020"
+    ],
+    "status": "confirmed"
+  },
+  {
+    "_id": "block-054",
+    "module_id": "mod-057",
+    "title": "Block 1 – Design Thinking for Startups",
+    "slots": [
+      {
+        "date": "2028-05-26",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-05-27",
+        "weekday": "saturday",
+        "period": "morning"
+      }
+    ],
+    "room_id": "room-002",
+    "instructor_ids": [
+      "instr-065"
+    ],
+    "status": "planned"
+  },
+  {
+    "_id": "block-055",
+    "module_id": "mod-058",
+    "title": "Block 1 – Live Case: Portmann AG",
+    "slots": [
+      {
+        "date": "2028-11-09",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-11-09",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-11-10",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-11-10",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-11-11",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-11-11",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-002",
+    "instructor_ids": [
+      "instr-018",
+      "instr-047"
+    ],
+    "status": "planned"
+  },
+  {
+    "_id": "block-056",
+    "module_id": "mod-059",
+    "title": "Block 1 – Innovation Management",
+    "slots": [
+      {
+        "date": "2028-11-02",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-11-02",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-11-03",
+        "weekday": "friday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-004",
+    "instructor_ids": [
+      "instr-032",
+      "instr-063"
+    ],
+    "status": "planned"
+  },
+  {
+    "_id": "block-057",
+    "module_id": "mod-060",
+    "title": "Block 1 – Venture Capital & Funding",
+    "slots": [
+      {
+        "date": "2028-10-12",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-10-12",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-10-13",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-10-13",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-10-14",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-10-14",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-001",
+    "instructor_ids": [
+      "instr-061",
+      "instr-033"
+    ],
+    "status": "planned"
+  },
+  {
+    "_id": "block-058",
+    "module_id": "mod-061",
+    "title": "Block 1 – Business Model Design",
+    "slots": [
+      {
+        "date": "2028-10-12",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-10-12",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-10-13",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-10-13",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-10-14",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-003",
+    "instructor_ids": [
+      "instr-059",
+      "instr-064"
+    ],
+    "status": "planned"
+  },
+  {
+    "_id": "block-059",
+    "module_id": "mod-063",
+    "title": "Block 1 – Pitching & Storytelling",
+    "slots": [
+      {
+        "date": "2029-06-14",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2029-06-14",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2029-06-15",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2029-06-15",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2029-06-16",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-004",
+    "instructor_ids": [
+      "instr-018",
+      "instr-002"
+    ],
+    "status": "confirmed"
+  },
+  {
+    "_id": "block-060",
+    "module_id": "mod-064",
+    "title": "Block 1 – Growth Hacking",
+    "slots": [
+      {
+        "date": "2029-03-22",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2029-03-23",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2029-03-23",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2029-03-24",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2029-03-24",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "room_id": "room-001",
+    "instructor_ids": [
+      "instr-038",
+      "instr-067"
+    ],
+    "status": "planned"
+  }
+]

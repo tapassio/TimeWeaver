@@ -1,0 +1,12 @@
+node_modules
+dist
+*.local
+.env.*.local
+docpouch-db
+docpouch-log
+postgres-data
+.idea
+*.imlpostgres-data
+docpouch-db
+docpouch-log
+solver-java/target/

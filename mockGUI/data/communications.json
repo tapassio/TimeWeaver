@@ -1,0 +1,162 @@
+[
+  {
+    "_id": "comm-001",
+    "channel": "teams",
+    "audience": "students",
+    "subject": "Erinnerung: Kontaktstudientage 'Cloud Business Models' stehen bevor",
+    "scheduled_date": "2027-09-25",
+    "program_id": "prog-dba",
+    "related_module_id": "mod-004",
+    "status": "scheduled"
+  },
+  {
+    "_id": "comm-002",
+    "channel": "email",
+    "audience": "instructors",
+    "subject": "Bitte Verfügbarkeit für 'Operations Management' bestätigen",
+    "scheduled_date": "2027-09-09",
+    "program_id": "prog-ba",
+    "related_module_id": "mod-036",
+    "status": "scheduled"
+  },
+  {
+    "_id": "comm-003",
+    "channel": "email",
+    "audience": "students",
+    "subject": "Unterlagen zu 'International Trade' jetzt verfügbar",
+    "scheduled_date": "2027-09-30",
+    "program_id": "prog-ba",
+    "related_module_id": "mod-034",
+    "status": "scheduled"
+  },
+  {
+    "_id": "comm-004",
+    "channel": "teams",
+    "audience": "students",
+    "subject": "Erinnerung: Kontaktstudientage 'Mergers & Acquisitions' stehen bevor",
+    "scheduled_date": "2027-10-30",
+    "program_id": "prog-ba",
+    "related_module_id": "mod-033",
+    "status": "scheduled"
+  },
+  {
+    "_id": "comm-005",
+    "channel": "email",
+    "audience": "instructors",
+    "subject": "Bitte Verfügbarkeit für 'Fiscal Sustainability' bestätigen",
+    "scheduled_date": "2027-10-21",
+    "program_id": "prog-pst",
+    "related_module_id": "mod-020",
+    "status": "scheduled"
+  },
+  {
+    "_id": "comm-006",
+    "channel": "email",
+    "audience": "students",
+    "subject": "Unterlagen zu 'Civic Technology' jetzt verfügbar",
+    "scheduled_date": "2027-11-11",
+    "program_id": "prog-pst",
+    "related_module_id": "mod-019",
+    "status": "scheduled"
+  },
+  {
+    "_id": "comm-007",
+    "channel": "teams",
+    "audience": "students",
+    "subject": "Erinnerung: Kontaktstudientage 'Bootstrapping & Alternative Financing' stehen bevor",
+    "scheduled_date": "2027-11-20",
+    "program_id": "prog-ent",
+    "related_module_id": "mod-050",
+    "status": "scheduled"
+  },
+  {
+    "_id": "comm-008",
+    "channel": "email",
+    "audience": "instructors",
+    "subject": "Bitte Verfügbarkeit für 'Negotiation & Conflict Management' bestätigen",
+    "scheduled_date": "2027-11-25",
+    "program_id": "prog-ba",
+    "related_module_id": "mod-035",
+    "status": "scheduled"
+  },
+  {
+    "_id": "comm-009",
+    "channel": "email",
+    "audience": "students",
+    "subject": "Kickoff-Briefing: Live Case: Winkler GmbH",
+    "scheduled_date": "2027-12-20",
+    "program_id": "prog-dba",
+    "related_module_id": "mod-001",
+    "status": "scheduled"
+  },
+  {
+    "_id": "comm-010",
+    "channel": "teams",
+    "audience": "instructors",
+    "subject": "Vorbereitung Praxispartner-Termin: Live Case: Winkler GmbH",
+    "scheduled_date": "2027-12-16",
+    "program_id": "prog-dba",
+    "related_module_id": "mod-001",
+    "status": "scheduled"
+  },
+  {
+    "_id": "comm-011",
+    "channel": "teams",
+    "audience": "students",
+    "subject": "Erinnerung: Kontaktstudientage 'Lean Startup Methodology' stehen bevor",
+    "scheduled_date": "2028-01-01",
+    "program_id": "prog-ent",
+    "related_module_id": "mod-052",
+    "status": "scheduled"
+  },
+  {
+    "_id": "comm-012",
+    "channel": "email",
+    "audience": "students",
+    "subject": "Kickoff-Briefing: Live Case: Siegrist GmbH",
+    "scheduled_date": "2028-01-03",
+    "program_id": "prog-ent",
+    "related_module_id": "mod-049",
+    "status": "scheduled"
+  },
+  {
+    "_id": "comm-013",
+    "channel": "teams",
+    "audience": "instructors",
+    "subject": "Vorbereitung Praxispartner-Termin: Live Case: Siegrist GmbH",
+    "scheduled_date": "2027-12-30",
+    "program_id": "prog-ent",
+    "related_module_id": "mod-049",
+    "status": "scheduled"
+  },
+  {
+    "_id": "comm-014",
+    "channel": "email",
+    "audience": "students",
+    "subject": "Unterlagen zu 'Digital Marketing' jetzt verfügbar",
+    "scheduled_date": "2028-01-27",
+    "program_id": "prog-dba",
+    "related_module_id": "mod-002",
+    "status": "scheduled"
+  },
+  {
+    "_id": "comm-015",
+    "channel": "teams",
+    "audience": "students",
+    "subject": "Erinnerung: Kontaktstudientage 'Change Management' stehen bevor",
+    "scheduled_date": "2028-01-29",
+    "program_id": "prog-dba",
+    "related_module_id": "mod-003",
+    "status": "scheduled"
+  },
+  {
+    "_id": "comm-016",
+    "channel": "email",
+    "audience": "instructors",
+    "subject": "Bitte Verfügbarkeit für 'Ethics in Public Administration' bestätigen",
+    "scheduled_date": "2028-01-13",
+    "program_id": "prog-pst",
+    "related_module_id": "mod-017",
+    "status": "scheduled"
+  }
+]

@@ -1,0 +1,9 @@
+[
+  {
+    "_id": "action-001",
+    "competency_id": "comp-critical-thinking",
+    "based_on_result_id": "result-001",
+    "description": "Zusätzliche Übungssequenz mit strukturiertem Peer-Feedback zur Argumentationslogik im Modul 'Business Analytics' (Reinforce-Stufe), ab HS2028 verbindlich eingeführt.",
+    "date": "2029-08-15"
+  }
+]

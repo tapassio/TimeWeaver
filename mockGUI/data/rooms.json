@@ -1,0 +1,62 @@
+[
+  {
+    "_id": "room-001",
+    "name": "E102",
+    "room_type": "classroom",
+    "location_id": "loc-001",
+    "floor": 1,
+    "room_number": "E102",
+    "capacity": {
+      "seats": 55
+    },
+    "accessibility": {
+      "step_free_access": true
+    },
+    "availability": {}
+  },
+  {
+    "_id": "room-002",
+    "name": "E103",
+    "room_type": "classroom",
+    "location_id": "loc-001",
+    "floor": 1,
+    "room_number": "E103",
+    "capacity": {
+      "seats": 25
+    },
+    "accessibility": {
+      "step_free_access": true
+    },
+    "availability": {}
+  },
+  {
+    "_id": "room-003",
+    "name": "E104",
+    "room_type": "lecture_hall",
+    "location_id": "loc-001",
+    "floor": 1,
+    "room_number": "E104",
+    "capacity": {
+      "seats": 25
+    },
+    "accessibility": {
+      "step_free_access": true
+    },
+    "availability": {}
+  },
+  {
+    "_id": "room-004",
+    "name": "E105",
+    "room_type": "classroom",
+    "location_id": "loc-001",
+    "floor": 1,
+    "room_number": "E105",
+    "capacity": {
+      "seats": 25
+    },
+    "accessibility": {
+      "step_free_access": false
+    },
+    "availability": {}
+  }
+]

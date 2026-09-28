@@ -1,0 +1,30 @@
+[
+  {
+    "_id": "sem-hs2027",
+    "identifier": "HS2027",
+    "start_date": "2027-09-20",
+    "end_date": "2028-02-08",
+    "special_dates": []
+  },
+  {
+    "_id": "sem-fs2028",
+    "identifier": "FS2028",
+    "start_date": "2028-02-21",
+    "end_date": "2028-06-27",
+    "special_dates": []
+  },
+  {
+    "_id": "sem-hs2028",
+    "identifier": "HS2028",
+    "start_date": "2028-09-18",
+    "end_date": "2029-02-06",
+    "special_dates": []
+  },
+  {
+    "_id": "sem-fs2029",
+    "identifier": "FS2029",
+    "start_date": "2029-02-19",
+    "end_date": "2029-06-26",
+    "special_dates": []
+  }
+]

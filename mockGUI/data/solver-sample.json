@@ -1,0 +1,84 @@
+{
+  "programs": [
+    { "id": "prog-dba", "name": "Digital Business Administration" },
+    { "id": "prog-pst", "name": "Public Sector Transformation" }
+  ],
+  "rooms": [
+    { "id": "room-001", "name": "Seminarraum 2.14", "capacity": 30 },
+    { "id": "room-002", "name": "Hörsaal A", "capacity": 80 },
+    { "id": "room-003", "name": "Computerlab", "capacity": 24 },
+    { "id": "room-004", "name": "Seminarraum 3.01", "capacity": 40 }
+  ],
+  "days": [
+    { "id": "2028-02-03", "date": "2028-02-03", "week": 5, "weekday": "Donnerstag", "phase": "main" },
+    { "id": "2028-02-04", "date": "2028-02-04", "week": 5, "weekday": "Freitag", "phase": "main" },
+    { "id": "2028-02-05", "date": "2028-02-05", "week": 5, "weekday": "Samstag", "phase": "main" },
+    { "id": "2028-02-10", "date": "2028-02-10", "week": 6, "weekday": "Donnerstag", "phase": "main" },
+    { "id": "2028-02-11", "date": "2028-02-11", "week": 6, "weekday": "Freitag", "phase": "main" },
+    { "id": "2028-02-12", "date": "2028-02-12", "week": 6, "weekday": "Samstag", "phase": "main" }
+  ],
+  "modules": [
+    {
+      "id": "mod-001",
+      "name": "Digital Marketing",
+      "program": "prog-dba",
+      "ects": 6,
+      "expectedStudents": 25,
+      "instructors": ["instr-001", "instr-002"],
+      "restrictions": []
+    },
+    {
+      "id": "mod-002",
+      "name": "Change Management",
+      "program": "prog-dba",
+      "ects": 6,
+      "expectedStudents": 20,
+      "instructors": ["instr-001"],
+      "restrictions": [
+        { "id": "AVOID_FRIDAY_AFTERNOON", "category": "soft", "weight": 20 }
+      ]
+    },
+    {
+      "id": "mod-003",
+      "name": "Cloud Business Models",
+      "program": "prog-dba",
+      "ects": 3,
+      "expectedStudents": 18,
+      "instructors": ["instr-003"],
+      "restrictions": [
+        { "id": "UNAVAILABLE_DATES", "category": "hard", "params": { "dates": ["2028-02-04"] } }
+      ]
+    },
+    {
+      "id": "mod-004",
+      "name": "Live Case: Felber",
+      "program": "prog-dba",
+      "ects": 6,
+      "expectedStudents": 30,
+      "instructors": ["instr-004"],
+      "restrictions": [
+        { "id": "AVOID_SATURDAY", "category": "soft", "weight": 10 }
+      ]
+    },
+    {
+      "id": "mod-005",
+      "name": "Data-Driven Decision",
+      "program": "prog-dba",
+      "ects": 3,
+      "expectedStudents": 22,
+      "instructors": ["instr-002", "instr-003"],
+      "restrictions": []
+    },
+    {
+      "id": "mod-006",
+      "name": "AI in Business",
+      "program": "prog-dba",
+      "ects": 6,
+      "expectedStudents": 28,
+      "instructors": ["instr-005"],
+      "restrictions": [
+        { "id": "ALLOWED_WEEKDAYS", "category": "hard", "params": { "weekdays": ["Donnerstag", "Freitag"] } }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "_id": "om-001",
+    "objective_id": "obj-ct-1",
+    "module_id": "mod-035",
+    "stage": "introduce",
+    "learning_activity": "Angeleitete Fallanalyse in Kleingruppen anhand von zwei Verhandlungsfällen",
+    "assessment_ids": [
+      "proof-035"
+    ]
+  },
+  {
+    "_id": "om-002",
+    "objective_id": "obj-ct-2",
+    "module_id": "mod-038",
+    "stage": "reinforce",
+    "learning_activity": "Eigenständige Datenanalyse mit anschliessendem Peer-Feedback und Überarbeitung",
+    "assessment_ids": [
+      "proof-038"
+    ]
+  },
+  {
+    "_id": "om-003",
+    "objective_id": "obj-ct-3",
+    "module_id": "mod-046",
+    "stage": "master",
+    "learning_activity": "Eigenständige Masterarbeit mit offener Fragestellung",
+    "assessment_ids": [
+      "proof-046"
+    ]
+  },
+  {
+    "_id": "om-004",
+    "objective_id": "obj-dc-1",
+    "module_id": "mod-002",
+    "stage": "introduce",
+    "learning_activity": "Angeleitete Kampagnenanalyse anhand vorgegebener Kennzahlen",
+    "assessment_ids": [
+      "proof-002"
+    ]
+  },
+  {
+    "_id": "om-005",
+    "objective_id": "obj-dc-2",
+    "module_id": "mod-007",
+    "stage": "reinforce",
+    "learning_activity": "Weiterentwicklung eines bestehenden Geschäftsmodells in Kleingruppen",
+    "assessment_ids": [
+      "proof-007"
+    ]
+  },
+  {
+    "_id": "om-006",
+    "objective_id": "obj-dc-2",
+    "module_id": "mod-014",
+    "stage": "master",
+    "learning_activity": "Digitalisierungsbezogene Fragestellung im Rahmen der Masterarbeit",
+    "assessment_ids": [
+      "proof-014"
+    ]
+  },
+  {
+    "_id": "om-007",
+    "objective_id": "obj-ea-1",
+    "module_id": "mod-051",
+    "stage": "introduce",
+    "learning_activity": "Entwicklung eines ersten Geschäftsmodell-Entwurfs",
+    "assessment_ids": [
+      "proof-051"
+    ]
+  },
+  {
+    "_id": "om-008",
+    "objective_id": "obj-ea-2",
+    "module_id": "mod-059",
+    "stage": "reinforce",
+    "learning_activity": "Innovationsprojekt mit realem Praxispartner",
+    "assessment_ids": [
+      "proof-059"
+    ]
+  },
+  {
+    "_id": "om-009",
+    "objective_id": "obj-sm-1",
+    "module_id": "mod-047",
+    "stage": "introduce",
+    "learning_activity": "Analyse eines bestehenden Geschäftsmodells auf Nachhaltigkeitsaspekte",
+    "assessment_ids": [
+      "proof-047"
+    ]
+  }
+]

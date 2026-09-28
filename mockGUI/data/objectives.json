@@ -1,0 +1,42 @@
+[
+  {
+    "_id": "obj-ct-1",
+    "text": "Fallstudien mit anerkannten Analysemodellen strukturiert untersuchen",
+    "level": "module"
+  },
+  {
+    "_id": "obj-ct-2",
+    "text": "Handlungsalternativen anhand definierter Kriterien bewerten",
+    "level": "module"
+  },
+  {
+    "_id": "obj-ct-3",
+    "text": "Eigenständig evidenzbasierte Empfehlungen entwickeln und verteidigen",
+    "level": "module"
+  },
+  {
+    "_id": "obj-dc-1",
+    "text": "Digitale Kanäle und Kennzahlen für Marketingentscheidungen nutzen",
+    "level": "module"
+  },
+  {
+    "_id": "obj-dc-2",
+    "text": "Ein bestehendes Geschäftsmodell anhand digitaler Technologien weiterentwickeln",
+    "level": "module"
+  },
+  {
+    "_id": "obj-ea-1",
+    "text": "Eine Geschäftsidee anhand eines strukturierten Modells konkretisieren",
+    "level": "module"
+  },
+  {
+    "_id": "obj-ea-2",
+    "text": "Innovationsvorhaben im organisationalen Kontext vorantreiben",
+    "level": "module"
+  },
+  {
+    "_id": "obj-sm-1",
+    "text": "Nachhaltigkeitsaspekte in ein Geschäftsmodell integrieren",
+    "level": "module"
+  }
+]

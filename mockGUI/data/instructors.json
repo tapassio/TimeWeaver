@@ -1,0 +1,377 @@
+[
+  {
+    "_id": "instr-001",
+    "name": "Bashkim Eugster",
+    "email": "bashkim.eugster@bfh.ch"
+  },
+  {
+    "_id": "instr-002",
+    "name": "Tomás Stalder",
+    "email": "tomás.stalder@bfh.ch"
+  },
+  {
+    "_id": "instr-003",
+    "name": "Alois Betschart",
+    "email": "alois.betschart@bfh.ch"
+  },
+  {
+    "_id": "instr-004",
+    "name": "Eline Roth",
+    "email": "eline.roth@bfh.ch"
+  },
+  {
+    "_id": "instr-005",
+    "name": "Olivier Käser",
+    "email": "olivier.käser@bfh.ch"
+  },
+  {
+    "_id": "instr-006",
+    "name": "Isabella Beck",
+    "email": "isabella.beck@bfh.ch"
+  },
+  {
+    "_id": "instr-007",
+    "name": "Malea Ott",
+    "email": "malea.ott@bfh.ch"
+  },
+  {
+    "_id": "instr-008",
+    "name": "Jon Bättig",
+    "email": "jon.bättig@bfh.ch"
+  },
+  {
+    "_id": "instr-009",
+    "name": "Mark Lüthi",
+    "email": "mark.lüthi@bfh.ch"
+  },
+  {
+    "_id": "instr-010",
+    "name": "Altin Bernasconi",
+    "email": "altin.bernasconi@bfh.ch"
+  },
+  {
+    "_id": "instr-011",
+    "name": "Mika Bolliger",
+    "email": "mika.bolliger@bfh.ch"
+  },
+  {
+    "_id": "instr-012",
+    "name": "Linda Leunberger",
+    "email": "linda.leunberger@bfh.ch"
+  },
+  {
+    "_id": "instr-013",
+    "name": "Hermann Scheidegger",
+    "email": "hermann.scheidegger@bfh.ch"
+  },
+  {
+    "_id": "instr-014",
+    "name": "Hasan Gfeller",
+    "email": "hasan.gfeller@bfh.ch"
+  },
+  {
+    "_id": "instr-015",
+    "name": "Joana Senn",
+    "email": "joana.senn@bfh.ch"
+  },
+  {
+    "_id": "instr-016",
+    "name": "Isabella Benz",
+    "email": "isabella.benz@bfh.ch"
+  },
+  {
+    "_id": "instr-017",
+    "name": "Katja Schmidt",
+    "email": "katja.schmidt@bfh.ch"
+  },
+  {
+    "_id": "instr-018",
+    "name": "Maxime Baumgartner",
+    "email": "maxime.baumgartner@bfh.ch"
+  },
+  {
+    "_id": "instr-019",
+    "name": "Tino Baumann",
+    "email": "tino.baumann@bfh.ch"
+  },
+  {
+    "_id": "instr-020",
+    "name": "Iris Egli",
+    "email": "iris.egli@bfh.ch"
+  },
+  {
+    "_id": "instr-021",
+    "name": "Fred Leu",
+    "email": "fred.leu@bfh.ch"
+  },
+  {
+    "_id": "instr-022",
+    "name": "Massimo Rüegg",
+    "email": "massimo.rüegg@bfh.ch"
+  },
+  {
+    "_id": "instr-023",
+    "name": "Aleksandar Scherrer",
+    "email": "aleksandar.scherrer@bfh.ch"
+  },
+  {
+    "_id": "instr-024",
+    "name": "Dan Schaub",
+    "email": "dan.schaub@bfh.ch"
+  },
+  {
+    "_id": "instr-025",
+    "name": "Malin Stocker",
+    "email": "malin.stocker@bfh.ch"
+  },
+  {
+    "_id": "instr-026",
+    "name": "Pablo Brun",
+    "email": "pablo.brun@bfh.ch"
+  },
+  {
+    "_id": "instr-027",
+    "name": "Francesca Scherrer",
+    "email": "francesca.scherrer@bfh.ch"
+  },
+  {
+    "_id": "instr-028",
+    "name": "Marlene Frei",
+    "email": "marlene.frei@bfh.ch"
+  },
+  {
+    "_id": "instr-029",
+    "name": "Serkan Bosshard",
+    "email": "serkan.bosshard@bfh.ch"
+  },
+  {
+    "_id": "instr-030",
+    "name": "Nadja Thommen",
+    "email": "nadja.thommen@bfh.ch"
+  },
+  {
+    "_id": "instr-031",
+    "name": "Luis Scheidegger",
+    "email": "luis.scheidegger@bfh.ch"
+  },
+  {
+    "_id": "instr-032",
+    "name": "Philippe Schweizer",
+    "email": "philippe.schweizer@bfh.ch"
+  },
+  {
+    "_id": "instr-033",
+    "name": "Gabriele Müller",
+    "email": "gabriele.müller@bfh.ch"
+  },
+  {
+    "_id": "instr-034",
+    "name": "Eleonora Roos",
+    "email": "eleonora.roos@bfh.ch"
+  },
+  {
+    "_id": "instr-035",
+    "name": "Domenic Wirz",
+    "email": "domenic.wirz@bfh.ch"
+  },
+  {
+    "_id": "instr-036",
+    "name": "Reinhold Meier",
+    "email": "reinhold.meier@bfh.ch"
+  },
+  {
+    "_id": "instr-037",
+    "name": "Michaela Martin",
+    "email": "michaela.martin@bfh.ch"
+  },
+  {
+    "_id": "instr-038",
+    "name": "Kristijan Hoffmann",
+    "email": "kristijan.hoffmann@bfh.ch"
+  },
+  {
+    "_id": "instr-039",
+    "name": "Rodrigo Zehnder",
+    "email": "rodrigo.zehnder@bfh.ch"
+  },
+  {
+    "_id": "instr-040",
+    "name": "Harry Stutz",
+    "email": "harry.stutz@bfh.ch"
+  },
+  {
+    "_id": "instr-041",
+    "name": "Celina Gross",
+    "email": "celina.gross@bfh.ch"
+  },
+  {
+    "_id": "instr-042",
+    "name": "Loris Schlatter",
+    "email": "loris.schlatter@bfh.ch"
+  },
+  {
+    "_id": "instr-043",
+    "name": "Lio Rey",
+    "email": "lio.rey@bfh.ch"
+  },
+  {
+    "_id": "instr-044",
+    "name": "Daniela Jäggi",
+    "email": "daniela.jäggi@bfh.ch"
+  },
+  {
+    "_id": "instr-045",
+    "name": "Annick Maier",
+    "email": "annick.maier@bfh.ch"
+  },
+  {
+    "_id": "instr-046",
+    "name": "Ivica Schürch",
+    "email": "ivica.schürch@bfh.ch"
+  },
+  {
+    "_id": "instr-047",
+    "name": "Ivo Bühlmann",
+    "email": "ivo.bühlmann@bfh.ch"
+  },
+  {
+    "_id": "instr-048",
+    "name": "Eva Leu",
+    "email": "eva.leu@bfh.ch"
+  },
+  {
+    "_id": "instr-049",
+    "name": "Alexandre Wenger",
+    "email": "alexandre.wenger@bfh.ch"
+  },
+  {
+    "_id": "instr-050",
+    "name": "Simeon Eugster",
+    "email": "simeon.eugster@bfh.ch"
+  },
+  {
+    "_id": "instr-051",
+    "name": "Margit Michel",
+    "email": "margit.michel@bfh.ch"
+  },
+  {
+    "_id": "instr-052",
+    "name": "Grzegorz Bauer",
+    "email": "grzegorz.bauer@bfh.ch"
+  },
+  {
+    "_id": "instr-053",
+    "name": "Derya Steiner",
+    "email": "derya.steiner@bfh.ch"
+  },
+  {
+    "_id": "instr-054",
+    "name": "Wilhelm Widmer",
+    "email": "wilhelm.widmer@bfh.ch"
+  },
+  {
+    "_id": "instr-055",
+    "name": "Valentina Scherrer",
+    "email": "valentina.scherrer@bfh.ch"
+  },
+  {
+    "_id": "instr-056",
+    "name": "Anne-Lise Huber",
+    "email": "anne-lise.huber@bfh.ch"
+  },
+  {
+    "_id": "instr-057",
+    "name": "Konstantinos Studer",
+    "email": "konstantinos.studer@bfh.ch"
+  },
+  {
+    "_id": "instr-058",
+    "name": "Jeffrey Schoch",
+    "email": "jeffrey.schoch@bfh.ch"
+  },
+  {
+    "_id": "instr-059",
+    "name": "Erika Schmid",
+    "email": "erika.schmid@bfh.ch"
+  },
+  {
+    "_id": "instr-060",
+    "name": "Amira Martin",
+    "email": "amira.martin@bfh.ch"
+  },
+  {
+    "_id": "instr-061",
+    "name": "Salvatore Bolliger",
+    "email": "salvatore.bolliger@bfh.ch"
+  },
+  {
+    "_id": "instr-062",
+    "name": "Lidija Hauser",
+    "email": "lidija.hauser@bfh.ch"
+  },
+  {
+    "_id": "instr-063",
+    "name": "Alwin Stutz",
+    "email": "alwin.stutz@bfh.ch"
+  },
+  {
+    "_id": "instr-064",
+    "name": "Susana Berger",
+    "email": "susana.berger@bfh.ch"
+  },
+  {
+    "_id": "instr-065",
+    "name": "Emil Walder",
+    "email": "emil.walder@bfh.ch"
+  },
+  {
+    "_id": "instr-066",
+    "name": "Jasmina Hotz",
+    "email": "jasmina.hotz@bfh.ch"
+  },
+  {
+    "_id": "instr-067",
+    "name": "Stefania Schlatter",
+    "email": "stefania.schlatter@bfh.ch"
+  },
+  {
+    "_id": "instr-068",
+    "name": "Franca Maier",
+    "email": "franca.maier@bfh.ch"
+  },
+  {
+    "_id": "instr-069",
+    "name": "Bujar Tobler",
+    "email": "bujar.tobler@bfh.ch"
+  },
+  {
+    "_id": "instr-070",
+    "name": "Kushtrim Steiner",
+    "email": "kushtrim.steiner@bfh.ch"
+  },
+  {
+    "_id": "instr-071",
+    "name": "Curdin Arnold",
+    "email": "curdin.arnold@bfh.ch"
+  },
+  {
+    "_id": "instr-072",
+    "name": "Ylenia Mayer",
+    "email": "ylenia.mayer@bfh.ch"
+  },
+  {
+    "_id": "instr-073",
+    "name": "Alfonso Felder",
+    "email": "alfonso.felder@bfh.ch"
+  },
+  {
+    "_id": "instr-074",
+    "name": "Sabina Bühler",
+    "email": "sabina.bühler@bfh.ch"
+  },
+  {
+    "_id": "instr-075",
+    "name": "Andrea Benz",
+    "email": "andrea.benz@bfh.ch"
+  }
+]

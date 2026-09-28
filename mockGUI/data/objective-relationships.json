@@ -1,0 +1,20 @@
+[
+  {
+    "_id": "objrel-001",
+    "objective_id": "obj-ct-2",
+    "related_objective_id": "obj-ct-1",
+    "relation_type": "prerequisite"
+  },
+  {
+    "_id": "objrel-002",
+    "objective_id": "obj-ct-3",
+    "related_objective_id": "obj-ct-2",
+    "relation_type": "prerequisite"
+  },
+  {
+    "_id": "objrel-003",
+    "objective_id": "obj-dc-2",
+    "related_objective_id": "obj-dc-1",
+    "relation_type": "prerequisite"
+  }
+]

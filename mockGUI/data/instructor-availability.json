@@ -1,0 +1,497 @@
+[
+  {
+    "_id": "avail-instr-018",
+    "instructor_id": "instr-018",
+    "unavailable_half_days": [
+      {
+        "date": "2029-06-01",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2029-04-07",
+        "weekday": "saturday",
+        "period": "morning"
+      }
+    ],
+    "preferred_weekdays": [
+      "saturday"
+    ],
+    "max_days_per_block": 1
+  },
+  {
+    "_id": "avail-instr-060",
+    "instructor_id": "instr-060",
+    "unavailable_half_days": [
+      {
+        "date": "2027-12-18",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-11-17",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-05-18",
+        "weekday": "thursday",
+        "period": "afternoon"
+      }
+    ],
+    "preferred_weekdays": [
+      "friday",
+      "thursday"
+    ],
+    "max_days_per_block": 2
+  },
+  {
+    "_id": "avail-instr-010",
+    "instructor_id": "instr-010",
+    "unavailable_half_days": [
+      {
+        "date": "2028-03-10",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2029-03-15",
+        "weekday": "thursday",
+        "period": "afternoon"
+      }
+    ],
+    "preferred_weekdays": [
+      "thursday"
+    ],
+    "max_days_per_block": 2
+  },
+  {
+    "_id": "avail-instr-013",
+    "instructor_id": "instr-013",
+    "unavailable_half_days": [
+      {
+        "date": "2028-11-04",
+        "weekday": "saturday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-06-22",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2029-04-07",
+        "weekday": "saturday",
+        "period": "morning"
+      }
+    ],
+    "preferred_weekdays": [
+      "saturday",
+      "thursday"
+    ],
+    "max_days_per_block": 1
+  },
+  {
+    "_id": "avail-instr-042",
+    "instructor_id": "instr-042",
+    "unavailable_half_days": [
+      {
+        "date": "2028-04-21",
+        "weekday": "friday",
+        "period": "afternoon"
+      }
+    ],
+    "preferred_weekdays": [
+      "thursday"
+    ],
+    "max_days_per_block": 3
+  },
+  {
+    "_id": "avail-instr-051",
+    "instructor_id": "instr-051",
+    "unavailable_half_days": [
+      {
+        "date": "2027-10-15",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-12-02",
+        "weekday": "saturday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-01-01",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2027-12-16",
+        "weekday": "thursday",
+        "period": "afternoon"
+      }
+    ],
+    "preferred_weekdays": [
+      "thursday",
+      "friday"
+    ],
+    "max_days_per_block": 3
+  },
+  {
+    "_id": "avail-instr-074",
+    "instructor_id": "instr-074",
+    "unavailable_half_days": [
+      {
+        "date": "2029-06-08",
+        "weekday": "friday",
+        "period": "afternoon"
+      }
+    ],
+    "preferred_weekdays": [
+      "saturday",
+      "friday"
+    ],
+    "max_days_per_block": 2
+  },
+  {
+    "_id": "avail-instr-055",
+    "instructor_id": "instr-055",
+    "unavailable_half_days": [
+      {
+        "date": "2029-04-21",
+        "weekday": "saturday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-09-21",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2027-10-29",
+        "weekday": "friday",
+        "period": "afternoon"
+      }
+    ],
+    "preferred_weekdays": [
+      "friday"
+    ],
+    "max_days_per_block": 3
+  },
+  {
+    "_id": "avail-instr-066",
+    "instructor_id": "instr-066",
+    "unavailable_half_days": [
+      {
+        "date": "2028-01-29",
+        "weekday": "saturday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2027-11-12",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-11-09",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2029-03-22",
+        "weekday": "thursday",
+        "period": "morning"
+      }
+    ],
+    "preferred_weekdays": [
+      "saturday"
+    ],
+    "max_days_per_block": 2
+  },
+  {
+    "_id": "avail-instr-046",
+    "instructor_id": "instr-046",
+    "unavailable_half_days": [
+      {
+        "date": "2027-11-04",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-03-17",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-05-26",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2029-05-12",
+        "weekday": "saturday",
+        "period": "morning"
+      }
+    ],
+    "preferred_weekdays": [
+      "saturday",
+      "thursday"
+    ],
+    "max_days_per_block": 1
+  },
+  {
+    "_id": "avail-instr-056",
+    "instructor_id": "instr-056",
+    "unavailable_half_days": [
+      {
+        "date": "2028-01-14",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-11-18",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-11-09",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-03-04",
+        "weekday": "saturday",
+        "period": "morning"
+      }
+    ],
+    "preferred_weekdays": [
+      "friday"
+    ],
+    "max_days_per_block": 2
+  },
+  {
+    "_id": "avail-instr-027",
+    "instructor_id": "instr-027",
+    "unavailable_half_days": [
+      {
+        "date": "2028-02-03",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-06-23",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2027-10-30",
+        "weekday": "saturday",
+        "period": "morning"
+      },
+      {
+        "date": "2029-01-05",
+        "weekday": "friday",
+        "period": "afternoon"
+      }
+    ],
+    "preferred_weekdays": [
+      "friday"
+    ],
+    "max_days_per_block": 2
+  },
+  {
+    "_id": "avail-instr-039",
+    "instructor_id": "instr-039",
+    "unavailable_half_days": [
+      {
+        "date": "2028-03-09",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-06-02",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2029-03-23",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-11-25",
+        "weekday": "saturday",
+        "period": "morning"
+      }
+    ],
+    "preferred_weekdays": [
+      "saturday",
+      "friday"
+    ],
+    "max_days_per_block": 3
+  },
+  {
+    "_id": "avail-instr-024",
+    "instructor_id": "instr-024",
+    "unavailable_half_days": [
+      {
+        "date": "2029-05-03",
+        "weekday": "thursday",
+        "period": "morning"
+      }
+    ],
+    "preferred_weekdays": [
+      "saturday",
+      "friday"
+    ],
+    "max_days_per_block": 3
+  },
+  {
+    "_id": "avail-instr-001",
+    "instructor_id": "instr-001",
+    "unavailable_half_days": [
+      {
+        "date": "2028-09-21",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-03-11",
+        "weekday": "saturday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2029-05-04",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-05-13",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "preferred_weekdays": [
+      "thursday",
+      "friday"
+    ],
+    "max_days_per_block": 3
+  },
+  {
+    "_id": "avail-instr-041",
+    "instructor_id": "instr-041",
+    "unavailable_half_days": [
+      {
+        "date": "2028-12-30",
+        "weekday": "saturday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2029-05-03",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-03-10",
+        "weekday": "friday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2027-12-11",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "preferred_weekdays": [
+      "thursday",
+      "friday"
+    ],
+    "max_days_per_block": 2
+  },
+  {
+    "_id": "avail-instr-045",
+    "instructor_id": "instr-045",
+    "unavailable_half_days": [
+      {
+        "date": "2028-03-30",
+        "weekday": "thursday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-09-21",
+        "weekday": "thursday",
+        "period": "morning"
+      }
+    ],
+    "preferred_weekdays": [
+      "saturday"
+    ],
+    "max_days_per_block": 2
+  },
+  {
+    "_id": "avail-instr-003",
+    "instructor_id": "instr-003",
+    "unavailable_half_days": [
+      {
+        "date": "2029-03-10",
+        "weekday": "saturday",
+        "period": "afternoon"
+      }
+    ],
+    "preferred_weekdays": [
+      "friday"
+    ],
+    "max_days_per_block": 1
+  },
+  {
+    "_id": "avail-instr-068",
+    "instructor_id": "instr-068",
+    "unavailable_half_days": [
+      {
+        "date": "2027-12-02",
+        "weekday": "thursday",
+        "period": "morning"
+      },
+      {
+        "date": "2028-03-18",
+        "weekday": "saturday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2028-04-14",
+        "weekday": "friday",
+        "period": "afternoon"
+      }
+    ],
+    "preferred_weekdays": [
+      "friday",
+      "saturday"
+    ],
+    "max_days_per_block": 2
+  },
+  {
+    "_id": "avail-instr-072",
+    "instructor_id": "instr-072",
+    "unavailable_half_days": [
+      {
+        "date": "2028-06-09",
+        "weekday": "friday",
+        "period": "morning"
+      },
+      {
+        "date": "2027-12-25",
+        "weekday": "saturday",
+        "period": "afternoon"
+      },
+      {
+        "date": "2027-12-16",
+        "weekday": "thursday",
+        "period": "afternoon"
+      }
+    ],
+    "preferred_weekdays": [
+      "saturday"
+    ],
+    "max_days_per_block": 2
+  }
+]

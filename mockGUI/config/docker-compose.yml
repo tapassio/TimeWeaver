@@ -1,0 +1,19 @@
+# CourseWeaver – dedicated DocPouch instance (dev)
+# Own instance, own port, own volume – no ANONYMOUS_DOCUMENTS_ENABLED.
+# (Lesson from SWOT/Pulsmesser: sharing an instance with
+#  ANONYMOUS_DOCUMENTS_ENABLED=true caused OIDC client instability.)
+
+services:
+  docpouch:
+    image: bfh-jtf/docpouch:latest   # TODO: use the exact image/tag from your SWOT docker-compose.yml
+    container_name: courseweaver-docpouch
+    ports:
+      - "3032:3030"                  # new port – not 3030 (Pulsmesser) or 3031 (SWOT)
+    environment:
+      - NODE_ENV=development
+      # ANONYMOUS_DOCUMENTS_ENABLED intentionally NOT set
+    volumes:
+      - courseweaver_data:/data
+
+volumes:
+  courseweaver_data:

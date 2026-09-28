@@ -1,0 +1,25 @@
+[
+  {
+    "_id": "result-001",
+    "proof_of_competency_id": "proof-046",
+    "semester_id": "sem-fs2029",
+    "criterion_results": [
+      {
+        "criterion_id": "crit-evidenzqualitaet",
+        "performance_summary": "72% erreichen oder übertreffen das Zielniveau",
+        "meets_target": true
+      },
+      {
+        "criterion_id": "crit-argumentationslogik",
+        "performance_summary": "58% erreichen das Zielniveau",
+        "meets_target": false
+      },
+      {
+        "criterion_id": "crit-struktur",
+        "performance_summary": "81% erreichen oder übertreffen das Zielniveau",
+        "meets_target": true
+      }
+    ],
+    "notes": "Erste Vollerhebung im Jahrgang HS2027–FS2029."
+  }
+]

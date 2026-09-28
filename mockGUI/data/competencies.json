@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "comp-critical-thinking",
+    "title": "Kritisches Denken",
+    "description": "Komplexe Sachverhalte strukturiert analysieren, Handlungsalternativen abwägen und evidenzbasiert entscheiden.",
+    "rationale": "Zentral für die BFH-Mission 'die Fachhochschule mit Impact': fundierte, nachvollziehbare Entscheidungen sind Voraussetzung für gesellschaftliche Wirkung."
+  },
+  {
+    "_id": "comp-digital-competence",
+    "title": "Digitale Kompetenz",
+    "description": "Digitale Technologien und Daten zur Weiterentwicklung von Geschäftsmodellen einsetzen.",
+    "rationale": "Trägt direkt zum strategischen Themenfeld Digitalisation der BFH bei."
+  },
+  {
+    "_id": "comp-entrepreneurial-action",
+    "title": "Unternehmerisches Handeln",
+    "description": "Geschäftschancen erkennen, bewerten und eigenständig in tragfähige Vorhaben überführen.",
+    "rationale": "Trägt direkt zum strategischen Themenfeld Entrepreneurship der BFH bei."
+  },
+  {
+    "_id": "comp-sustainable-management",
+    "title": "Nachhaltiges Wirtschaften",
+    "description": "Ökologische und soziale Auswirkungen unternehmerischer Entscheidungen einschätzen und berücksichtigen.",
+    "rationale": "Trägt direkt zum strategischen Themenfeld Sustainability der BFH bei."
+  }
+]

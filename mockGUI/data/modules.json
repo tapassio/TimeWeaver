@@ -1,0 +1,1183 @@
+[
+  {
+    "_id": "mod-001",
+    "program_id": "prog-dba",
+    "title": "Live Case: Winkler GmbH",
+    "credits": 6,
+    "description": "Modul 'Live Case: Winkler GmbH' im Rahmen von Digital Business Administration, Semester 1.",
+    "year": 2027,
+    "semester_id": "sem-hs2027",
+    "last_revised": "2026-02-10",
+    "delivery_status": "confirmed",
+    "instructor_ids": [
+      "instr-031",
+      "instr-012"
+    ],
+    "is_live_case": true,
+    "strategic_theme_ids": [
+      "term-digitalisation",
+      "term-entrepreneurship"
+    ],
+    "practice_partner": "Winkler GmbH"
+  },
+  {
+    "_id": "mod-002",
+    "program_id": "prog-dba",
+    "title": "Digital Marketing",
+    "credits": 6,
+    "description": "Modul 'Digital Marketing' im Rahmen von Digital Business Administration, Semester 1.",
+    "year": 2027,
+    "semester_id": "sem-hs2027",
+    "last_revised": "2026-03-07",
+    "delivery_status": "planned",
+    "instructor_ids": [
+      "instr-051",
+      "instr-007"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-entrepreneurship"
+    ]
+  },
+  {
+    "_id": "mod-003",
+    "program_id": "prog-dba",
+    "title": "Change Management",
+    "credits": 6,
+    "description": "Modul 'Change Management' im Rahmen von Digital Business Administration, Semester 1.",
+    "year": 2027,
+    "semester_id": "sem-hs2027",
+    "last_revised": "2026-04-07",
+    "delivery_status": "confirmed",
+    "instructor_ids": [
+      "instr-016",
+      "instr-074"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-digitalisation"
+    ]
+  },
+  {
+    "_id": "mod-004",
+    "program_id": "prog-dba",
+    "title": "Cloud Business Models",
+    "credits": 6,
+    "description": "Modul 'Cloud Business Models' im Rahmen von Digital Business Administration, Semester 1.",
+    "year": 2027,
+    "semester_id": "sem-hs2027",
+    "last_revised": "2026-07-18",
+    "delivery_status": "confirmed",
+    "instructor_ids": [
+      "instr-009",
+      "instr-073"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-digitalisation"
+    ]
+  },
+  {
+    "_id": "mod-005",
+    "program_id": "prog-dba",
+    "title": "Live Case: Felber & Partner",
+    "credits": 6,
+    "description": "Modul 'Live Case: Felber & Partner' im Rahmen von Digital Business Administration, Semester 2.",
+    "year": 2027,
+    "semester_id": "sem-fs2028",
+    "last_revised": "2026-04-09",
+    "delivery_status": "confirmed",
+    "instructor_ids": [
+      "instr-059",
+      "instr-047"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-digitalisation"
+    ],
+    "practice_partner": "Felber & Partner"
+  },
+  {
+    "_id": "mod-006",
+    "program_id": "prog-dba",
+    "title": "Digital Ethics",
+    "credits": 6,
+    "description": "Modul 'Digital Ethics' im Rahmen von Digital Business Administration, Semester 2.",
+    "year": 2027,
+    "semester_id": "sem-fs2028",
+    "last_revised": "2026-03-14",
+    "delivery_status": "planned",
+    "instructor_ids": [
+      "instr-068",
+      "instr-064"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": []
+  },
+  {
+    "_id": "mod-007",
+    "program_id": "prog-dba",
+    "title": "Business Model Innovation",
+    "credits": 6,
+    "description": "Modul 'Business Model Innovation' im Rahmen von Digital Business Administration, Semester 2.",
+    "year": 2027,
+    "semester_id": "sem-fs2028",
+    "last_revised": "2026-02-12",
+    "delivery_status": "planned",
+    "instructor_ids": [
+      "instr-022",
+      "instr-044"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-digitalisation",
+      "term-sustainability"
+    ]
+  },
+  {
+    "_id": "mod-008",
+    "program_id": "prog-dba",
+    "title": "Digital Transformation Leadership",
+    "credits": 3,
+    "description": "Modul 'Digital Transformation Leadership' im Rahmen von Digital Business Administration, Semester 2.",
+    "year": 2027,
+    "semester_id": "sem-fs2028",
+    "last_revised": "2026-04-15",
+    "delivery_status": "confirmed",
+    "instructor_ids": [
+      "instr-045",
+      "instr-064"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-digitalisation"
+    ]
+  },
+  {
+    "_id": "mod-009",
+    "program_id": "prog-dba",
+    "title": "IT Governance",
+    "credits": 3,
+    "description": "Modul 'IT Governance' im Rahmen von Digital Business Administration, Semester 2.",
+    "year": 2027,
+    "semester_id": "sem-fs2028",
+    "last_revised": "2026-05-11",
+    "delivery_status": "confirmed",
+    "instructor_ids": [
+      "instr-009",
+      "instr-008"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": []
+  },
+  {
+    "_id": "mod-010",
+    "program_id": "prog-dba",
+    "title": "Live Case: Kaiser Stocker & Co.",
+    "credits": 6,
+    "description": "Modul 'Live Case: Kaiser Stocker & Co.' im Rahmen von Digital Business Administration, Semester 3.",
+    "year": 2028,
+    "semester_id": "sem-hs2028",
+    "last_revised": "2026-08-05",
+    "delivery_status": "confirmed",
+    "instructor_ids": [
+      "instr-045",
+      "instr-003"
+    ],
+    "is_live_case": true,
+    "strategic_theme_ids": [],
+    "practice_partner": "Kaiser Stocker & Co."
+  },
+  {
+    "_id": "mod-011",
+    "program_id": "prog-dba",
+    "title": "Agile Software Delivery",
+    "credits": 6,
+    "description": "Modul 'Agile Software Delivery' im Rahmen von Digital Business Administration, Semester 3.",
+    "year": 2028,
+    "semester_id": "sem-hs2028",
+    "last_revised": "2026-02-15",
+    "delivery_status": "planned",
+    "instructor_ids": [
+      "instr-037",
+      "instr-017"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": []
+  },
+  {
+    "_id": "mod-012",
+    "program_id": "prog-dba",
+    "title": "FinTech Innovation",
+    "credits": 6,
+    "description": "Modul 'FinTech Innovation' im Rahmen von Digital Business Administration, Semester 3.",
+    "year": 2028,
+    "semester_id": "sem-hs2028",
+    "last_revised": "2026-02-20",
+    "delivery_status": "planned",
+    "instructor_ids": [
+      "instr-052",
+      "instr-071"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-digitalisation",
+      "term-entrepreneurship"
+    ]
+  },
+  {
+    "_id": "mod-013",
+    "program_id": "prog-dba",
+    "title": "AI in Business",
+    "credits": 6,
+    "description": "Modul 'AI in Business' im Rahmen von Digital Business Administration, Semester 3.",
+    "year": 2028,
+    "semester_id": "sem-hs2028",
+    "last_revised": "2026-03-04",
+    "delivery_status": "confirmed",
+    "instructor_ids": [
+      "instr-049"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-entrepreneurship"
+    ]
+  },
+  {
+    "_id": "mod-014",
+    "program_id": "prog-dba",
+    "title": "Masterarbeit",
+    "credits": 12,
+    "description": "Modul 'Masterarbeit' im Rahmen von Digital Business Administration, Semester 4.",
+    "year": 2028,
+    "semester_id": "sem-fs2029",
+    "last_revised": "2026-03-04",
+    "delivery_status": "planned",
+    "instructor_ids": [
+      "instr-024",
+      "instr-034"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-digitalisation",
+      "term-entrepreneurship"
+    ]
+  },
+  {
+    "_id": "mod-015",
+    "program_id": "prog-dba",
+    "title": "Data-Driven Decision Making",
+    "credits": 6,
+    "description": "Modul 'Data-Driven Decision Making' im Rahmen von Digital Business Administration, Semester 4.",
+    "year": 2028,
+    "semester_id": "sem-fs2029",
+    "last_revised": "2026-04-27",
+    "delivery_status": "confirmed",
+    "instructor_ids": [
+      "instr-066"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": []
+  },
+  {
+    "_id": "mod-016",
+    "program_id": "prog-dba",
+    "title": "Digital Strategy",
+    "credits": 6,
+    "description": "Modul 'Digital Strategy' im Rahmen von Digital Business Administration, Semester 4.",
+    "year": 2028,
+    "semester_id": "sem-fs2029",
+    "last_revised": "2026-05-19",
+    "delivery_status": "confirmed",
+    "instructor_ids": [
+      "instr-051",
+      "instr-014"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-digitalisation"
+    ]
+  },
+  {
+    "_id": "mod-017",
+    "program_id": "prog-pst",
+    "title": "Ethics in Public Administration",
+    "credits": 6,
+    "description": "Modul 'Ethics in Public Administration' im Rahmen von Public Sector Transformation, Semester 1.",
+    "year": 2027,
+    "semester_id": "sem-hs2027",
+    "last_revised": "2026-03-10",
+    "delivery_status": "planned",
+    "instructor_ids": [
+      "instr-049"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-sustainability",
+      "term-digitalisation"
+    ]
+  },
+  {
+    "_id": "mod-018",
+    "program_id": "prog-pst",
+    "title": "Public Finance Management",
+    "credits": 6,
+    "description": "Modul 'Public Finance Management' im Rahmen von Public Sector Transformation, Semester 1.",
+    "year": 2027,
+    "semester_id": "sem-hs2027",
+    "last_revised": "2026-01-14",
+    "delivery_status": "confirmed",
+    "instructor_ids": [
+      "instr-063",
+      "instr-060"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-sustainability"
+    ]
+  },
+  {
+    "_id": "mod-019",
+    "program_id": "prog-pst",
+    "title": "Civic Technology",
+    "credits": 6,
+    "description": "Modul 'Civic Technology' im Rahmen von Public Sector Transformation, Semester 1.",
+    "year": 2027,
+    "semester_id": "sem-hs2027",
+    "last_revised": "2026-04-13",
+    "delivery_status": "confirmed",
+    "instructor_ids": [
+      "instr-021",
+      "instr-067"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-sustainability"
+    ]
+  },
+  {
+    "_id": "mod-020",
+    "program_id": "prog-pst",
+    "title": "Fiscal Sustainability",
+    "credits": 6,
+    "description": "Modul 'Fiscal Sustainability' im Rahmen von Public Sector Transformation, Semester 1.",
+    "year": 2027,
+    "semester_id": "sem-hs2027",
+    "last_revised": "2026-04-02",
+    "delivery_status": "planned",
+    "instructor_ids": [
+      "instr-039"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": []
+  },
+  {
+    "_id": "mod-021",
+    "program_id": "prog-pst",
+    "title": "Sustainable Public Procurement",
+    "credits": 6,
+    "description": "Modul 'Sustainable Public Procurement' im Rahmen von Public Sector Transformation, Semester 2.",
+    "year": 2027,
+    "semester_id": "sem-fs2028",
+    "last_revised": "2026-05-14",
+    "delivery_status": "confirmed",
+    "instructor_ids": [
+      "instr-046"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": []
+  },
+  {
+    "_id": "mod-022",
+    "program_id": "prog-pst",
+    "title": "Change Leadership in Public Institutions",
+    "credits": 6,
+    "description": "Modul 'Change Leadership in Public Institutions' im Rahmen von Public Sector Transformation, Semester 2.",
+    "year": 2027,
+    "semester_id": "sem-fs2028",
+    "last_revised": "2026-08-05",
+    "delivery_status": "planned",
+    "instructor_ids": [
+      "instr-025",
+      "instr-031"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": []
+  },
+  {
+    "_id": "mod-023",
+    "program_id": "prog-pst",
+    "title": "Stakeholder Engagement",
+    "credits": 6,
+    "description": "Modul 'Stakeholder Engagement' im Rahmen von Public Sector Transformation, Semester 2.",
+    "year": 2027,
+    "semester_id": "sem-fs2028",
+    "last_revised": "2026-06-10",
+    "delivery_status": "confirmed",
+    "instructor_ids": [
+      "instr-004",
+      "instr-036"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-sustainability",
+      "term-digitalisation"
+    ]
+  },
+  {
+    "_id": "mod-024",
+    "program_id": "prog-pst",
+    "title": "Public-Private Partnerships",
+    "credits": 3,
+    "description": "Modul 'Public-Private Partnerships' im Rahmen von Public Sector Transformation, Semester 2.",
+    "year": 2027,
+    "semester_id": "sem-fs2028",
+    "last_revised": "2026-05-03",
+    "delivery_status": "confirmed",
+    "instructor_ids": [
+      "instr-045"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": []
+  },
+  {
+    "_id": "mod-025",
+    "program_id": "prog-pst",
+    "title": "Institutional Innovation",
+    "credits": 3,
+    "description": "Modul 'Institutional Innovation' im Rahmen von Public Sector Transformation, Semester 2.",
+    "year": 2027,
+    "semester_id": "sem-fs2028",
+    "last_revised": "2026-05-25",
+    "delivery_status": "confirmed",
+    "instructor_ids": [
+      "instr-027",
+      "instr-062"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": []
+  },
+  {
+    "_id": "mod-026",
+    "program_id": "prog-pst",
+    "title": "Public Administration Reform",
+    "credits": 6,
+    "description": "Modul 'Public Administration Reform' im Rahmen von Public Sector Transformation, Semester 3.",
+    "year": 2028,
+    "semester_id": "sem-hs2028",
+    "last_revised": "2026-06-07",
+    "delivery_status": "confirmed",
+    "instructor_ids": [
+      "instr-011"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-digitalisation"
+    ]
+  },
+  {
+    "_id": "mod-027",
+    "program_id": "prog-pst",
+    "title": "Evidence-Based Policy Making",
+    "credits": 6,
+    "description": "Modul 'Evidence-Based Policy Making' im Rahmen von Public Sector Transformation, Semester 3.",
+    "year": 2028,
+    "semester_id": "sem-hs2028",
+    "last_revised": "2026-01-25",
+    "delivery_status": "confirmed",
+    "instructor_ids": [
+      "instr-056"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": []
+  },
+  {
+    "_id": "mod-028",
+    "program_id": "prog-pst",
+    "title": "Regulatory Impact Analysis",
+    "credits": 6,
+    "description": "Modul 'Regulatory Impact Analysis' im Rahmen von Public Sector Transformation, Semester 3.",
+    "year": 2028,
+    "semester_id": "sem-hs2028",
+    "last_revised": "2026-07-24",
+    "delivery_status": "confirmed",
+    "instructor_ids": [
+      "instr-011",
+      "instr-021"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-sustainability",
+      "term-digitalisation"
+    ]
+  },
+  {
+    "_id": "mod-029",
+    "program_id": "prog-pst",
+    "title": "Governance & Policy Design",
+    "credits": 6,
+    "description": "Modul 'Governance & Policy Design' im Rahmen von Public Sector Transformation, Semester 3.",
+    "year": 2028,
+    "semester_id": "sem-hs2028",
+    "last_revised": "2026-06-29",
+    "delivery_status": "planned",
+    "instructor_ids": [
+      "instr-061",
+      "instr-045"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-sustainability",
+      "term-entrepreneurship"
+    ]
+  },
+  {
+    "_id": "mod-030",
+    "program_id": "prog-pst",
+    "title": "Masterarbeit",
+    "credits": 12,
+    "description": "Modul 'Masterarbeit' im Rahmen von Public Sector Transformation, Semester 4.",
+    "year": 2028,
+    "semester_id": "sem-fs2029",
+    "last_revised": "2026-07-19",
+    "delivery_status": "planned",
+    "instructor_ids": [
+      "instr-025",
+      "instr-028"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-sustainability",
+      "term-digitalisation"
+    ]
+  },
+  {
+    "_id": "mod-031",
+    "program_id": "prog-pst",
+    "title": "Digital Government Services",
+    "credits": 6,
+    "description": "Modul 'Digital Government Services' im Rahmen von Public Sector Transformation, Semester 4.",
+    "year": 2028,
+    "semester_id": "sem-fs2029",
+    "last_revised": "2026-07-02",
+    "delivery_status": "confirmed",
+    "instructor_ids": [
+      "instr-054",
+      "instr-017"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-sustainability"
+    ]
+  },
+  {
+    "_id": "mod-032",
+    "program_id": "prog-pst",
+    "title": "Smart City Strategies",
+    "credits": 6,
+    "description": "Modul 'Smart City Strategies' im Rahmen von Public Sector Transformation, Semester 4.",
+    "year": 2028,
+    "semester_id": "sem-fs2029",
+    "last_revised": "2026-04-07",
+    "delivery_status": "planned",
+    "instructor_ids": [
+      "instr-068",
+      "instr-066"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-sustainability"
+    ]
+  },
+  {
+    "_id": "mod-033",
+    "program_id": "prog-ba",
+    "title": "Mergers & Acquisitions",
+    "credits": 6,
+    "description": "Modul 'Mergers & Acquisitions' im Rahmen von Business Administration, Semester 1.",
+    "year": 2027,
+    "semester_id": "sem-hs2027",
+    "last_revised": "2026-04-08",
+    "delivery_status": "planned",
+    "instructor_ids": [
+      "instr-006",
+      "instr-013"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": []
+  },
+  {
+    "_id": "mod-034",
+    "program_id": "prog-ba",
+    "title": "International Trade",
+    "credits": 6,
+    "description": "Modul 'International Trade' im Rahmen von Business Administration, Semester 1.",
+    "year": 2027,
+    "semester_id": "sem-hs2027",
+    "last_revised": "2026-02-05",
+    "delivery_status": "confirmed",
+    "instructor_ids": [
+      "instr-065",
+      "instr-066"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-entrepreneurship"
+    ]
+  },
+  {
+    "_id": "mod-035",
+    "program_id": "prog-ba",
+    "title": "Negotiation & Conflict Management",
+    "credits": 6,
+    "description": "Modul 'Negotiation & Conflict Management' im Rahmen von Business Administration, Semester 1.",
+    "year": 2027,
+    "semester_id": "sem-hs2027",
+    "last_revised": "2026-05-29",
+    "delivery_status": "planned",
+    "instructor_ids": [
+      "instr-034",
+      "instr-072"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-digitalisation"
+    ]
+  },
+  {
+    "_id": "mod-036",
+    "program_id": "prog-ba",
+    "title": "Operations Management",
+    "credits": 6,
+    "description": "Modul 'Operations Management' im Rahmen von Business Administration, Semester 1.",
+    "year": 2027,
+    "semester_id": "sem-hs2027",
+    "last_revised": "2026-01-27",
+    "delivery_status": "planned",
+    "instructor_ids": [
+      "instr-041",
+      "instr-010"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-sustainability"
+    ]
+  },
+  {
+    "_id": "mod-037",
+    "program_id": "prog-ba",
+    "title": "Leadership & Organizational Behavior",
+    "credits": 6,
+    "description": "Modul 'Leadership & Organizational Behavior' im Rahmen von Business Administration, Semester 2.",
+    "year": 2027,
+    "semester_id": "sem-fs2028",
+    "last_revised": "2026-01-28",
+    "delivery_status": "planned",
+    "instructor_ids": [
+      "instr-020"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": []
+  },
+  {
+    "_id": "mod-038",
+    "program_id": "prog-ba",
+    "title": "Business Analytics",
+    "credits": 6,
+    "description": "Modul 'Business Analytics' im Rahmen von Business Administration, Semester 2.",
+    "year": 2027,
+    "semester_id": "sem-fs2028",
+    "last_revised": "2026-02-27",
+    "delivery_status": "planned",
+    "instructor_ids": [
+      "instr-029"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-digitalisation"
+    ]
+  },
+  {
+    "_id": "mod-039",
+    "program_id": "prog-ba",
+    "title": "Project Management",
+    "credits": 6,
+    "description": "Modul 'Project Management' im Rahmen von Business Administration, Semester 2.",
+    "year": 2027,
+    "semester_id": "sem-fs2028",
+    "last_revised": "2026-02-17",
+    "delivery_status": "planned",
+    "instructor_ids": [
+      "instr-056",
+      "instr-066"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": []
+  },
+  {
+    "_id": "mod-040",
+    "program_id": "prog-ba",
+    "title": "Strategic Management",
+    "credits": 3,
+    "description": "Modul 'Strategic Management' im Rahmen von Business Administration, Semester 2.",
+    "year": 2027,
+    "semester_id": "sem-fs2028",
+    "last_revised": "2026-03-27",
+    "delivery_status": "confirmed",
+    "instructor_ids": [
+      "instr-071",
+      "instr-059"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-digitalisation"
+    ]
+  },
+  {
+    "_id": "mod-041",
+    "program_id": "prog-ba",
+    "title": "Corporate Finance",
+    "credits": 3,
+    "description": "Modul 'Corporate Finance' im Rahmen von Business Administration, Semester 2.",
+    "year": 2027,
+    "semester_id": "sem-fs2028",
+    "last_revised": "2026-01-25",
+    "delivery_status": "planned",
+    "instructor_ids": [
+      "instr-030",
+      "instr-014"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-entrepreneurship"
+    ]
+  },
+  {
+    "_id": "mod-042",
+    "program_id": "prog-ba",
+    "title": "Supply Chain Management",
+    "credits": 6,
+    "description": "Modul 'Supply Chain Management' im Rahmen von Business Administration, Semester 3.",
+    "year": 2028,
+    "semester_id": "sem-hs2028",
+    "last_revised": "2026-01-14",
+    "delivery_status": "confirmed",
+    "instructor_ids": [
+      "instr-055"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": []
+  },
+  {
+    "_id": "mod-043",
+    "program_id": "prog-ba",
+    "title": "Risk Management",
+    "credits": 6,
+    "description": "Modul 'Risk Management' im Rahmen von Business Administration, Semester 3.",
+    "year": 2028,
+    "semester_id": "sem-hs2028",
+    "last_revised": "2026-02-15",
+    "delivery_status": "planned",
+    "instructor_ids": [
+      "instr-066",
+      "instr-074"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": []
+  },
+  {
+    "_id": "mod-044",
+    "program_id": "prog-ba",
+    "title": "HR Management",
+    "credits": 6,
+    "description": "Modul 'HR Management' im Rahmen von Business Administration, Semester 3.",
+    "year": 2028,
+    "semester_id": "sem-hs2028",
+    "last_revised": "2026-02-04",
+    "delivery_status": "confirmed",
+    "instructor_ids": [
+      "instr-035"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": []
+  },
+  {
+    "_id": "mod-045",
+    "program_id": "prog-ba",
+    "title": "Marketing Management",
+    "credits": 6,
+    "description": "Modul 'Marketing Management' im Rahmen von Business Administration, Semester 3.",
+    "year": 2028,
+    "semester_id": "sem-hs2028",
+    "last_revised": "2026-04-01",
+    "delivery_status": "planned",
+    "instructor_ids": [
+      "instr-016",
+      "instr-059"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-entrepreneurship"
+    ]
+  },
+  {
+    "_id": "mod-046",
+    "program_id": "prog-ba",
+    "title": "Masterarbeit",
+    "credits": 12,
+    "description": "Modul 'Masterarbeit' im Rahmen von Business Administration, Semester 4.",
+    "year": 2028,
+    "semester_id": "sem-fs2029",
+    "last_revised": "2026-01-19",
+    "delivery_status": "planned",
+    "instructor_ids": [
+      "instr-031",
+      "instr-015"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-sustainability"
+    ]
+  },
+  {
+    "_id": "mod-047",
+    "program_id": "prog-ba",
+    "title": "Sustainable Business Models",
+    "credits": 6,
+    "description": "Modul 'Sustainable Business Models' im Rahmen von Business Administration, Semester 4.",
+    "year": 2028,
+    "semester_id": "sem-fs2029",
+    "last_revised": "2026-07-19",
+    "delivery_status": "confirmed",
+    "instructor_ids": [
+      "instr-068",
+      "instr-027"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-sustainability"
+    ]
+  },
+  {
+    "_id": "mod-048",
+    "program_id": "prog-ba",
+    "title": "Business Ethics & Governance",
+    "credits": 6,
+    "description": "Modul 'Business Ethics & Governance' im Rahmen von Business Administration, Semester 4.",
+    "year": 2028,
+    "semester_id": "sem-fs2029",
+    "last_revised": "2026-05-24",
+    "delivery_status": "planned",
+    "instructor_ids": [
+      "instr-005"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-entrepreneurship"
+    ]
+  },
+  {
+    "_id": "mod-049",
+    "program_id": "prog-dba",
+    "title": "Live Case: Siegrist GmbH",
+    "credits": 6,
+    "description": "Modul 'Live Case: Siegrist GmbH' im Rahmen von Entrepreneurship, Semester 1.",
+    "year": 2027,
+    "semester_id": "sem-hs2027",
+    "last_revised": "2026-08-05",
+    "delivery_status": "planned",
+    "instructor_ids": [
+      "instr-018",
+      "instr-052"
+    ],
+    "is_live_case": true,
+    "strategic_theme_ids": [],
+    "practice_partner": "Siegrist GmbH"
+  },
+  {
+    "_id": "mod-050",
+    "program_id": "prog-ent",
+    "title": "Bootstrapping & Alternative Financing",
+    "credits": 6,
+    "description": "Modul 'Bootstrapping & Alternative Financing' im Rahmen von Entrepreneurship, Semester 1.",
+    "year": 2027,
+    "semester_id": "sem-hs2027",
+    "last_revised": "2026-05-22",
+    "delivery_status": "planned",
+    "instructor_ids": [
+      "instr-033",
+      "instr-056"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-entrepreneurship",
+      "term-digitalisation"
+    ]
+  },
+  {
+    "_id": "mod-051",
+    "program_id": "prog-ent",
+    "title": "Venture Creation",
+    "credits": 6,
+    "description": "Modul 'Venture Creation' im Rahmen von Entrepreneurship, Semester 1.",
+    "year": 2027,
+    "semester_id": "sem-hs2027",
+    "last_revised": "2026-04-24",
+    "delivery_status": "planned",
+    "instructor_ids": [
+      "instr-006",
+      "instr-059"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-entrepreneurship",
+      "term-sustainability"
+    ]
+  },
+  {
+    "_id": "mod-052",
+    "program_id": "prog-ent",
+    "title": "Lean Startup Methodology",
+    "credits": 6,
+    "description": "Modul 'Lean Startup Methodology' im Rahmen von Entrepreneurship, Semester 1.",
+    "year": 2027,
+    "semester_id": "sem-hs2027",
+    "last_revised": "2026-02-07",
+    "delivery_status": "confirmed",
+    "instructor_ids": [
+      "instr-071"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-entrepreneurship",
+      "term-digitalisation"
+    ]
+  },
+  {
+    "_id": "mod-053",
+    "program_id": "prog-ent",
+    "title": "Live Case: Meier Merz & Partner",
+    "credits": 6,
+    "description": "Modul 'Live Case: Meier Merz & Partner' im Rahmen von Entrepreneurship, Semester 2.",
+    "year": 2027,
+    "semester_id": "sem-fs2028",
+    "last_revised": "2026-03-21",
+    "delivery_status": "confirmed",
+    "instructor_ids": [
+      "instr-043",
+      "instr-049"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-entrepreneurship"
+    ],
+    "practice_partner": "Meier Merz & Partner"
+  },
+  {
+    "_id": "mod-054",
+    "program_id": "prog-ent",
+    "title": "Entrepreneurial Finance",
+    "credits": 6,
+    "description": "Modul 'Entrepreneurial Finance' im Rahmen von Entrepreneurship, Semester 2.",
+    "year": 2027,
+    "semester_id": "sem-fs2028",
+    "last_revised": "2026-02-13",
+    "delivery_status": "planned",
+    "instructor_ids": [
+      "instr-012",
+      "instr-019"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-entrepreneurship",
+      "term-digitalisation"
+    ]
+  },
+  {
+    "_id": "mod-055",
+    "program_id": "prog-ent",
+    "title": "Legal Foundations for Startups",
+    "credits": 6,
+    "description": "Modul 'Legal Foundations for Startups' im Rahmen von Entrepreneurship, Semester 2.",
+    "year": 2027,
+    "semester_id": "sem-fs2028",
+    "last_revised": "2026-06-22",
+    "delivery_status": "planned",
+    "instructor_ids": [
+      "instr-068",
+      "instr-020"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": []
+  },
+  {
+    "_id": "mod-056",
+    "program_id": "prog-ent",
+    "title": "Corporate Entrepreneurship",
+    "credits": 3,
+    "description": "Modul 'Corporate Entrepreneurship' im Rahmen von Entrepreneurship, Semester 2.",
+    "year": 2027,
+    "semester_id": "sem-fs2028",
+    "last_revised": "2026-06-20",
+    "delivery_status": "confirmed",
+    "instructor_ids": [
+      "instr-064",
+      "instr-020"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-entrepreneurship",
+      "term-sustainability"
+    ]
+  },
+  {
+    "_id": "mod-057",
+    "program_id": "prog-ent",
+    "title": "Design Thinking for Startups",
+    "credits": 3,
+    "description": "Modul 'Design Thinking for Startups' im Rahmen von Entrepreneurship, Semester 2.",
+    "year": 2027,
+    "semester_id": "sem-fs2028",
+    "last_revised": "2026-04-25",
+    "delivery_status": "planned",
+    "instructor_ids": [
+      "instr-065"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-entrepreneurship",
+      "term-sustainability"
+    ]
+  },
+  {
+    "_id": "mod-058",
+    "program_id": "prog-dba",
+    "title": "Live Case: Portmann AG",
+    "credits": 6,
+    "description": "Modul 'Live Case: Portmann AG' im Rahmen von Entrepreneurship, Semester 3.",
+    "year": 2028,
+    "semester_id": "sem-hs2028",
+    "last_revised": "2026-02-26",
+    "delivery_status": "planned",
+    "instructor_ids": [
+      "instr-018",
+      "instr-047"
+    ],
+    "is_live_case": true,
+    "strategic_theme_ids": [],
+    "practice_partner": "Portmann AG"
+  },
+  {
+    "_id": "mod-059",
+    "program_id": "prog-ent",
+    "title": "Innovation Management",
+    "credits": 6,
+    "description": "Modul 'Innovation Management' im Rahmen von Entrepreneurship, Semester 3.",
+    "year": 2028,
+    "semester_id": "sem-hs2028",
+    "last_revised": "2026-08-04",
+    "delivery_status": "planned",
+    "instructor_ids": [
+      "instr-032",
+      "instr-063"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-entrepreneurship",
+      "term-sustainability"
+    ]
+  },
+  {
+    "_id": "mod-060",
+    "program_id": "prog-ent",
+    "title": "Venture Capital & Funding",
+    "credits": 6,
+    "description": "Modul 'Venture Capital & Funding' im Rahmen von Entrepreneurship, Semester 3.",
+    "year": 2028,
+    "semester_id": "sem-hs2028",
+    "last_revised": "2026-04-01",
+    "delivery_status": "planned",
+    "instructor_ids": [
+      "instr-061",
+      "instr-033"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": []
+  },
+  {
+    "_id": "mod-061",
+    "program_id": "prog-ent",
+    "title": "Business Model Design",
+    "credits": 6,
+    "description": "Modul 'Business Model Design' im Rahmen von Entrepreneurship, Semester 3.",
+    "year": 2028,
+    "semester_id": "sem-hs2028",
+    "last_revised": "2026-06-09",
+    "delivery_status": "planned",
+    "instructor_ids": [
+      "instr-059",
+      "instr-064"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-digitalisation"
+    ]
+  },
+  {
+    "_id": "mod-062",
+    "program_id": "prog-ent",
+    "title": "Masterarbeit",
+    "credits": 12,
+    "description": "Modul 'Masterarbeit' im Rahmen von Entrepreneurship, Semester 4.",
+    "year": 2028,
+    "semester_id": "sem-fs2029",
+    "last_revised": "2026-07-27",
+    "delivery_status": "planned",
+    "instructor_ids": [
+      "instr-026",
+      "instr-010"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-entrepreneurship"
+    ]
+  },
+  {
+    "_id": "mod-063",
+    "program_id": "prog-ent",
+    "title": "Pitching & Storytelling",
+    "credits": 6,
+    "description": "Modul 'Pitching & Storytelling' im Rahmen von Entrepreneurship, Semester 4.",
+    "year": 2028,
+    "semester_id": "sem-fs2029",
+    "last_revised": "2026-06-24",
+    "delivery_status": "confirmed",
+    "instructor_ids": [
+      "instr-018",
+      "instr-002"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-entrepreneurship"
+    ]
+  },
+  {
+    "_id": "mod-064",
+    "program_id": "prog-ent",
+    "title": "Growth Hacking",
+    "credits": 6,
+    "description": "Modul 'Growth Hacking' im Rahmen von Entrepreneurship, Semester 4.",
+    "year": 2028,
+    "semester_id": "sem-fs2029",
+    "last_revised": "2026-03-18",
+    "delivery_status": "planned",
+    "instructor_ids": [
+      "instr-038",
+      "instr-067"
+    ],
+    "is_live_case": false,
+    "strategic_theme_ids": [
+      "term-entrepreneurship"
+    ]
+  }
+]

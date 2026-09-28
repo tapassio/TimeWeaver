@@ -1,0 +1,47 @@
+
+  [32m[1mVITE[22m v8.3.0[39m  [2mready in [0m[1m321[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+[2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[2m15:34:47[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/import/ImportDialog.vue[22m
+[2m15:35:16[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/import/ImportDialog.vue[22m
+[2m16:57:38[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/router/index.ts[22m
+[2m16:57:56[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/views/CurriculumView.vue[22m
+[2m17:06:04[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/curriculum/PipelineStepper.vue[22m
+[2m17:26:45[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/curriculum/CurriculumMappingPage.vue[22m
+[2m17:26:45[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: Property "candidateInfo" was accessed during render but is not defined on instance. 
+  at <VContainer fluid="" > 
+  at <CurriculumMappingPage onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< {} > > 
+  at <RouterView> 
+  at <VMain> 
+  at <VApp> 
+  at <AppLayout onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< {} > > 
+  at <RouterView> 
+  at <App>
+[2m17:26:45[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: Property "errorInfo" was accessed during render but is not defined on instance. 
+  at <VContainer fluid="" > 
+  at <CurriculumMappingPage onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< {} > > 
+  at <RouterView> 
+  at <VMain> 
+  at <VApp> 
+  at <AppLayout onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< {} > > 
+  at <RouterView> 
+  at <App>
+[2m17:27:01[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/curriculum/CurriculumMappingPage.vue[22m
+[2m17:27:16[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/curriculum/CurriculumMappingPage.vue[22m
+[2m17:27:23[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/curriculum/CurriculumMappingPage.vue[22m
+[2m17:27:27[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/curriculum/CurriculumMappingPage.vue[22m
+[2m17:27:35[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/curriculum/CurriculumMappingPage.vue[22m
+[2m18:24:37[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/curriculum/PipelineStepper.vue[22m
+[2m18:24:43[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/curriculum/PipelineStepper.vue?vue&type=style&index=0&scoped=b9439f94&lang.css[22m
+[2m18:24:49[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/curriculum/CurriculumMappingPage.vue[22m
+[2m18:24:49[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m[Vue warn]: Property "onStepClick" was accessed during render but is not defined on instance. 
+  at <VContainer fluid="" > 
+  at <CurriculumMappingPage onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< {} > > 
+  at <RouterView> 
+  at <VMain> 
+  at <VApp> 
+  at <AppLayout onVnodeUnmounted=fn<onVnodeUnmounted> ref=Ref< {} > > 
+  at <RouterView> 
+  at <App>
+[2m18:25:09[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/curriculum/CurriculumMappingPage.vue[22m

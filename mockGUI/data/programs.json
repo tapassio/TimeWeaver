@@ -1,0 +1,34 @@
+[
+  {
+    "_id": "prog-dba",
+    "department_id": "dept-001",
+    "title": "Digital Business Administration",
+    "degree": "Master of Science",
+    "description": "Digitale Transformation von Geschäftsmodellen und Organisationen.",
+    "mission_statement": "Die Fachhochschule mit Impact: gesellschaftliche Wirkung durch Bildung, Forschung und Praxistransfer in den Feldern Entrepreneurship, Digitalisation und Sustainability."
+  },
+  {
+    "_id": "prog-pst",
+    "department_id": "dept-001",
+    "title": "Public Sector Transformation",
+    "degree": "Master of Science",
+    "description": "Wandel und Innovation in öffentlichen Institutionen.",
+    "mission_statement": "Die Fachhochschule mit Impact: gesellschaftliche Wirkung durch Bildung, Forschung und Praxistransfer in den Feldern Entrepreneurship, Digitalisation und Sustainability."
+  },
+  {
+    "_id": "prog-ba",
+    "department_id": "dept-001",
+    "title": "Business Administration",
+    "degree": "Master of Science",
+    "description": "Generalistische Managementausbildung.",
+    "mission_statement": "Die Fachhochschule mit Impact: gesellschaftliche Wirkung durch Bildung, Forschung und Praxistransfer in den Feldern Entrepreneurship, Digitalisation und Sustainability."
+  },
+  {
+    "_id": "prog-ent",
+    "department_id": "dept-001",
+    "title": "Entrepreneurship",
+    "degree": "Master of Science",
+    "description": "Gründung, Wachstum und Führung unternehmerischer Vorhaben.",
+    "mission_statement": "Die Fachhochschule mit Impact: gesellschaftliche Wirkung durch Bildung, Forschung und Praxistransfer in den Feldern Entrepreneurship, Digitalisation und Sustainability."
+  }
+]

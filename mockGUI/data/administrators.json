@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "admin-dba",
+    "name": "Heinz Meili",
+    "email": "heinz.meili@bfh.ch",
+    "program_id": "prog-dba"
+  },
+  {
+    "_id": "admin-pst",
+    "name": "Nikola Widmer",
+    "email": "nikola.widmer@bfh.ch",
+    "program_id": "prog-pst"
+  },
+  {
+    "_id": "admin-ba",
+    "name": "Admir Erni",
+    "email": "admir.erni@bfh.ch",
+    "program_id": "prog-ba"
+  },
+  {
+    "_id": "admin-ent",
+    "name": "Leandra Baumann",
+    "email": "leandra.baumann@bfh.ch",
+    "program_id": "prog-ent"
+  }
+]

@@ -1,0 +1,1095 @@
+openapi: 3.0.3
+info:
+  title: CourseWeaver REST API
+  description: |
+    REST API for the CourseWeaver curriculum management, room scheduling, taxonomy, and planning system.
+    Provides endpoints for managing curriculum versions, study programs, modules, semesters, lessons, lecturers, rooms, locations, competencies, and taxonomy items.
+  version: 1.0.0
+  contact:
+    name: CourseWeaver Team
+servers:
+  - url: http://localhost:3000/api
+    description: Local Express API Server
+  - url: /api
+    description: Relative API proxy path
+
+tags:
+  - name: Health
+    description: System and database health check
+  - name: Entities
+    description: Generic CRUD operations for all CourseWeaver resource entities
+  - name: Rooms
+    description: Room and facility management
+  - name: Locations
+    description: Campus and building locations
+  - name: Competencies
+    description: Student competencies and skill levels
+  - name: Curriculum
+    description: Curriculum versions, study programs, modules, and lessons
+
+paths:
+  /health:
+    get:
+      summary: Health check
+      description: Returns the health status of the API server and PostgreSQL database connectivity.
+      tags:
+        - Health
+      responses:
+        '200':
+          description: Server status and database connectivity info
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HealthResponse'
+              example:
+                status: "ok"
+                databaseConnected: true
+                timestamp: "2026-09-15T13:38:00.000Z"
+
+  /{entity}:
+    get:
+      summary: Get all items for an entity
+      description: Fetches all stored items for the specified entity collection.
+      tags:
+        - Entities
+      parameters:
+        - $ref: '#/components/parameters/EntityName'
+      responses:
+        '200':
+          description: A list of entity items
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/EntityRecord'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+    post:
+      summary: Create a new entity item
+      description: Creates and saves a new entity item in the specified collection. If no `id` or `_id` is provided, a unique identifier is generated automatically.
+      tags:
+        - Entities
+      parameters:
+        - $ref: '#/components/parameters/EntityName'
+      requestBody:
+        required: true
+        description: The entity data to create
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/EntityInput'
+            examples:
+              room:
+                summary: Room creation example
+                value:
+                  name: "Science Building 204"
+                  room_type: "classroom"
+                  floor: 2
+                  room_number: "204"
+                  capacity:
+                    seats: 36
+                    accessible_seats: 2
+                  accessibility:
+                    step_free_access: true
+                  availability:
+                    weekdays: ["monday", "tuesday", "wednesday", "thursday", "friday"]
+              location:
+                summary: Location creation example
+                value:
+                  name: "North Campus, Science Building"
+                  campus: "North Campus"
+                  building: "Science Building"
+                  address: "Example Street 12"
+                  latitude: 52.5201
+                  longitude: 13.4049
+              competency:
+                summary: Competency creation example
+                value:
+                  name: "Relational Database Design"
+                  category: "Databases"
+                  topic: "SQL & Normalization"
+                  level: "M"
+                  description: "Master level competence in database schema design and normalization."
+      responses:
+        '201':
+          description: The created entity item
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EntityRecord'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /{entity}/{id}:
+    get:
+      summary: Get a single entity item by ID
+      description: Retrieves a specific entity item by its identifier.
+      tags:
+        - Entities
+      parameters:
+        - $ref: '#/components/parameters/EntityName'
+        - $ref: '#/components/parameters/EntityId'
+      responses:
+        '200':
+          description: The requested entity item
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EntityRecord'
+        '404':
+          description: Entity item not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                error: "Entity not found in rooms"
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+    put:
+      summary: Replace / update an entity item
+      description: Updates or replaces an existing entity item by ID.
+      tags:
+        - Entities
+      parameters:
+        - $ref: '#/components/parameters/EntityName'
+        - $ref: '#/components/parameters/EntityId'
+      requestBody:
+        required: true
+        description: Updated entity payload
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/EntityInput'
+      responses:
+        '200':
+          description: The updated entity item
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EntityRecord'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+    patch:
+      summary: Partially update an entity item
+      description: Partially modifies fields of an existing entity item by ID.
+      tags:
+        - Entities
+      parameters:
+        - $ref: '#/components/parameters/EntityName'
+        - $ref: '#/components/parameters/EntityId'
+      requestBody:
+        required: true
+        description: Partial entity fields to update
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: true
+      responses:
+        '200':
+          description: The updated entity item
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EntityRecord'
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+    delete:
+      summary: Delete an entity item
+      description: Deletes an entity item by ID from the specified collection.
+      tags:
+        - Entities
+      parameters:
+        - $ref: '#/components/parameters/EntityName'
+        - $ref: '#/components/parameters/EntityId'
+      responses:
+        '200':
+          description: Deletion confirmation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DeleteResponse'
+              example:
+                success: true
+                id: "room_123"
+        '500':
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+components:
+  parameters:
+    EntityName:
+      name: entity
+      in: path
+      required: true
+      description: The name of the entity table/collection.
+      schema:
+        type: string
+        enum:
+          - rooms
+          - locations
+          - competencies
+          - competency_matrices
+          - matrix_competencies
+          - proofs_of_competency
+          - curriculum_versions
+          - departments
+          - programs
+          - degrees
+          - classes
+          - modules
+          - lessons
+          - semesters
+          - weeks
+          - schedule_entries
+          - lecturers
+          - lecturer_availability
+          - room_availability
+          - scheduling_rules
+          - taxonomy_items
+        example: rooms
+
+    EntityId:
+      name: id
+      in: path
+      required: true
+      description: The unique identifier of the entity item.
+      schema:
+        type: string
+        example: "room_123"
+
+  schemas:
+    HealthResponse:
+      type: object
+      required:
+        - status
+        - databaseConnected
+        - timestamp
+      properties:
+        status:
+          type: string
+          example: "ok"
+        databaseConnected:
+          type: boolean
+          example: true
+        timestamp:
+          type: string
+          format: date-time
+          example: "2026-09-15T13:38:00.000Z"
+
+    ErrorResponse:
+      type: object
+      required:
+        - error
+      properties:
+        error:
+          type: string
+          example: "Entity not found in rooms"
+
+    DeleteResponse:
+      type: object
+      required:
+        - success
+        - id
+      properties:
+        success:
+          type: boolean
+          example: true
+        id:
+          type: string
+          example: "room_123"
+
+    EntityRecord:
+      type: object
+      description: Generic entity record returned by the database with system identifiers and timestamps.
+      properties:
+        id:
+          type: string
+          example: "cw_1726407480000_abc123"
+        _id:
+          type: string
+          example: "cw_1726407480000_abc123"
+        created_at:
+          type: string
+          format: date-time
+          example: "2026-09-15T13:38:00.000Z"
+        updated_at:
+          type: string
+          format: date-time
+          example: "2026-09-15T13:38:00.000Z"
+      additionalProperties: true
+
+    EntityInput:
+      type: object
+      description: Generic input payload for creating or updating an entity.
+      additionalProperties: true
+
+    # Specific Entity Schemas
+    Location:
+      type: object
+      required:
+        - name
+        - building
+      properties:
+        id:
+          type: string
+        _id:
+          type: string
+        name:
+          type: string
+          description: Human-readable name for the location
+          example: "North Campus, Science Building"
+        campus:
+          type: string
+          description: Campus name or code
+          example: "North Campus"
+        building:
+          type: string
+          description: Building name or code
+          example: "Science Building"
+        address:
+          type: string
+          description: Postal or street address
+          example: "Example Street 12"
+        latitude:
+          type: number
+          format: float
+          description: Geographic latitude in decimal degrees (WGS 84)
+          example: 52.5201
+        longitude:
+          type: number
+          format: float
+          description: Geographic longitude in decimal degrees (WGS 84)
+          example: 13.4049
+        created_at:
+          type: string
+          format: date-time
+        updated_at:
+          type: string
+          format: date-time
+
+    Competency:
+      type: object
+      required:
+        - name
+      properties:
+        id:
+          type: string
+        _id:
+          type: string
+        name:
+          type: string
+          description: Name of the competency
+          example: "Relational Database Design"
+        category:
+          type: string
+          description: Broad grouping of related skills
+          example: "Databases"
+        topic:
+          type: string
+          description: Specific subject or competency covered within category
+          example: "SQL & Normalization"
+        description:
+          type: string
+          description: Detailed description of the competency
+          example: "Ability to design relational schemas and normalize tables up to 3NF."
+        level:
+          type: string
+          description: Degree of proficiency or expertise
+          enum:
+            - Introduction
+            - Regular
+            - Master
+            - I
+            - R
+            - M
+          example: "M"
+        created_at:
+          type: string
+          format: date-time
+        updated_at:
+          type: string
+          format: date-time
+
+    Room:
+      type: object
+      required:
+        - name
+        - room_type
+        - floor
+        - room_number
+        - capacity
+        - accessibility
+        - availability
+      properties:
+        id:
+          type: string
+        _id:
+          type: string
+        name:
+          type: string
+          example: "Science Building 204"
+        room_type:
+          type: string
+          enum:
+            - lecture_hall
+            - classroom
+            - computer_lab
+            - laboratory
+            - other
+          example: "classroom"
+        owner:
+          type: string
+          example: "Facility Management"
+        location_id:
+          type: string
+          description: ID reference to Location
+          example: "loc_abc123"
+        floor:
+          oneOf:
+            - type: integer
+            - type: string
+          example: 2
+        room_number:
+          type: string
+          example: "204"
+        capacity:
+          $ref: '#/components/schemas/RoomCapacity'
+        layout:
+          $ref: '#/components/schemas/RoomLayout'
+        equipment:
+          $ref: '#/components/schemas/RoomEquipment'
+        connectivity:
+          $ref: '#/components/schemas/RoomConnectivity'
+        accessibility:
+          $ref: '#/components/schemas/RoomAccessibility'
+        availability:
+          $ref: '#/components/schemas/RoomAvailability'
+        maintenance:
+          $ref: '#/components/schemas/RoomMaintenance'
+        created_at:
+          type: string
+          format: date-time
+        updated_at:
+          type: string
+          format: date-time
+
+    RoomCapacity:
+      type: object
+      required:
+        - seats
+      properties:
+        seats:
+          type: integer
+          description: Maximum number of regular seats
+          example: 36
+        accessible_seats:
+          type: integer
+          description: Number of wheelchair accessible seats
+          example: 2
+        desks:
+          type: integer
+          description: Number of desks or workstations
+          example: 18
+        standing_capacity:
+          type: integer
+          nullable: true
+          description: Additional standing capacity
+
+    RoomLayout:
+      type: object
+      properties:
+        type:
+          type: string
+          enum:
+            - rows
+            - u_shape
+            - boardroom
+            - laboratory_benches
+            - computer_workstations
+            - other
+          example: "rows"
+        movable_desks:
+          type: boolean
+          example: true
+        movable_chairs:
+          type: boolean
+          example: true
+        group_work_possible:
+          type: boolean
+          example: true
+        floor_area_m2:
+          type: number
+          example: 58
+
+    StreamingCamera:
+      type: object
+      required:
+        - available
+      properties:
+        available:
+          type: boolean
+          example: true
+        type:
+          type: string
+          enum:
+            - fixed
+            - tracking
+            - pan_tilt_zoom
+          example: "tracking"
+        position:
+          type: string
+          example: "front_wall"
+        quality:
+          type: string
+          enum:
+            - 720p
+            - 1080p
+            - 4k
+          example: "1080p"
+
+    VideoConferencing:
+      type: object
+      required:
+        - available
+      properties:
+        available:
+          type: boolean
+          example: true
+        system:
+          type: string
+          example: "Zoom Rooms"
+        supports_remote_participants:
+          type: boolean
+          example: true
+
+    RoomEquipment:
+      type: object
+      properties:
+        whiteboards:
+          type: integer
+          example: 2
+        blackboard:
+          type: boolean
+          example: false
+        flipchart:
+          type: boolean
+          example: true
+        smartboard:
+          type: boolean
+          example: false
+        projector:
+          type: boolean
+          example: true
+        projector_count:
+          type: integer
+          example: 1
+        display_type:
+          oneOf:
+            - type: string
+            - type: array
+              items:
+                type: string
+          example: "laser_projector"
+        document_camera:
+          type: boolean
+          example: false
+        lectern:
+          type: boolean
+          example: true
+        speakers:
+          type: boolean
+          example: true
+        microphone:
+          type: boolean
+          example: true
+        lecture_capture:
+          type: boolean
+          example: false
+        streaming_camera:
+          $ref: '#/components/schemas/StreamingCamera'
+        video_conferencing:
+          $ref: '#/components/schemas/VideoConferencing'
+
+    RoomConnectivity:
+      type: object
+      properties:
+        wifi:
+          type: boolean
+          example: true
+        wired_network:
+          type: boolean
+          example: true
+        network_speed_mbps:
+          type: number
+          example: 1000
+        power_outlets:
+          type: integer
+          example: 24
+        connections:
+          type: array
+          items:
+            type: string
+            enum:
+              - HDMI
+              - DisplayPort
+              - USB-C
+              - VGA
+              - 3.5mm_audio
+              - Ethernet
+          example: ["HDMI", "USB-C", "Ethernet"]
+        wireless_presentation:
+          type: boolean
+          example: true
+
+    RoomAccessibility:
+      type: object
+      required:
+        - step_free_access
+      properties:
+        step_free_access:
+          type: boolean
+          example: true
+        accessible_door:
+          type: boolean
+          example: true
+        accessible_seating:
+          type: boolean
+          example: true
+        hearing_loop:
+          type: boolean
+          example: false
+        braille_signage:
+          type: boolean
+          example: false
+        accessible_restrooms_nearby:
+          type: boolean
+          example: true
+
+    TimeRange:
+      type: object
+      required:
+        - weekday
+        - start
+        - end
+      properties:
+        weekday:
+          type: string
+          enum:
+            - monday
+            - tuesday
+            - wednesday
+            - thursday
+            - friday
+            - saturday
+            - sunday
+          example: "monday"
+        start:
+          type: string
+          pattern: '^([01]\d|2[0-3]):[0-5]\d$'
+          example: "08:00"
+        end:
+          type: string
+          pattern: '^([01]\d|2[0-3]):[0-5]\d$'
+          example: "18:00"
+
+    UnavailablePeriod:
+      type: object
+      required:
+        - start
+        - end
+      properties:
+        start:
+          type: string
+          example: "2026-07-01"
+        end:
+          type: string
+          example: "2026-08-31"
+
+    RoomAvailability:
+      type: object
+      properties:
+        weekdays:
+          type: array
+          items:
+            type: string
+            enum:
+              - monday
+              - tuesday
+              - wednesday
+              - thursday
+              - friday
+              - saturday
+              - sunday
+          example: ["monday", "tuesday", "wednesday", "thursday", "friday"]
+        time_ranges:
+          type: array
+          items:
+            $ref: '#/components/schemas/TimeRange'
+        unavailable_periods:
+          type: array
+          items:
+            $ref: '#/components/schemas/UnavailablePeriod'
+
+    RoomMaintenance:
+      type: object
+      properties:
+        last_updated:
+          type: string
+          format: date-time
+          example: "2026-09-14T10:00:00Z"
+
+    CurriculumVersion:
+      type: object
+      required:
+        - name
+      properties:
+        id:
+          type: string
+        _id:
+          type: string
+        name:
+          type: string
+          example: "Computer Science Curriculum 2026"
+        description:
+          type: string
+          example: "Revised curriculum starting Fall 2026"
+        version:
+          type: number
+          example: 1
+        parentId:
+          type: string
+          description: ID of parent curriculum if forked
+        createdAt:
+          type: string
+        created_at:
+          type: string
+          format: date-time
+        updated_at:
+          type: string
+          format: date-time
+
+    StudyProgram:
+      type: object
+      required:
+        - name
+      properties:
+        id:
+          type: string
+        _id:
+          type: string
+        name:
+          type: string
+          example: "BSc in Computer Science"
+        description:
+          type: string
+          example: "3-year Bachelor of Science program"
+        degreeType:
+          type: string
+          example: "Bachelor"
+        version:
+          type: number
+          example: 1
+        curriculumVersionId:
+          type: string
+          description: Associated curriculum version ID
+        created_at:
+          type: string
+          format: date-time
+        updated_at:
+          type: string
+          format: date-time
+
+    ModuleConstraint:
+      type: object
+      required:
+        - type
+        - targetModuleId
+      properties:
+        type:
+          type: string
+          enum:
+            - requires
+            - corequisite
+            - forbids
+          example: "requires"
+        targetModuleId:
+          type: string
+          example: "mod_cs101"
+
+    Module:
+      type: object
+      required:
+        - name
+      properties:
+        id:
+          type: string
+        _id:
+          type: string
+        name:
+          type: string
+          example: "Software Architecture & Design"
+        description:
+          type: string
+          example: "Principles of modular software design and modern architectural styles."
+        code:
+          type: string
+          example: "CS-301"
+        creditPoints:
+          type: number
+          example: 6
+        contactHours:
+          type: number
+          example: 60
+        selfStudyHours:
+          type: number
+          example: 120
+        teachingHours:
+          type: number
+          example: 45
+        constraints:
+          type: array
+          items:
+            $ref: '#/components/schemas/ModuleConstraint'
+        curriculumVersionId:
+          type: string
+        studyProgramIds:
+          type: array
+          items:
+            type: string
+        created_at:
+          type: string
+          format: date-time
+        updated_at:
+          type: string
+          format: date-time
+
+    DateRange:
+      type: object
+      required:
+        - start
+        - end
+      properties:
+        start:
+          type: string
+          example: "2026-12-24"
+        end:
+          type: string
+          example: "2027-01-06"
+        label:
+          type: string
+          example: "Winter Break"
+
+    Semester:
+      type: object
+      required:
+        - identifier
+        - startDate
+        - endDate
+      properties:
+        id:
+          type: string
+        _id:
+          type: string
+        identifier:
+          type: string
+          example: "FS2026"
+        startDate:
+          type: string
+          format: date
+          example: "2026-02-16"
+        endDate:
+          type: string
+          format: date
+          example: "2026-06-20"
+        holidays:
+          type: array
+          items:
+            $ref: '#/components/schemas/DateRange'
+        specialDates:
+          type: array
+          items:
+            $ref: '#/components/schemas/DateRange'
+        created_at:
+          type: string
+          format: date-time
+        updated_at:
+          type: string
+          format: date-time
+
+    ScheduledSession:
+      type: object
+      required:
+        - date
+        - startTime
+        - endTime
+      properties:
+        date:
+          type: string
+          format: date
+          example: "2026-03-02"
+        startTime:
+          type: string
+          pattern: '^([01]\d|2[0-3]):[0-5]\d$'
+          example: "08:15"
+        endTime:
+          type: string
+          pattern: '^([01]\d|2[0-3]):[0-5]\d$'
+          example: "11:45"
+        lecturerId:
+          type: string
+          example: "lect_1"
+        roomId:
+          type: string
+          example: "room_123"
+
+    Lesson:
+      type: object
+      required:
+        - moduleId
+        - name
+      properties:
+        id:
+          type: string
+        _id:
+          type: string
+        moduleId:
+          type: string
+          example: "mod_cs301"
+        name:
+          type: string
+          example: "Microservices Architecture & Event-Driven Systems"
+        description:
+          type: string
+        taxonomyItemIds:
+          type: array
+          items:
+            type: string
+        proofOfCompetencyIds:
+          type: array
+          items:
+            type: string
+        scheduledSessions:
+          type: array
+          items:
+            $ref: '#/components/schemas/ScheduledSession'
+        created_at:
+          type: string
+          format: date-time
+        updated_at:
+          type: string
+          format: date-time
+
+    AvailabilitySlot:
+      type: object
+      required:
+        - dayOfWeek
+        - startTime
+        - endTime
+      properties:
+        dayOfWeek:
+          type: integer
+          description: "0 = Sunday, 1 = Monday, ..., 6 = Saturday"
+          minimum: 0
+          maximum: 6
+          example: 1
+        startTime:
+          type: string
+          pattern: '^([01]\d|2[0-3]):[0-5]\d$'
+          example: "09:00"
+        endTime:
+          type: string
+          pattern: '^([01]\d|2[0-3]):[0-5]\d$'
+          example: "17:00"
+
+    Lecturer:
+      type: object
+      required:
+        - name
+      properties:
+        id:
+          type: string
+        _id:
+          type: string
+        name:
+          type: string
+          example: "Dr. Jane Doe"
+        email:
+          type: string
+          format: email
+          example: "jane.doe@example.edu"
+        department:
+          type: string
+          example: "Computer Science"
+        availability:
+          type: array
+          items:
+            $ref: '#/components/schemas/AvailabilitySlot'
+        created_at:
+          type: string
+          format: date-time
+        updated_at:
+          type: string
+          format: date-time
+
+    TaxonomyItem:
+      type: object
+      required:
+        - name
+        - category
+      properties:
+        id:
+          type: string
+        _id:
+          type: string
+        name:
+          type: string
+          example: "REST API Design Principles"
+        description:
+          type: string
+          example: "Understanding of RESTful interfaces, HTTP status codes, and URI design."
+        category:
+          type: string
+          enum:
+            - competency
+            - learningObjective
+            - proofOfCompetency
+          example: "competency"
+        parentTaxonomyItemId:
+          type: string
+          nullable: true
+        created_at:
+          type: string
+          format: date-time
+        updated_at:
+          type: string
+          format: date-time

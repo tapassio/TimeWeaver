@@ -1,0 +1,17 @@
+[
+  {
+    "_id": "term-entrepreneurship",
+    "title": "Entrepreneurship",
+    "category": "strategic_theme"
+  },
+  {
+    "_id": "term-digitalisation",
+    "title": "Digitalisation",
+    "category": "strategic_theme"
+  },
+  {
+    "_id": "term-sustainability",
+    "title": "Sustainability",
+    "category": "strategic_theme"
+  }
+]

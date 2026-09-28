@@ -1,0 +1,302 @@
+erDiagram
+
+    %% ── Curriculum structure ─────────────────────────────────
+    DEPARTMENT }|--o{ PROGRAM : "offers"
+    DEPARTMENT ||--o{ LECTURER : "employs"
+    PROGRAM }|--o{ DEGREE : "offers"
+    %% kept (7.1, intentional data): degreeIds = degrees the module is part of
+    DEGREE }|--|{ MODULE : "contains"
+
+    PROGRAM ||--o{ CURRICULUM_VERSION : "has versions"
+    PROGRAM ||--o| CURRICULUM_VERSION : "currently active"
+    CURRICULUM_VERSION ||--o{ MODULE : "defines"
+    CURRICULUM_VERSION ||--o{ CLASS_ENTITY : "followed by"
+
+    DEGREE ||--o{ CLASS_ENTITY : "pursued by"
+    SEMESTER ||--o{ CLASS_ENTITY : "hosts"
+
+    MODULE }o--o{ CLASS_ENTITY : "taken by"
+    %% module-level link = qualified/responsible for the term;
+    %% SCHEDULE_ENTRY.lecturerIds = actually teaching that session (7.2)
+    MODULE }o--o{ LECTURER : "taught by"
+    MODULE ||--o{ LESSON : "contains"
+
+    LESSON }o--o{ TAXONOMY_ITEM : "categorized by"
+    LESSON }o--o{ PROOF_OF_COMPETENCY : "assessed by"
+
+    MODULE }o--|{ COMPETENCY : "develops"
+    MODULE }o--o{ PROOF_OF_COMPETENCY : "assessed by"
+    %% invariant (7.3): competencies evaluated by a module's proofs
+    %% must appear in that module's competencyIds
+    PROOF_OF_COMPETENCY }o--|{ COMPETENCY : "evaluates"
+
+    COMPETENCY_MATRIX ||--|{ MATRIX_COMPETENCY : "defines"
+    COMPETENCY }o--o| MATRIX_COMPETENCY : "x-axis mapped"
+    COMPETENCY }o--o| MATRIX_COMPETENCY : "y-axis mapped"
+
+    %% ── Resources & calendar ─────────────────────────────────
+    LOCATION ||--o{ ROOM : "contains"
+
+    ROOM ||--o{ ROOM_AVAILABILITY : "has"
+    LECTURER ||--o{ LECTURER_AVAILABILITY : "has"
+    USER |o--o| LECTURER : "is"
+
+    SEMESTER ||--o{ SCHEDULING_RULE : "has"
+    SEMESTER ||--o{ WEEK : "contains"
+
+    WEEK ||--o{ ROOM_AVAILABILITY : "defines"
+    WEEK ||--o{ LECTURER_AVAILABILITY : "defines"
+    WEEK ||--o{ SCHEDULE_ENTRY : "contains"
+
+    %% ── Scheduling: M:N via FK arrays on SCHEDULE_ENTRY ──────
+    ROOM }o--o{ SCHEDULE_ENTRY : "hosts"
+    MODULE }o--o{ SCHEDULE_ENTRY : "scheduled in"
+    CLASS_ENTITY }o--o{ SCHEDULE_ENTRY : "participates in"
+    LECTURER }o--o{ SCHEDULE_ENTRY : "teaches"
+
+    %% ── Implicit, derived links (no stored FK) ───────────────
+    %% An availability slot or rule informs an entry when the
+    %% room/lecturer matches and the slot covers the entry's
+    %% weekday + time window.
+    ROOM_AVAILABILITY }o--o{ SCHEDULE_ENTRY : "informs"
+    LECTURER_AVAILABILITY }o--o{ SCHEDULE_ENTRY : "informs"
+    SCHEDULING_RULE }o--o{ SCHEDULE_ENTRY : "informs"
+
+    %% supplierId = external identity provider/tenant; localName = login handle
+    USER {
+        string id PK
+        string localName
+        string displayName
+        string email
+        string supplierId
+        array roles
+        boolean isActive
+        string timezone
+        datetime createdAt
+    }
+
+    %% name kept for guest lecturers without USER accounts
+    LECTURER {
+        string id PK
+        string name
+        string userId FK
+        string departmentId FK
+        array moduleIds FK
+    }
+
+    DEPARTMENT {
+        string id PK
+        string name
+        string description
+        string contact
+        string url
+    }
+
+    PROGRAM {
+        string id PK
+        string name
+        string description
+        array departmentIds FK
+        string activeCurriculumVersionId FK
+        string contact
+        string url
+    }
+
+    DEGREE {
+        string id PK
+        string name
+        string description
+        array programIds FK
+        string contact
+        string url
+    }
+
+    CURRICULUM_VERSION {
+        string id PK
+        string name
+        string description
+        number versionNumber
+        string programId FK
+        datetime createdAt
+    }
+
+    %% selfStudyHours dropped: derivable ≈ 30·creditPoints − contactHours
+    MODULE {
+        string id PK
+        string name
+        string code
+        string description
+        array degreeIds FK
+        string curriculumVersionId FK
+        array competencyIds FK
+        array proofOfCompetencyIds FK
+        number creditPoints
+        number contactHours
+        string contact
+        string url
+    }
+
+    %% curriculumVersionId determines the program; degreeId must be offered
+    %% by that program; semesterId = intake semester (startingYear dropped)
+    CLASS_ENTITY {
+        string id PK
+        string name
+        string code
+        string description
+        string semesterId FK
+        string curriculumVersionId FK
+        string degreeId FK
+        array moduleIds FK
+        number size
+        string contact
+        string url
+    }
+
+    LESSON {
+        string id PK
+        string moduleId FK
+        string name
+        string description
+        array taxonomyItemIds FK
+        array proofOfCompetencyIds FK
+    }
+
+    TAXONOMY_ITEM {
+        string id PK
+        string name
+        string description
+    }
+
+    %% xMatrixCompetencyId → row with matrixAxis 'x', yMatrixCompetencyId →
+    %% row with matrixAxis 'y' (so the two FKs can never reference the same
+    %% row); matrixDefined dropped — derivable from the FKs
+    COMPETENCY {
+        string id PK
+        string name
+        string category
+        string topic
+        string description
+        string level
+        string xMatrixCompetencyId FK
+        string yMatrixCompetencyId FK
+    }
+
+    COMPETENCY_MATRIX {
+        string id PK
+        string name
+        string description
+    }
+
+    %% matrixAxis ('x' | 'y') is the defining attribute of a grid row;
+    %% the grid renders even when no COMPETENCY is mapped to it
+    MATRIX_COMPETENCY {
+        string id PK
+        string competencyMatrixId FK
+        string name
+        string category
+        string description
+        string level
+        string matrixAxis
+    }
+
+    %% answerFormats replaces assessmentType/multipleChoice/freeText;
+    %% a proof may mix formats, e.g. ["multipleChoice", "freeText"]
+    PROOF_OF_COMPETENCY {
+        string id PK
+        string name
+        string description
+        array answerFormats
+        string assignmentScope
+        number durationMinutes
+        array competencyIds FK
+    }
+
+    LOCATION {
+        string id PK
+        string name
+        string campus
+        string building
+        string address
+        number latitude
+        number longitude
+    }
+
+    ROOM {
+        string id PK
+        string name
+        string roomType
+        string owner
+        string locationId FK
+        string floor
+        string roomNumber
+        number capacity
+        json layout
+        json equipment
+        json connectivity
+        json accessibility
+        json maintenance
+    }
+
+    LECTURER_AVAILABILITY {
+        string id PK
+        string lecturerId FK
+        string weekId FK
+        string weekday
+        time startTime
+        time endTime
+    }
+
+    ROOM_AVAILABILITY {
+        string id PK
+        string roomId FK
+        string weekId FK
+        string weekday
+        time startTime
+        time endTime
+    }
+
+    SEMESTER {
+        string id PK
+        string name
+        string code
+        date startDate
+        date endDate
+    }
+
+    %% daysOff: array of dates
+    WEEK {
+        string id PK
+        string semesterId FK
+        number semesterWeek
+        date startDate
+        date endDate
+        array daysOff
+    }
+
+    %% ruleType → external constraint catalog; appliesTo = entity ids
+    %% (modules, rooms, lecturers, classes) the rule scopes to
+    SCHEDULING_RULE {
+        string id PK
+        string ruleType
+        string category
+        number weight
+        boolean enabled
+        string description
+        string semesterId FK
+        json params
+        array appliesTo
+    }
+
+    %% the four *Ids are FK arrays; empty = not yet assigned (mid-generation);
+    %% all rooms/modules of one entry share its weekday + time window
+    SCHEDULE_ENTRY {
+        string id PK
+        string weekId FK
+        array moduleIds FK
+        array roomIds FK
+        array classIds FK
+        array lecturerIds FK
+        string weekday
+        time startTime
+        time endTime
+    }

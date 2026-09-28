@@ -1,0 +1,28 @@
+[
+  {
+    "_id": "rubric-masterarbeit-ba",
+    "title": "Bewertungsraster Masterarbeit – Business Administration",
+    "criteria": [
+      {
+        "_id": "crit-evidenzqualitaet",
+        "name": "Evidenzqualität",
+        "objective_id": "obj-ct-3",
+        "target_level": "proficient",
+        "description": "Belastbarkeit und Relevanz der herangezogenen Evidenz."
+      },
+      {
+        "_id": "crit-argumentationslogik",
+        "name": "Argumentationslogik",
+        "objective_id": "obj-ct-3",
+        "target_level": "proficient",
+        "description": "Schlüssigkeit der Argumentationskette."
+      },
+      {
+        "_id": "crit-struktur",
+        "name": "Struktur und Klarheit",
+        "target_level": "proficient",
+        "description": "Nachvollziehbarer Aufbau der Arbeit."
+      }
+    ]
+  }
+]
