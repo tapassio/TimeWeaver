@@ -39,7 +39,6 @@ export function explainSolution(
   })
 
   // Hilfs-Index: Zuordnung session -> day/room
-  const assignmentBySession = new Map(raw.assignments.map((a) => [a.sessionId, a]))
 
   const explanations: RuleEvaluation[] = []
 
@@ -187,7 +186,6 @@ export function explainSolution(
 
   // --- MODULE_PREREQUISITE_ORDER (Kap. 11.3, hard) --------------------------
   {
-    const prereqPairs = input.prerequisites
     let satisfied = true
     const affected: string[] = []
     const dayIndex = new Map(input.days.map((d, i) => [d.id, i]))

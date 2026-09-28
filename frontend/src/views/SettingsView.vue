@@ -128,8 +128,7 @@
             <p class="text-body-2 mb-4">
               Diese Voreinstellung bestimmt die im Programm vorgewählten Programm-/Semesterfilter (Planung, Mapping).
             </p>
-            <v-select
-              <v-combobox
+            <v-combobox
               v-model="defaultDepartment"
               :items="['alle Departements', 'BFH-W', 'BFH-G', 'BFH-T', 'BFH-S']"
               label="Departement (freie Eingabe möglich)"

@@ -8,7 +8,7 @@ import type { Module, OnCampusDay, Room } from '../domain.js'
 
 function generateDays(weeks: number): OnCampusDay[] {
   const days: OnCampusDay[] = []
-  let date = new Date('2028-02-03')
+  const date = new Date('2028-02-03')
   let week = 5
   for (let w = 0; w < weeks; w++) {
     for (const wd of ['Donnerstag', 'Freitag', 'Samstag'] as const) {

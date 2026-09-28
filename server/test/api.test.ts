@@ -1,4 +1,4 @@
-import { app, startServer } from '../index'
+import { startServer } from '../index'
 import { Server } from 'http'
 
 async function runTests() {

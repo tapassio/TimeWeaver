@@ -8,8 +8,6 @@
  * dieselbe Modul-Definition nutzen (Checkliste Kap. 11).
  */
 
-import type { Program, Instructor } from '../core/domain.js'
-
 export type { Program, Instructor } from '../core/domain.js'
 
 export interface Room {

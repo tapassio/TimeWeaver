@@ -10,7 +10,7 @@ import type { Module, OnCampusDay, Room } from '../domain.js'
 function generateDays(count: number, startWeek = 5): OnCampusDay[] {
   const days: OnCampusDay[] = []
   let week = startWeek
-  let date = new Date('2028-02-03') // Donnerstag
+  const date = new Date('2028-02-03') // Donnerstag
   for (let i = 0; i < count; i++) {
     const wd = ['Donnerstag', 'Freitag', 'Samstag'][i % 3] as OnCampusDay['weekday']
     const iso = date.toISOString().slice(0, 10)

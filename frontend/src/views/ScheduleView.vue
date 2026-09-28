@@ -604,8 +604,6 @@ function removeGhost(): void {
   if (ghostEl) { ghostEl.remove(); ghostEl = null }
 }
 
-const occupied3 = computed(() => 0)
-void occupied3
 
 onMounted(() => {
   void load()

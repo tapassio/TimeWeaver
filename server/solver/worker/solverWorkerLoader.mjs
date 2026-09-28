@@ -4,6 +4,7 @@
  * und importiert dann den eigentlichen typisierten SolverWorker.
  * In Produktion wird direkt das kompilierte solverWorker.js benutzt.
  */
+/* eslint-disable no-undef */
 import { register } from 'tsx/esm/api'
 
 register()

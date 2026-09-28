@@ -139,7 +139,6 @@ export class OrToolsWasmTimetableSolver implements TimetableSolver {
         instructorSessions.set(iid, list)
       }
     })
-    const makespanWeight = SOFT_PENALTY_SCALE * resolveWeight('TEACHER_MAKESPAN')
     for (const indices of instructorSessions.values()) {
       if (indices.length < 2) continue
       const dayVarsOfInstr = indices.map((idx) => dayVars[idx]!)

@@ -8,7 +8,7 @@
  */
 import { Router, Request, Response } from 'express'
 import { OutlookGraphClient } from '../outlook/graphClient.js'
-import { OutlookPublisher, type PublishEntry } from '../outlook/outlookPublisher.js'
+import { OutlookPublisher } from '../outlook/outlookPublisher.js'
 import { slotStatusFromAvailabilityView, toRestrictions } from '../outlook/availability.js'
 import type { OnCampusDay, SlotType } from '../solver/domain.js'
 

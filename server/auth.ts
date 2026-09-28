@@ -1,6 +1,6 @@
 import crypto from 'crypto'
 import { Request, Response, NextFunction } from 'express'
-import { getUserByOidc, getUserById, LocalUser } from './db'
+import { getUserByOidc, LocalUser } from './db'
 
 export interface OidcClaims {
   iss: string

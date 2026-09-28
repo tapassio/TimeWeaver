@@ -19,7 +19,7 @@ import {
 } from '../db'
 import { authRouter } from './auth'
 import { usersRouter } from './users'
-import { AuthenticatedRequest, extractOidcClaims } from '../auth'
+import { extractOidcClaims } from '../auth'
 
 const SUPERUSER_TABLES = new Set(['curriculum_versions', 'semesters', 'lessons', 'lecturers', 'weeks', 'schedule_entries'])
 
@@ -113,7 +113,6 @@ apiRouter.get('/:entity/:id/admins', async (req: Request, res: Response) => {
 apiRouter.post('/:entity/:id/admins', async (req: Request, res: Response) => {
   try {
     const entity = String(req.params.entity)
-    const id = String(req.params.entity) === entity ? req.params.id : String(req.params.id)
     const entityId = String(req.params.id)
     const userId = req.body?.userId
     if (!userId) {

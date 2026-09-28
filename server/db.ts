@@ -177,6 +177,7 @@ export async function initDatabase(): Promise<boolean> {
       `[Database] PostgreSQL nicht erreichbar: ${err.message}. ` +
         'Datenbank starten (docker compose up -d postgres) oder bewusst ' +
         'ALLOW_INMEMORY_FALLBACK=true setzen (RAM-only, Datenverlust bei Neustart!).',
+      { cause: err },
     )
   }
 }

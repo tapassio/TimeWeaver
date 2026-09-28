@@ -101,8 +101,8 @@ console.log('--- Solver Unit Tests ---')
 {
   // 4a. COHORT_CONFLICT: dieselbe Kohorte (Programm + Semester) → unterschiedliche Tage
   const cohortMods: Module[] = [
-    { id: 'c1', name: 'C1', program: 'prog-dba', semester: 1, ects: 3 as 3, expectedStudents: 10, instructors: ['i1'], restrictions: [] },
-    { id: 'c2', name: 'C2', program: 'prog-dba', semester: 1, ects: 3 as 3, expectedStudents: 10, instructors: ['i2'], restrictions: [] },
+    { id: 'c1', name: 'C1', program: 'prog-dba', semester: 1, ects: 3 as const, expectedStudents: 10, instructors: ['i1'], restrictions: [] },
+    { id: 'c2', name: 'C2', program: 'prog-dba', semester: 1, ects: 3 as const, expectedStudents: 10, instructors: ['i2'], restrictions: [] },
   ]
   const cohortInput = buildSolverInput(cohortMods, days, rooms)
   const cohortSol = await solveInProcess(cohortInput, { timeLimitSeconds: 30 }, new Map([['c1', 'C1'], ['c2', 'C2']]))
