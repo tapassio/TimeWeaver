@@ -197,16 +197,10 @@ onMounted(() => {
 const navItems = computed(() => {
   const items = [
     { title: t('nav.dashboard'), icon: 'mdi-view-dashboard', to: '/' },
-    { title: t('nav.curriculum'), icon: 'mdi-book-education', to: '/curriculum' },
     { title: t('nav.schedule'), icon: 'mdi-calendar-clock', to: '/schedule' },
-    { title: t('nav.modules'), icon: 'mdi-view-module', to: '/modules' },
-    // "Mapping" bewusst nicht als eigener Nav-Punkt: die Mapping/Review-Matrix
-    // (/mapping, MappingView) ist Schritt 5 der Pipeline in /curriculum und via
-    // Stepper erreichbar; der Legacy-Nav-Eintrag zeigte auf denselben Screen.
-    { title: t('nav.constraints'), icon: 'mdi-filter-variant', to: '/constraints' },
-    { title: t('nav.todos'), icon: 'mdi-clipboard-check-outline', to: '/todos' },
-    { title: t('nav.taxonomy'), icon: 'mdi-sitemap', to: '/taxonomy' },
+    { title: t('nav.availability'), icon: 'mdi-calendar-check', to: '/availability' },
     { title: t('nav.rooms'), icon: 'mdi-door-open', to: '/rooms' },
+    { title: t('nav.constraints'), icon: 'mdi-filter-variant', to: '/constraints' },
   ]
   if (auth.isAdmin) {
     items.push({ title: t('nav.admin'), icon: 'mdi-shield-account', to: '/admin' })

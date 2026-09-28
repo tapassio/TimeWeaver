@@ -56,6 +56,10 @@ const router = createRouter({
           meta: { requiresAdmin: true },
         },
         {
+          path: '/:pathMatch(.*)*',
+          redirect: '/',
+        },
+        {
           // Einstellungen UNBEDINGT im AppLayout belassen: v-app-bar (Kopfzeile mit
           // Navigation) bleibt sichtbar. Guard via meta-Override child-first.
           path: 'settings',

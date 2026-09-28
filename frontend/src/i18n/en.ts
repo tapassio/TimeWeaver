@@ -13,6 +13,7 @@ export const en: Record<string, string> = {
   'nav.taxonomy': 'Taxonomy',
   'nav.modules': 'Modules',
   'nav.mapping': 'Mapping',
+  'nav.availability': 'Availability',
   'nav.schedule': 'Planning',
   'nav.todos': 'Todos',
   'nav.constraints': 'Constraints',
