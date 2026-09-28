@@ -181,7 +181,7 @@
               v-model="editLocalName"
               label="Local Name"
               placeholder="e.g. jdoe"
-              hint="Login handle within CourseWeaver"
+              hint="Login handle within TimeWeaver"
               persistent-hint
               variant="outlined"
               density="comfortable"

@@ -2,7 +2,7 @@
   <div class="mandatory-list">
     <label class="text-subtitle-2 font-weight-bold">Pflichtfelder</label>
     <p class="hint text-medium-emphasis mb-2">
-      Diese Angaben braucht CourseWeaver, um die Datei eindeutig zuzuordnen:
+      Diese Angaben braucht TimeWeaver, um die Datei eindeutig zuzuordnen:
     </p>
     <div v-for="f in fields" :key="f.name" class="field-row d-flex align-center ga-2 py-1">
       <v-icon size="small" :color="f.value ? 'success' : 'warning'">

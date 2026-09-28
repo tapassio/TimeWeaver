@@ -6,7 +6,7 @@
         <img
           src="/Logo.png"
           class="bar-logo"
-          alt="CourseWeaver"
+          alt="TimeWeaver"
           role="button"
           tabindex="0"
           @click="goHome"
@@ -26,7 +26,7 @@
 
     <v-navigation-drawer v-model="drawer" temporary>
       <div class="brand" role="button" tabindex="0" @click="goHome" @keydown.enter.prevent="goHome">
-        <img src="/Logo.png" class="brand-logo" alt="CourseWeaver" />
+        <img src="/Logo.png" class="brand-logo" alt="TimeWeaver" />
       </div>
       <v-list nav>
         <v-list-item

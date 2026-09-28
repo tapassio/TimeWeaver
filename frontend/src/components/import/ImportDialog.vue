@@ -8,7 +8,7 @@
           <div class="flex-grow-1">
             <v-card-title class="pa-0" style="font-size: 18px">Daten importieren</v-card-title>
             <v-card-subtitle class="pa-0">
-              Mehrere Dateien gleichzeitig — CourseWeaver erkennt den Datentyp pro Datei automatisch
+              Mehrere Dateien gleichzeitig — timeweaver erkennt den Datentyp pro Datei automatisch
             </v-card-subtitle>
           </div>
           <v-btn icon="mdi-close" size="small" variant="text" @click="$emit('update:modelValue', false)" />

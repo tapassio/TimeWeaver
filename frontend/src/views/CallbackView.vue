@@ -30,7 +30,7 @@ onMounted(async () => {
 
   // Check if logout was cancelled
   if (logoutParam === 'no') {
-    message.value = 'Logout cancelled. Returning to CourseWeaver...'
+    message.value = 'Logout cancelled. Returning to TimeWeaver...'
     if (typeof window !== 'undefined' && window.sessionStorage) {
       sessionStorage.removeItem('docpouch_logout_in_progress')
     }

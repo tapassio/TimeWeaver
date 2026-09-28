@@ -11,7 +11,8 @@
  * (explainSolution.ts) bleibt invariant.
  */
 
-import type { SolverInput, RawSolverResult, SolveOptions } from './types.js'
+import { SolverInput } from './solverInput.js'
+import type { RawSolverResult, SolveOptions } from './types.js'
 
 export interface TimefoldRequest {
   sessions: Array<{

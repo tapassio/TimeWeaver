@@ -1,11 +1,11 @@
 import { ref, computed } from 'vue'
 
 export const PG_STORAGE_KEYS = {
-  apiUrl: 'courseweaver_pg_api_url',
-  host: 'courseweaver_pg_host',
-  port: 'courseweaver_pg_port',
-  dbName: 'courseweaver_pg_dbname',
-  user: 'courseweaver_pg_user',
+  apiUrl: 'timeweaver_pg_api_url',
+  host: 'timeweaver_pg_host',
+  port: 'timeweaver_pg_port',
+  dbName: 'timeweaver_pg_dbname',
+  user: 'timeweaver_pg_user',
 } as const
 
 export interface PostgresConfig {

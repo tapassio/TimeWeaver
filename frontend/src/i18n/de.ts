@@ -4,7 +4,7 @@
  */
 export const de: Record<string, string> = {
   // Brand
-  'app.title': 'CourseWeaver',
+  'app.title': 'TimeWeaver',
   'app.logout': 'Abmelden',
 
   // Navigation

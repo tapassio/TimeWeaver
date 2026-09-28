@@ -73,8 +73,8 @@ let isConnected = false
 export function getDbConfig() {
   const host = process.env.POSTGRES_HOST || 'localhost'
   const port = parseInt(process.env.POSTGRES_PORT || '5432', 10)
-  const database = process.env.POSTGRES_DB || 'courseweaver'
-  const user = process.env.POSTGRES_USER || 'courseweaver'
+  const database = process.env.POSTGRES_DB || 'timeweaver'
+  const user = process.env.POSTGRES_USER || 'timeweaver'
   // Review #9: kein hartkodiertes Default-Passwort mehr. Ohne gesetzte
   // Umgebungsvariable wird PostgreSQL bewusst NICHT benutzt (In-Memory mit
   // explizitem Warnhinweis) — still weitermachen mit 'courseweaver' wäre

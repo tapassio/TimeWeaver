@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "@mdi/font": "^7.4.47",
+    "@vue/devtools-api": "^8.2.1",
     "cors": "^2.8.6",
     "cp-sat-ts": "file:vendor/cp-sat-typescript",
     "docpouch-client": "^1.2.1",

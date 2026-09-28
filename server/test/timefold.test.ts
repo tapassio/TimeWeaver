@@ -8,7 +8,8 @@ import assert from 'node:assert'
 import { buildTimefoldRequest, timefoldUrl, timefoldHealth } from '../solver/TimefoldClientTimetableSolver.js'
 import { TimefoldHybridSolver } from '../solver/engine.js'
 import { solveInProcess } from '../solver/solverService.js'
-import type { SolverInput, OnCampusDay, Room } from '../solver/solverInput.js'
+import type { SolverInput } from '../solver/solverInput.js'
+import type { OnCampusDay, Room } from '../solver/domain.js'
 
 console.log('--- Timefold Client Mapping Tests ---')
 

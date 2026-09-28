@@ -63,7 +63,7 @@
           <v-card-title>Database &amp; API Settings</v-card-title>
           <v-card-text>
             <p class="text-body-2 mb-4 text-medium-emphasis">
-              CourseWeaver persists curricula, modules, taxonomy, and rooms in PostgreSQL (JSONB entity store).
+              TimeWeaver persists rooms, equipment, semesters, availability, and schedule entries in PostgreSQL (JSONB entity store).
             </p>
             <v-form @submit.prevent="handleSave">
               <v-text-field

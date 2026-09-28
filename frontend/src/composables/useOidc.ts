@@ -258,7 +258,7 @@ export function useOidc() {
         if (!docPouchInstance.value) throw new Error('Could not initialize DocPouch OIDC client')
         const redirectUri = getCallbackUrl()
         const resolvedClientId = await docPouchInstance.value.ensureOidcClient(redirectUri, token, {
-          clientName: 'CourseWeaver',
+          clientName: 'TimeWeaver',
           postLogoutRedirectUri: redirectUri,
         })
         clientId.value = resolvedClientId
@@ -274,7 +274,7 @@ export function useOidc() {
             ...(token ? { Authorization: `Bearer ${token}` } : {}),
           },
           body: JSON.stringify({
-            client_name: 'CourseWeaver',
+            client_name: 'TimeWeaver',
             redirect_uris: [getCallbackUrl()],
             post_logout_redirect_uris: [getCallbackUrl()],
             grant_types: ['authorization_code'],
@@ -349,7 +349,7 @@ export function useOidc() {
         for (const regToken of tokenCandidates) {
           try {
             effectiveClientId = await docPouchInstance.value.ensureOidcClient(redirectUri, regToken, {
-              clientName: 'CourseWeaver',
+              clientName: 'TimeWeaver',
               postLogoutRedirectUri: redirectUri,
             })
             break
