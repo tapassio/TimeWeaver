@@ -10,11 +10,12 @@ import dotenv from 'dotenv'
 // Browser-Build gelangen (envDir würde alle Prefix-Env-Vars exponieren).
 const __dirnameVite = () => path.dirname(fileURLToPath(import.meta.url))
 dotenv.config({ path: path.resolve(__dirnameVite(), '../.env') })
+dotenv.config({ path: path.resolve(__dirnameVite(), '../.env.local'), override: true })
 
 /** Root-.env-Variable als statischer import.meta.env-Eintrag (nur die nötigen OIDC-Werte). */
 function defineOidcEnv(): Record<string, string> {
   const defines: Record<string, string> = {}
-  for (const key of ['OIDC_ISSUER', 'OIDC_CLIENT_ID', 'OIDC_PROVIDER_NAME', 'OIDC_REGISTRATION_TOKEN']) {
+  for (const key of ['OIDC_ISSUER', 'OIDC_CLIENT_ID', 'OIDC_PROVIDER_NAME', 'OIDC_REGISTRATION_TOKEN', 'VITE_DEV_NO_AUTH']) {
     defines[`import.meta.env.${key}`] = JSON.stringify(process.env[key] ?? '')
   }
   return defines
