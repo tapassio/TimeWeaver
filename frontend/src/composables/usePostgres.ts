@@ -47,7 +47,14 @@ export const EntityTables = {
 
 export type EntityTableName = (typeof EntityTables)[keyof typeof EntityTables]
 
-const apiUrl = ref(localStorage.getItem(PG_STORAGE_KEYS.apiUrl) || import.meta.env.DATABASE_URL || 'http://localhost:3000/api')
+// §Dev-Bypass (VITE_DEV_NO_AUTH=1): der injizierte DATABASE_URL hinter 'define'
+// schlägt immer — veraltete localStorage-Einträge (z. B. Port 30003testsetValue) sollen das
+// Frontend im dev nicht an den falschen API-Port schicken.
+const devNoAuthOverride = import.meta.env.VITE_DEV_NO_AUTH === '1' && !!import.meta.env.DATABASE_URL
+const apiUrl = ref((devNoAuthOverride ? import.meta.env.DATABASE_URL : undefined)
+  || localStorage.getItem(PG_STORAGE_KEYS.apiUrl)
+  || import.meta.env.DATABASE_URL
+  || 'http://localhost:3000/api')
 const host = ref(localStorage.getItem(PG_STORAGE_KEYS.host) || import.meta.env.POSTGRES_HOST || 'localhost')
 const port = ref(parseInt(localStorage.getItem(PG_STORAGE_KEYS.port) || String(import.meta.env.POSTGRES_PORT || 5432)))
 const dbName = ref(localStorage.getItem(PG_STORAGE_KEYS.dbName) || import.meta.env.POSTGRES_DB || 'courseweaver')

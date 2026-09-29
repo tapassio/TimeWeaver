@@ -15,7 +15,7 @@ dotenv.config({ path: path.resolve(__dirnameVite(), '../.env.local'), override: 
 /** Root-.env-Variable als statischer import.meta.env-Eintrag (nur die nötigen OIDC-Werte). */
 function defineOidcEnv(): Record<string, string> {
   const defines: Record<string, string> = {}
-  for (const key of ['OIDC_ISSUER', 'OIDC_CLIENT_ID', 'OIDC_PROVIDER_NAME', 'OIDC_REGISTRATION_TOKEN', 'VITE_DEV_NO_AUTH']) {
+  for (const key of ['OIDC_ISSUER', 'OIDC_CLIENT_ID', 'OIDC_PROVIDER_NAME', 'OIDC_REGISTRATION_TOKEN', 'VITE_DEV_NO_AUTH', 'DATABASE_URL']) {
     defines[`import.meta.env.${key}`] = JSON.stringify(process.env[key] ?? '')
   }
   return defines
