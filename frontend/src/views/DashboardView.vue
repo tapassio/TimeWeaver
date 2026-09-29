@@ -1,9 +1,9 @@
 <template>
   <v-container>
-    <h1>{{ t('dashboard.title') }}</h1>
-    <p class="text-body-1 mt-2 mb-4">
-      {{ t('dashboard.subtitle') }}
-    </p>
+    <div class="view-hero">
+      <h1 class="text-h4 font-weight-bold">{{ t('dashboard.title') }}</h1>
+      <div class="text-body-2 opacity-90">{{ t('dashboard.subtitle') }}</div>
+    </div>
 
     <v-row>
       <v-col cols="12" md="4">
