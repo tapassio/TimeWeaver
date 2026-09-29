@@ -138,3 +138,21 @@ Für den Programmierer, der den Solver-Teil umbaut — diese Punkte betreffen di
 - Soll `Class` in CourseWeaver (Curriculum-Seite) oder TimeWeaver (Scheduling-Seite) verwaltet werden? (Empfehlung: CourseWeaver, da es eine Stammdaten-Entität ist, die der Solver nur liest.)
 - Wird der Timefold-Solver-Service in Java/Kotlin oder Python umgesetzt? Performance-Unterschied laut Doku "signifikant" — sollte vor Schritt 1 geklärt werden, da es die Deployment-Pipeline betrifft.
 - Migrationsfenster für die `ProofOfKnowledge` → `ProofOfCompetency`-Umstellung (Schritt 2): Big-Bang oder parallel mit Feature-Flag?
+
+---
+
+## 6. Umsetzungsstatus (implementiert)
+
+| Schritt | Status | Hinweise |
+|---|---|---|
+| §3.1 Class (Kohorte) einführen | ✅ Umgesetzt | Type in CW (types/curriculumClass.ts, `programId` als Zielmodell, `programIds[]` legacy) + TW (server/solver/domain.ts: Class-Entity + Module.classIds); Migrationserver-Skript `server/migrate-classes.ts` (laufbar mit `SEED_API_URL=<api>/api`) — CW **und** TW: je 8 Kohorten für 64 Module erzeugt; UI in CW ModulesView (anlegen/bearbeiten/löschen, Modul-Zuweisung, Curriculum-Version-Auswahl → deckt §3.5 ab); Solver: buildSolverInput liest `options.classes` + `module.classIds`; lokale Engines matchen Kohorten zusätzlich über Class-Überschneidung; Timefold: `PlanningSession.classIds` + REST-Payload + Constraint `CLASS_CONFLICT` (JUnit-Test `classConflictPreventsSameDayEvenAcrossPrograms`, 3/3 grün). Solver-Container neu gebaut und E2E verifiziert. |
+| §3.2 Nachweis-Modell zusammenführen | ✅ Big Bang | `server/migrate-proofs.ts` konvertiert und **leert** `proofs_of_knowledge` (0 Rows → keine Daten in der lokalen Demo-DB); `ProofOfKnowledge`-Type, `useProofsOfKnowledge`, `ProofOfKnowledgeFormDialog` entfernt; `constructiveAlignment` liest `proofs_of_competency`; CSV-Import transformiert Booleans direkt zu `answerFormats[]` und schreibt in `proofs_of_competency`; Import-Typs-ID `proofs_of_knowledge` bleibt (Abwärtskompatibilität), Label → "Proofs of Competency". |
+| §3.3 matrixAxis-Bugfix | ✅ | `MatrixCompetency.matrixAxis: "x" | "y"` war bereits vorhanden — Regressionstest ergänzt (matrixAxis-Ableitung in csvImport.test.ts, verhindert leere Gridzeilen). |
+| §3.4 User-Schattentabelle | ✅ beide Apps | `local_user_cache` Tabelle + Upsert bei jedem OIDC-Login (db.ts in CourseWeaver **und** TimeWeaver); kein Ersatz der Autorisierungslogik. |
+| §3.5 Curriculum-Version-Flow | ✅ über Class-Verwaltung | Kohorten in CourseWeaver verwalten inkl. `curriculumVersionId`-Auswahl (kein separater Tab nötig). |
+| §3.6 Schedule-Snapshots | ✅ TimeWeaver | `schedule_snapshots` (Allowlist + EntityTables); `POST /api/timetable/solve` mit `persist: true` + `semesterId` schreibt einen JSON-Blob je Solver-Lauf (engine, timeLimit, schedule[]); Frontend `solveTimetableOnServer(..., extra.classes/persist/semesterId)`; live verifiziert (`ss-sem-hs2027-…` in der DB). |
+
+**Entscheidungen zu den offenen Fragen des Teams (bestätigt 29.09.2026):**
+1. `Class` wird in **CourseWeaver** verwaltet (Stammdaten, Solver liest nur).
+2. Timefold-Solver-Service bleibt **Java** (Spring Boot, `ai.timefold.solver 2.7.0`).
+3. ProofOfKnowledge → ProofOfCompetency: **Big Bang** — Migration konvertiert und leert die Quelltabelle im selben Lauf, kein Feature-Flag.
