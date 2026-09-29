@@ -10,6 +10,10 @@
  *    Tag-System (REQUIRED_DAY_TAGS / UNDESIRED_DAY_TAGS)
  */
 import assert from 'node:assert'
+// Diese Tests verifizieren die lokale Hybrid-Engine deterministisch — der
+// Default-Engine-Zielzustand (Timefold direkt) wird separat in timefold.test.ts
+// (HTTP-Roundtrip zum echten Timefold-Service) getestet.
+process.env.SOLVER_ENGINE = 'cp-sat-ts'
 import { buildSolverInput } from '../solver/solverInput.js'
 import { solveInProcess } from '../solver/solverService.js'
 import type { Module, OnCampusDay, Room } from '../solver/domain.js'

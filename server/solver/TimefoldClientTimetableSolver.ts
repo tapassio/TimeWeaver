@@ -12,7 +12,8 @@
  */
 
 import { SolverInput } from './solverInput.js'
-import type { RawSolverResult, SolveOptions } from './types.js'
+import { explainSolution } from './explainSolution.js'
+import type { RawSolverResult, SolveOptions, TimetableSolution } from './types.js'
 
 export interface TimefoldRequest {
   sessions: Array<{
@@ -91,7 +92,7 @@ export function buildTimefoldRequest(input: SolverInput, options: SolveOptions =
 }
 
 export class TimefoldClientTimetableSolver {
-  constructor(private fnModuleNameById: Map<string, string> = new Map()) {}
+  constructor(private moduleNameById: Map<string, string> = new Map()) {}
 
   async solveRaw(input: SolverInput, options: SolveOptions = {}): Promise<RawSolverResult> {
     const url = timefoldUrl()
@@ -128,5 +129,10 @@ export class TimefoldClientTimetableSolver {
     } finally {
       clearTimeout(timer)
     }
+  }
+
+  async solve(input: SolverInput, options?: SolveOptions): Promise<TimetableSolution> {
+    const raw = await this.solveRaw(input, options)
+    return explainSolution(input, raw, this.moduleNameById)
   }
 }

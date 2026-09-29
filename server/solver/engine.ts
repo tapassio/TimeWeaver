@@ -1,19 +1,17 @@
 /**
- * Kap. 3 — Hybride Engine-Auswahl für den TimetableSolver.
+ * Engine-Auswahl für den TimetableSolver (TimeWeaver).
  *
- * Default: `timefold` (Java, https://github.com/TimefoldAI/timefold-solver).
- * Der Solver läuft als eigenständiges Spring-Boot-Microservice
- * (solver-java/) und wird via HTTP REST aufgerufen (TIMEFOLD_URL).
+ * Default: **Timefold, direkt** — der Java-Solver (https://github.com/TimefoldAI/timefold-solver)
+ * läuft als eigenständiges Spring-Boot-Microservice (solver-java/) und wird
+ * via HTTP REST aufgerufen (TIMEFOLD_URL). Kein automatischer Fallback:
+ * Ist Timefold nicht erreichbar, schlägt der Solve mit einer klaren
+ * Fehlermeldung fehl (Operator sieht sofort, dass der Solver-Service down ist).
  *
- * Falls Timefold nicht erreichbar ist (nicht konfiguriert oder Service down),
- * wird transparent auf die lokale Hybrid-Engine gefallen:
- *   cp-sat-ts (pure TypeScript) → Fallback or-tools-wasm.
- *
- * SOLVER_ENGINE-Auswahl:
- *   timefold      → Timefold bevorzugt, Fallback auf Hybrid (Default)
- *   timefold-only → Timefold OHNE Fallback (Fehler wenn nicht erreichbar)
- *   cp-sat-ts     → nicht mehr Default, aber unterstütztes Alias für Hybrid
- *   or-tools-wasm → erzwingt Alt-Engine ohne Fallback
+ * Explizite Engines (opt-in für Benchmarks / solverlose Entwicklung):
+ *   timefold        → Timefold, ohne Fallback (Default)
+ *   timefold-fallback → Timefold bevorzugt, bei Nichterreichbarkeit auf Hybrid
+ *   cp-sat-ts       → lokale Hybrid-Engine (cp-sat-ts → or-tools-wasm)
+ *   or-tools-wasm   → Alt-Engine ohne Fallback
  */
 
 import { CpSatTsTimetableSolver } from './CpSatTsTimetableSolver.js'
@@ -24,12 +22,13 @@ import type { SolverInput } from './solverInput.js'
 import type { RawSolverResult, SolveOptions, TimetableSolution } from './types.js'
 import { explainSolution } from './explainSolution.js'
 
-export type SolverEngineId = 'timefold' | 'cp-sat-ts' | 'or-tools-wasm'
+export type SolverEngineId = 'timefold' | 'timefold-fallback' | 'cp-sat-ts' | 'or-tools-wasm'
 
 export function resolveSolverEngine(): SolverEngineId {
   const env = (process.env.SOLVER_ENGINE ?? 'timefold').toLowerCase()
   if (env === 'or-tools-wasm') return 'or-tools-wasm'
   if (env === 'cp-sat-ts') return 'cp-sat-ts'
+  if (env === 'timefold-fallback') return 'timefold-fallback'
   return 'timefold'
 }
 
@@ -83,22 +82,29 @@ export class HybridTimetableSolver implements TimetableSolver {
 }
 
 /**
- * Timefold-Engine mit transparentem Fallback:
- * `SOLVER_ENGINE=timefold-only` erzwingt Timefold (kein Fallback).
+ * Timefold-Direktaufruf — Default in TimeWeaver (kein CP-SAT-TS-Fallback).
+ * `SOLVER_ENGINE=timefold-fallback` aktiviert den transparenten Fallback
+ * auf die lokale Hybrid-Engine (für solverlose Maschinen / CI).
  */
 export class TimefoldHybridSolver implements TimetableSolver {
   constructor(private moduleNameById: Map<string, string> = new Map()) {}
 
   async solveRaw(input: SolverInput, options: SolveOptions = {}): Promise<RawSolverResult> {
     const solverEnv = process.env.SOLVER_ENGINE?.toLowerCase()
-    const allowFallback = solverEnv !== 'timefold-only'
+    const allowFallback = solverEnv === 'timefold-fallback'
 
     if (await timefoldHealth()) {
       return new TimefoldClientTimetableSolver(this.moduleNameById).solveRaw(input, options)
     }
 
     if (!allowFallback) {
-      throw new Error('SOLVER_ENGINE=timefold-only, aber Timefold-Service ist nicht erreichbar (TIMEFOLD_URL)')
+      console.error(
+        '[engine] Timefold-Service nicht erreichbar (' + (process.env.TIMEFOLD_URL ?? 'TIMEFOLD_URL ungesetzt') + ')',
+      )
+      throw new Error(
+        `Timefold-Solver nicht erreichbar (${process.env.TIMEFOLD_URL ?? 'TIMEFOLD_URL ungesetzt'}). ` +
+          'Lösen: "docker compose up -d solver" oder SOLVER_ENGINE=timefold-fallback (um lokale Engine zu nutzen).',
+      )
     }
 
     console.warn('[engine] Timefold nicht erreichbar — Fallback auf lokale Hybrid-Engine (cp-sat-ts → or-tools-wasm)')
@@ -117,7 +123,10 @@ export function createTimetableSolver(moduleNameById: Map<string, string> = new 
       return new OrToolsWasmTimetableSolver(moduleNameById)
     case 'cp-sat-ts':
       return new HybridTimetableSolver(moduleNameById)
-    default:
+    case 'timefold-fallback':
       return new TimefoldHybridSolver(moduleNameById)
+    default:
+      // timefold — direkt, ohne CP-SAT-TS-Fallback
+      return new TimefoldClientTimetableSolver(moduleNameById)
   }
 }
