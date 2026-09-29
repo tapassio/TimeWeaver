@@ -36,6 +36,7 @@ public final class TimetableConstraintProvider implements ConstraintProvider {
                 sameModuleDistinctDays(factory),
                 teacherConflict(factory),
                 cohortConflict(factory),
+                classConflict(factory),
                 roomOccupancyConflict(factory),
                 roomCapacityOverflow(factory),
                 prerequisiteOrder(factory),
@@ -88,6 +89,22 @@ public final class TimetableConstraintProvider implements ConstraintProvider {
                         && !a.getModuleId().equals(b.getModuleId()))
                 .penalize(HardSoftScore.ONE_HARD)
                 .asConstraint("COHORT_CONFLICT");
+    }
+
+    // ------------------------------------------------------------------
+    // Hard: CLASS_CONFLICT — data-model-comparison.md §3.1: zwei Sessions
+    // derselben Kohorte (Class) dürfen nicht gleichzeitig am selben Tag
+    // überlappende SlotTypes belegen. Die Class ersetzt die implizite
+    // program+semester-Verwandtschaft, sobald sie gesetzt ist.
+    // ------------------------------------------------------------------
+    Constraint classConflict(ConstraintFactory factory) {
+        return factory.forEachUniquePair(PlanningSession.class)
+                .filter((a, b) -> a.getDay() != null && a.getDay().equals(b.getDay())
+                        && slotsOverlap(a, b)
+                        && !a.getModuleId().equals(b.getModuleId())
+                        && shareClass(a, b))
+                .penalize(HardSoftScore.ONE_HARD)
+                .asConstraint("CLASS_CONFLICT");
     }
 
     // ------------------------------------------------------------------
@@ -238,6 +255,12 @@ public final class TimetableConstraintProvider implements ConstraintProvider {
     static boolean slotsOverlap(PlanningSession a, PlanningSession b) {
         if (a.getSlotTypes() == null || b.getSlotTypes() == null) return false;
         return a.getSlotTypes().stream().anyMatch(b.getSlotTypes()::contains);
+    }
+
+    static boolean shareClass(PlanningSession a, PlanningSession b) {
+        if (a.getClassIds() == null) return false;
+        return b.getClassIds() != null
+                && a.getClassIds().stream().anyMatch(b.getClassIds()::contains);
     }
 
     static boolean shareInstructor(PlanningSession a, PlanningSession b) {

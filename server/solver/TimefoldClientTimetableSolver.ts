@@ -25,6 +25,7 @@ export interface TimefoldRequest {
     slotTypes: string[]
     expectedStudents: number
     instructorIds: string[]
+    classIds?: string[]
     allowedDayIds: string[]
     allowedRoomIds: string[]
     softPenalties: Array<{ dayId: string; constraintId: string; weight: number }>
@@ -76,6 +77,7 @@ export function buildTimefoldRequest(input: SolverInput, options: SolveOptions =
       slotTypes: s.slotTypes,
       expectedStudents: s.expectedStudents,
       instructorIds: s.instructorIds,
+      classIds: s.classIds ?? [],
       allowedDayIds: s.allowedDayIds,
       allowedRoomIds: s.allowedRoomIds,
       softPenalties: s.softPenalties,

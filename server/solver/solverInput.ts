@@ -14,6 +14,8 @@ export interface SolverSession {
   /** Kap. 11.1 — Kohorte (Programm+Semester) für die generische Kohorten-Prüfung */
   program: string
   semester?: number
+  /** data-model-comparison.md §3.1 — Kohorte (Class); wenn vorhanden, replaced program+semester-Verwandtschaft */
+  classIds?: string[] // Kohorte, aus dem Class-Verzeichnis
   slotTypes: SlotType[] // ['vormittag'] oder ['vormittag','nachmittag'] = ganzer Tag, ['abend'] separat
   expectedStudents: number
   instructorIds: string[]
@@ -32,6 +34,8 @@ export interface SolverInput {
 }
 
 export interface BuildSolverInputOptions {
+  /** Kohorten (Classes) mit moduleIds — Zielmodell: Classes ersetzen die implizite program+semester-Verwandtschaft */
+  classes?: Array<{ id: string; programId: string; semesterId?: string; semester?: number; moduleIds?: string[] }>
   /** Wochenbalance explizit setzen – sonst auto aus days */
   weeklyBalance?: SolverInput['weeklyBalance']
   /**
@@ -267,6 +271,25 @@ export function buildSolverInput(
     if (m.instructors.length === 0) throw new Error(`Modul ${m.id}: mindestens ein Instructor erforderlich`)
   }
 
+  // data-model-comparison.md §3.1 — Classes: departmentalized cohorts that
+  // can be sent with the request body or carry their membership on the Class
+  // rows (moduleIds). classIds am Modul schlagen die Membership vor.
+  const classById = new Map((options.classes ?? []).map(c => [c.id, c]))
+  const classByKey = new Map<string, string>()
+  for (const c of classById.values()) {
+    classByKey.set(`${c.programId}::${c.semester ?? 'default'}`, c.id)
+  }
+  const classesForModule = new Map<string, string[]>()
+  for (const mod of modules) {
+    const ids = new Set<string>(mod.classIds ?? [])
+    const byKey = classByKey.get(`${mod.program}::${mod.semester ?? 'default'}`)
+    if (byKey) ids.add(byKey)
+    for (const c of classById.values()) {
+      if ((c.moduleIds ?? []).includes(mod.id)) ids.add(c.id)
+    }
+    if (ids.size > 0) classesForModule.set(mod.id, [...ids])
+  }
+
   const sessions: SolverSession[] = modules.flatMap((mod) => {
     // SlotTypes bestimmen: Falls Restriktion FIXED_SLOT existiert, nutze diese für JEDEN Teil-Slot;
     // sonst Standard-Tag-Plan gemäss ECTS / onCampusDays-Override.
@@ -314,6 +337,7 @@ export function buildSolverInput(
         moduleId: mod.id,
         program: mod.program,
         semester: mod.semester,
+        classIds: classesForModule.get(mod.id),
         slotTypes: slotTypesPartial,
         expectedStudents: mod.expectedStudents,
         instructorIds: [...mod.instructors],

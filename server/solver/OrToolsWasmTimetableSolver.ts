@@ -73,9 +73,14 @@ export class OrToolsWasmTimetableSolver implements TimetableSolver {
         if (!slotsOverlap(si.slotTypes, sj.slotTypes)) continue
         // Kap. 11.1 — Kohorten-Konflikt: dieselbe Kohorte (Programm+Semester)
         // kann nicht in überlappenden SlotTypes am selben Tag an zwei Modulen lernen.
+        // data-model-comparison.md §3.1 — Kohorte auch über Class-Überschneidung
+        // (Kohorten-Verbindlichkeit gilt zusätzlich zu Programm+Semester).
+        const sameClass =
+          (si.classIds ?? []).some((c) => (sj.classIds ?? []).includes(c))
         const cohortSame =
-          si.program === sj.program &&
-          (si.semester ?? 'default') === (sj.semester ?? 'default')
+          sameClass ||
+          (si.program === sj.program &&
+          (si.semester ?? 'default') === (sj.semester ?? 'default'))
         if (cohortSame) {
           model.addAllDifferent([dayVars[i], dayVars[j]])
           continue

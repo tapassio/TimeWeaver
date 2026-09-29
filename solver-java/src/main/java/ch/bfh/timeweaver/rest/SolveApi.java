@@ -34,6 +34,7 @@ public class SolveApi {
         public List<String> slotTypes = new ArrayList<>();
         public int expectedStudents;
         public List<String> instructorIds = new ArrayList<>();
+        public List<String> classIds = new ArrayList<>();
         public List<String> allowedDayIds = new ArrayList<>();
         public List<String> allowedRoomIds = new ArrayList<>();
         public List<PenaltyDef> softPenalties = new ArrayList<>();
@@ -133,6 +134,7 @@ public class SolveApi {
             ps.setSlotTypes(s.slotTypes == null ? new ArrayList<>() : s.slotTypes);
             ps.setExpectedStudents(s.expectedStudents);
             ps.setInstructorIds(s.instructorIds == null ? new ArrayList<>() : s.instructorIds);
+            ps.setClassIds(s.classIds == null ? new ArrayList<>() : s.classIds);
             ps.setAllowedDays(allowedDays);
             ps.setAllowedRooms(allowedRooms);
             ps.setLowerPerWeek(req.weeklyBalance != null ? req.weeklyBalance.lowerPerWeek : 0);

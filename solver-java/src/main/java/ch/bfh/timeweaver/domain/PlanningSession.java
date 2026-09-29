@@ -24,6 +24,8 @@ public class PlanningSession {
     private List<String> slotTypes = new ArrayList<>();
     private int expectedStudents;
     private List<String> instructorIds = new ArrayList<>();
+    /** data-model-comparison.md §3.1 — Kohorte (Class) */
+    private List<String> classIds = new ArrayList<>();
     private List<String> prerequisiteModuleIds = new ArrayList<>();
 
     private List<SoftPenalty> softPenalties = new ArrayList<>();
@@ -127,6 +129,14 @@ public class PlanningSession {
 
     public void setExpectedStudents(int expectedStudents) {
         this.expectedStudents = expectedStudents;
+    }
+
+    public List<String> getClassIds() {
+        return classIds;
+    }
+
+    public void setClassIds(List<String> classIds) {
+        this.classIds = classIds;
     }
 
     public List<String> getInstructorIds() {

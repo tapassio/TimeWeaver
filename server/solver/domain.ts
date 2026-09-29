@@ -63,10 +63,25 @@ export interface Restriction {
   params?: Record<string, unknown> // z. B. { dates: ['2026-11-14'] }
 }
 
+export interface Class {
+  id: string
+  name: string
+  /** Zielmodell (data-model-comparison.md §2): Programm-Kohorte als echte Entität */
+  programId: string
+  semesterId?: string
+  semester?: number
+  curriculumVersionId?: string
+  size?: number
+  /** M:N zu Modulen (Kohorte hört diese Module) */
+  moduleIds?: string[]
+}
+
 export interface Module {
   id: string
   name: string
   program: string // Program.id
+  /** Kohorte (Class) — ersetzt die implizite program+semester-Verwandtschaft */
+  classIds?: string[]
   ects: 3 | 6
   /**
    * Kap. 11.1 — Kohorten-Verbindlichkeit: Module in derselben Kohorte

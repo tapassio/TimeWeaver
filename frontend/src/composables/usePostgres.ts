@@ -24,6 +24,7 @@ export const EntityTables = {
   LESSON: 'lessons',
   WEEK: 'weeks',
   SCHEDULE_ENTRY: 'schedule_entries',
+  SCHEDULE_SNAPSHOT: 'schedule_snapshots',
   ROOM: 'rooms',
   LOCATION: 'locations',
   LECTURER: 'lecturers',

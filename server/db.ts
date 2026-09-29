@@ -142,6 +142,17 @@ export async function initDatabase(): Promise<boolean> {
         ALTER TABLE local_users ADD COLUMN IF NOT EXISTS is_active BOOLEAN NOT NULL DEFAULT TRUE;
         ALTER TABLE local_users ADD COLUMN IF NOT EXISTS timezone VARCHAR(64) DEFAULT '';
 
+        CREATE TABLE IF NOT EXISTS local_user_cache (
+          id VARCHAR(255) PRIMARY KEY,
+          local_name VARCHAR(255) NOT NULL,
+          email VARCHAR(255) DEFAULT '',
+          supplier_id VARCHAR(512) DEFAULT '',
+          timezone VARCHAR(64) DEFAULT '',
+          roles JSONB NOT NULL DEFAULT '[]'::jsonb,
+          updated_at TIMESTAMPTZ DEFAULT NOW()
+        );
+        CREATE INDEX IF NOT EXISTS idx_user_cache_email ON local_user_cache(email);
+
         CREATE TABLE IF NOT EXISTS entity_acl (
           table_name VARCHAR(100) NOT NULL,
           entity_id VARCHAR(255) NOT NULL,

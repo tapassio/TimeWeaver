@@ -46,11 +46,13 @@ export async function solveTimetableOnServer(
   rooms: Room[],
   options: SolveOptions = {},
   useWorker = true,
+  // data-model-comparison.md §3.1/§3.6 — Kohorten mitliefern + Snapshot persistieren
+  extra: { classes?: Array<{ id: string; programId: string; semester?: number; moduleIds?: string[] }>; persist?: boolean; semesterId?: string } = {},
 ) {
   const res = await fetch('/api/timetable/solve', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ modules, days, rooms, options, useWorker }),
+    body: JSON.stringify({ modules, days, rooms, options, useWorker, classes: extra.classes, persist: extra.persist, semesterId: extra.semesterId }),
   })
   if (!res.ok) {
     const err = await res.json().catch(() => ({ error: res.statusText }))

@@ -94,4 +94,20 @@ class SolverControllerTest {
         assertEquals(2, response.assignments.size());
         // Keine Exception/500 — Solver liefert trotzdem eine Zuordnung (mit Hard-Kosten)
     }
+    @Test
+    void classConflictPreventsSameDayEvenAcrossPrograms() {
+        // data-model-comparison.md §3.1 — zwei Sessions derselben Class, aber
+        // Programm+Semester unterscheiden sich bewusst: OHNE Class-Constraint
+        // wären beide am selben Tag möglich. Mit CLASS_CONFLICT nicht.
+        SolveApi.Request req = basicRequest();
+        req.sessions.get(0).program = "prog-other";
+        req.sessions.get(0).semester = 3;
+        req.sessions.get(0).classIds = List.of("class-shared-1");
+        req.sessions.get(1).classIds = List.of("class-shared-1");
+        req.prerequisites = List.of();
+
+        SolveApi.Response response = controller.solve(req);
+        assertEquals(2, response.assignments.size());
+        assertEquals(0, response.score.hard, "Class-Kohorten dürfen nicht am selben Tag überlappen");
+    }
 }

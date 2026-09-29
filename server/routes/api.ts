@@ -35,6 +35,10 @@ export const ALLOWED_ENTITY_TABLES = new Set([
   'modules',
   'learning_cycles',
   'curriculum_modules',
+  'schedule_snapshots',
+
+  'classes',
+
   'semesters',
   'terms',
   'themes',
