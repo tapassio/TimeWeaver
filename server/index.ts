@@ -18,9 +18,24 @@ const PORT = process.env.PORT || 3000
 // Middlewares
 // CORS: Standard restricted, allowlisting via CORS_ORIGIN
 // (Review #5: Previously permissive cross-origin resource sharing for all origins)
-const corsOptions = process.env.CORS_ORIGIN
-  ? { origin: process.env.CORS_ORIGIN.split(',').map((s) => s.trim()) }
-  : { origin: false }
+const corsOriginList = process.env.CORS_ORIGIN?.split(',').map((s) => s.trim())
+type CorsCallback = (err: Error | null, ok?: boolean) => void
+const corsOptions = {
+  origin: corsOriginList
+    ? corsOriginList // explizit konfigurierte Origins (Prod-Konfiguration)
+    : (origin: string | undefined, cb: CorsCallback) => {
+      // Dev-Komfort: alle localhost/127-Origins erlauben (Vite-Dev-Port variiert);
+      // fehlende CORS-Header blockieren Browser-Fetches sonst stillschweigend.
+      if (!origin) return cb(null, true)
+      try {
+        const u = new URL(origin)
+        const ok = u.hostname === "localhost" || u.hostname === "127.0.0.1"
+        return cb(null, ok)
+      } catch {
+        return cb(null, false)
+      }
+    },
+}
 app.use(cors(corsOptions))
 app.use(express.json({ limit: '10mb' }))
 app.use(express.urlencoded({ extended: true }))
