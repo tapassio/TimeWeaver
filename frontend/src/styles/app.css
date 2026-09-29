@@ -1,0 +1,47 @@
+/**
+ * Globale Feinschliff-Styles (beide weaveR-Apps teilen die Token-Logik):
+ * dezenter Grauverlauf als Seitenhintergrund, Hover-Lift für Cards,
+ * hübsche Scrollbars.
+ */
+html,
+body {
+  background: var(--v-theme-surface);
+}
+
+#app {
+  min-height: 100vh;
+}
+
+.app-bg {
+  background:
+    radial-gradient(1200px 400px at 10% -10%, rgba(0, 121, 107, 0.10), transparent),
+    radial-gradient(900px 380px at 95% -20%, rgba(242, 169, 0, 0.08), transparent),
+    linear-gradient(180deg, #F3F6FB 0%, #F7F9FC 30%, #F5F7FA 100%);
+  background-attachment: fixed;
+  min-height: calc(100vh - 64px);
+}
+
+.card-lift {
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.card-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(16, 34, 48, .10) !important;
+}
+
+/*纸张-Ecken: subtle separation headers in views */
+.view-hero {
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(0, 121, 107, .92), rgba(0, 105, 92, .96));
+  color: #fff;
+  padding: 18px 22px;
+  margin-bottom: 16px;
+  box-shadow: 0 6px 18px rgba(0, 121, 107, .25);
+}
+.view-hero .text-h5,
+.view-hero .text-h6 { color: #fff; }
+
+/* Lists in the drawer: softer */
+.v-list-item--active {
+  font-weight: 600;
+}

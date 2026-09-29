@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar color="primary" prominent>
+    <v-app-bar color="primary" prominent elevation="2">
       <v-app-bar-nav-icon @click="drawer = !drawer" />
       <v-app-bar-title>
         <img
@@ -60,7 +60,7 @@
       </template>
     </v-navigation-drawer>
 
-    <v-main>
+    <v-main class="app-bg">
       <router-view />
     </v-main>
   </v-app>

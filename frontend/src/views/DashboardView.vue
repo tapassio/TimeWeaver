@@ -17,7 +17,7 @@
           </div>
         </v-card>
 
-        <v-card variant="outlined" class="pa-3 mb-4" to="/schedule" hover>
+        <v-card variant="flat" class="pa-3 mb-4 card-lift" to="/schedule" hover>
           <div class="text-subtitle-1 font-weight-bold mb-2">{{ t('schedule.conflicts') }}</div>
           <div class="text-h4">{{ slotConflictsCount }}</div>
           <div class="text-caption text-medium-emphasis">
@@ -37,7 +37,7 @@
       </v-col>
 
       <v-col cols="12" md="8">
-        <v-card variant="outlined" class="pa-3 mb-4" to="/schedule" hover>
+        <v-card variant="flat" class="pa-3 mb-4 card-lift" to="/schedule" hover>
           <div class="text-subtitle-1 font-weight-bold mb-2">{{ t('dashboard.nextBlocks') }}</div>
           <div v-for="up in upcomingBlocks" :key="up._id" class="d-flex justify-space-between py-1">
             <span class="text-body-2">{{ up.title }}</span>
