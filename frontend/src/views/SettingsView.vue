@@ -1,9 +1,13 @@
 <template>
   <v-container fluid>
+    <div class="view-hero">
+      <h1 class="text-h4 font-weight-bold">Einstellungen</h1>
+      <div class="text-body-2 opacity-90">OIDC-Authentifizierung Datenbank-Anbindung konfigurieren.</div>
+    </div>
     <v-row>
       <!-- linke Nav-Spalte -->
       <v-col cols="12" md="3">
-        <v-card variant="outlined" class="pa-2">
+        <v-card variant="flat" class="pa-2 card-lift">
           <v-list nav density="compact">
             <v-list-item
               v-for="s in sections"

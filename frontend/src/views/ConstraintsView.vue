@@ -1,16 +1,19 @@
 <template>
   <v-container fluid>
-    <div class="d-flex align-center justify-space-between mb-2 flex-wrap ga-2">
-      <div>
-        <h1 class="page-title mb-1">Constraints</h1>
-        <div class="text-body-2 text-medium-emphasis">
-          Regel-Erfassung: hart-/weiche Regeln für Module und Programm — Kategorien (aus den
-          Regeltypen abgeleitet), Hart/Weich-Pill-Filter und Inline-Bearbeitung je Zeile.
+    <div class="view-hero">
+      <div class="d-flex align-center justify-space-between flex-wrap ga-3">
+        <div>
+          <h1 class="text-h4 font-weight-bold">Constraints</h1>
+          <div class="text-body-2 opacity-90">
+            Regel-Erfassung: hart-/weiche Regeln für Module und Programm — Kategorien (aus den
+            Regeltypen abgeleitet), Hart/Weich-Pill-Filter und Inline-Bearbeitung je Zeile.
+          </div>
         </div>
-      </div>
-      <v-btn color="primary" variant="flat" class="llm-button" @click="openDialog">
+  
+      <v-btn color="rgba(255,255,255,0.22)" text-color="white" variant="flat" class="llm-button" @click="openDialog">
         + Neue Regel
       </v-btn>
+    </div>
     </div>
 
     <v-alert v-if="loadError" type="error" variant="tonal" class="mb-4" closable>{{ loadError }}</v-alert>
@@ -29,7 +32,7 @@
 
       <v-col cols="12" md="9">
         <!-- Regelzeilen: jedes ist ein Akkordeon mit denselben Detailfeldern wie beim Anlegen -->
-        <v-card variant="outlined" class="pa-3 mb-4" v-if="visibleRules.length > 0">
+        <v-card variant="flat" class="pa-3 card-lift mb-4" v-if="visibleRules.length > 0">
           <ConstraintRow
             v-for="r in visibleRules"
             :key="r.id"
@@ -47,7 +50,7 @@
         </v-alert>
 
         <h3 class="text-subtitle-1 font-weight-bold mt-6 mb-2">Unterstützende Regeln (im Solver erzwungen)</h3>
-        <v-card variant="outlined" class="pa-3">
+        <v-card variant="flat" class="pa-3 card-lift ">
           <SystemRuleRow v-for="sr in systemRulesList" :key="sr.id" :def="sr" />
           <div v-if="systemRulesList.length === 0" class="text-caption text-medium-emphasis pa-2">
             Katalog konnte nicht geladen werden.

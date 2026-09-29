@@ -2,9 +2,9 @@
   <v-container class="fill-height" fluid>
     <v-row align="center" justify="center">
       <v-col cols="12" sm="8" md="5">
-        <v-card class="elevation-4 pa-4 rounded-lg">
+        <v-card class="elevation-6 pa-4 rounded-lg card-lift">
           <v-card-title class="text-h5 text-center font-weight-bold">TimeWeaver</v-card-title>
-          <v-card-subtitle class="text-center mb-4">Curriculum Mapping &amp; Academic Scheduling</v-card-subtitle>
+          <v-card-subtitle class="text-center mb-4">Zeitliche Planung der On-Campus-Module</v-card-subtitle>
 
           <v-card-text>
             <!-- Case 1: OIDC provider not configured -->

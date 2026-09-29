@@ -1,7 +1,9 @@
 <template>
   <v-container>
-    <h1 class="mb-1">Rooms &amp; Locations</h1>
-    <p class="text-body-2 text-medium-emphasis mb-4">Manage rooms, locations, equipment, and availability.</p>
+    <div class="view-hero">
+      <h1 class="text-h4 font-weight-bold">Rooms &amp; Locations</h1>
+      <div class="text-body-2 opacity-90">Manage rooms, locations, equipment, and availability.</div>
+    </div>
 
     <v-tabs v-model="activeTab">
       <v-tab value="rooms">Rooms</v-tab>

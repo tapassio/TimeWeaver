@@ -1,12 +1,13 @@
 <template>
   <v-container fluid class="pa-6">
-    <div class="d-flex align-center justify-space-between mb-6">
-      <div>
-        <h1 class="text-h4 font-weight-bold">System Administration</h1>
-        <p class="text-subtitle-1 text-medium-emphasis">
-          Manage local users, OIDC external identity mappings, usernames, emails, and authorization.
-        </p>
+    <div class="view-hero">
+      <h1 class="text-h4 font-weight-bold">System Administration</h1>
+      <div class="text-body-2 opacity-90">
+        Manage local users, OIDC external identity mappings, usernames, emails, and authorization.
       </div>
+    </div>
+    <div class="d-flex align-center justify-space-between mb-4">
+    &nbsp;
       <v-btn color="primary" prepend-icon="mdi-refresh" @click="fetchUsers" :loading="loading">
         Refresh Users
       </v-btn>

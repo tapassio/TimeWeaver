@@ -1,17 +1,20 @@
 <template>
   <v-container fluid>
-    <div class="d-flex align-center ga-3 mb-1">
-      <h1 class="text-h5">Planung</h1>
-      <v-chip v-if="currentSemester" size="small" variant="tonal" color="primary">
-        {{ currentSemester.identifier }} · {{ currentSemester.start_date }} – {{ currentSemester.end_date }}
-      </v-chip>
-      <v-chip v-if="slotConflicts.length" color="error" size="small">{{ slotConflicts.length }} Konflikte</v-chip>
-
+    <div class="view-hero">
+      <h1 class="text-h4 font-weight-bold">Planung</h1>
+      <div class="text-body-2 opacity-90">
+        On-Campus-Kalender (Do/Fr/Sa · vormittags/nachmittags). Modul aus dem Pool auf eine Zelle ziehen,
+        um einen Kontaktblock anzulegen; Klick auf einen Blockchip entfernt ihn wieder.
+      </div>
+      <div v-if="currentSemester" class="mt-2 d-flex ga-2">
+        <v-chip size="small" color="rgba(255,255,255,0.20)" text-color="white" variant="flat">
+          {{ currentSemester.identifier }} · {{ currentSemester.start_date }} – {{ currentSemester.end_date }}
+        </v-chip>
+        <v-chip v-if="slotConflicts.length" size="small" color="rgba(255,255,255,0.20)" text-color="white" variant="flat">
+          {{ slotConflicts.length }} Konflikte
+        </v-chip>
+      </div>
     </div>
-    <p class="text-body-2 text-medium-emphasis mb-4">
-      On-Campus-Kalender (Do/Fr/Sa · vormittags/nachmittags). Modul aus dem Pool auf eine Zelle ziehen,
-      um einen Kontaktblock anzulegen; Klick auf einen Blockchip entfernt ihn wieder.
-    </p>
 
     <v-alert v-if="error" type="error" variant="tonal" closable class="mb-4">{{ error }}</v-alert>
 
